@@ -1,0 +1,221 @@
+/*==================================================
+        CORES DAS EQUIPES F1 2026
+==================================================*/
+
+
+/*==================================================
+        McLAREN
+==================================================*/
+
+.mclaren{
+    --primary: #FF8000;
+    --primary-rgba: rgba(255,128,0,1);
+
+    --secondary: #000000;
+    --secondary-rgba: rgba(0,0,0,1);
+}
+
+
+/*==================================================
+        MERCEDES
+==================================================*/
+
+.mercedes{
+    --primary: #00D2BE;
+    --primary-rgba: rgba(0,210,190,1);
+
+    --secondary: #000000;
+    --secondary-rgba: rgba(0,0,0,1);
+
+    --tertiary: #C0C0C0;
+    --tertiary-rgba: rgba(192,192,192,1);
+}
+
+
+/*==================================================
+        RED BULL
+==================================================*/
+
+.redbull{
+    --primary: #1E41FF;
+    --primary-rgba: rgba(30,65,255,1);
+
+    --secondary: #1E2A44;
+    --secondary-rgba: rgba(30,42,68,1);
+
+    --tertiary: #FFD700;
+    --tertiary-rgba: rgba(255,215,0,1);
+
+    --quaternary: #0057B8;
+    --quaternary-rgba: rgba(0,87,184,1);
+}
+
+
+/*==================================================
+        FERRARI
+==================================================*/
+
+.ferrari{
+    --primary: #DC0000;
+    --primary-rgba: rgba(220,0,0,1);
+
+    --secondary: #FFFFFF;
+    --secondary-rgba: rgba(255,255,255,1);
+}
+
+
+/*==================================================
+        WILLIAMS
+==================================================*/
+
+.williams{
+    --primary: #005AFF;
+    --primary-rgba: rgba(0,90,255,1);
+
+    --secondary: #000000;
+    --secondary-rgba: rgba(0,0,0,1);
+
+    --tertiary: #62a9ff;
+    --tertiary-rgba: rgba(98,169,255,1);
+}
+
+
+/*==================================================
+        RACING BULLS
+==================================================*/
+
+.racingbulls{
+    --primary: #F9F9F9;
+    --primary-rgba: rgba(249,249,249,1);
+
+    --secondary: #FFD700;
+    --secondary-rgba: rgba(255,215,0,1);
+
+    --tertiary: #0057B8;
+    --tertiary-rgba: rgba(0,87,184,1);
+
+    --quartiary: #5f5fff
+}
+
+
+/*==================================================
+        ASTON MARTIN
+==================================================*/
+
+.astonmartin{
+    --primary: #066F62;
+    --primary-rgba: rgba(6,111,98,1);
+
+    --secondary: #CEDC00;
+    --secondary-rgba: rgba(206,220,0,1);
+
+    --tertiary: #F2E500;
+    --tertiary-rgba: rgba(242,229,0,1);
+}
+
+
+/*==================================================
+        HAAS
+==================================================*/
+
+.haas{
+    --primary: #F0F0F0;
+    --primary-rgba: rgba(240,240,240,1);
+
+    --secondary: #000000;
+    --secondary-rgba: rgba(0,0,0,1);
+
+    --tertiary: #E10600;
+    --tertiary-rgba: rgba(225,6,0,1);
+}
+
+
+/*==================================================
+        AUDI
+==================================================*/
+
+.audi{
+    --primary: #808080;
+    --primary-rgba: rgba(128,128,128,1);
+
+    --secondary: #000000;
+    --secondary-rgba: rgba(0,0,0,1);
+
+    --tertiary: #E30613;
+    --tertiary-rgba: rgba(227,6,19,1);
+
+}
+
+
+/*==================================================
+        ALPINE
+==================================================*/
+
+.alpine{
+    --primary: #0090FF;
+    --primary-rgba: rgba(0,144,255,1);
+
+
+    --secondary: #FF63B8;
+    --secondary-rgba: rgba(255,99,184,1);
+}
+
+
+/*==================================================
+        CADILLAC
+==================================================*/
+
+.cadillac{
+    --primary: #030303;
+    --primary-rgba: rgba(3,3,3,1);
+
+    --secondary: #FFFFFF;
+    --secondary-rgba: rgba(255,255,255,1);
+}
+
+
+
+
+/*==================================================
+            APELIDOS
+==================================================*/
+
+
+🟥 Ferrari — THE PRANCING HORSE
+🩶 Mercedes — THE SILVER ARROWS / Flechas de Prata
+🟧 McLaren — THE PAPAYA ARMY / Exército Papaya
+🔵 Red Bull — THE BULLS
+🟢 Aston Martin — THE GREEN MACHINE
+🔵 Williams — THE GROVE RACERS / tradicionalmente associada a “The Williams”
+🔵 Alpine — THE FRENCH BLUES (menos consolidado)
+⚫ Haas — THE AMERICAN TEAM
+🔴 Audi — THE FOUR RINGS
+⚪ Cadillac — THE AMERICAN ICON
+                  
+                                         
+
+
+
+EquipeNome de Construtor / Operação Comercial Nome Comercial Completo (Com Patrocínio)
+
+🏎️ Ferrari: Scuderia Ferrari / Scuderia Ferrari HP
+
+🏎️ McLaren: McLaren Racing / McLaren Mastercard F1 Team
+
+🏎️ Mercedes: Mercedes-AMG / Mercedes-AMG Petronas F1 Team
+
+🏎️ Red Bull: Red Bull Racing / Oracle Red Bull Racing
+
+🏎️ Aston Martin: Aston Martin Aramco / Aston Martin Aramco F1 Team
+
+🏎️ Williams: Williams Racing / Atlassian Williams F1 Team
+
+🏎️ Alpine: BWT Alpine / BWT Alpine F1 Team
+
+🏎️ Racing Bulls: Racing Bulls / Visa Cash App Racing Bulls F1 Team
+
+🏎️ Haas: Haas F1 Team / TGR Haas F1 Team 
+
+🏎️ Audi: Audi F1 Team / Audi Revolut F1 Team 
+
+🏎️ Cadillac: Cadillac Racing / Cadillac Formula 1 Team

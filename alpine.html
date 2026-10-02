@@ -1,0 +1,2344 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Alpine</title>
+<link rel="stylesheet" href="stylemain.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="alpine">
+     
+     
+     
+<header class="topbar-alpine">
+
+    <!-- MENU -->
+    <button class="menu-toggle-alpine" id="menuTogglealpine">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <!-- NOME -->
+<div class="topbar-title-alpine">
+
+    <img src="icons/Alpinef1.png" alt="McLaren">
+
+    <span>Alpine Formula 1 Team</span>
+
+</div>
+    <!-- NOTÍCIAS -->
+    <button class="news-toggle-alpine" id="abrirNoticiasalpine">
+        <i class="fa-solid fa-newspaper"></i>
+    </button>
+
+</header>
+	
+  <nav class="side-menu-alpine" id="sideMenualpine">
+    
+    <div class="close-menu-alpine" id="closeMenualpine">✕</div>
+
+<div class="menu-profile-alpine">
+
+    <img
+        src="api/alpine.avif"
+        alt="Lando Norris">
+
+    <p>Alpine Formula 1 Team</p>
+
+</div>
+
+
+<div class="menu-links-alpine">
+	<ul>
+
+<li>
+<a href="#overlay">
+<span><i class="fa-solid fa-users"></i> Pilotos</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+<li>
+<a href="#intro">
+<span><i class="fa-solid fa-id-card"></i> Introdução</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+<li>
+<a href="#philo">
+<span><i class="fa-solid fa-lightbulb"></i> Filosofia</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+<li>
+<a href="#fac">
+<span><i class="fa-solid fa-industry"></i> Fabrica</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+<li>
+<a href="#linha">
+<span><i class="fa-solid fa-timeline"></i> Linha Geneólogica</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+<li>
+<a href="#tabela">
+<span><i class="fa-solid fa-circle-info"></i> Infos</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+<li>
+<a href="#alpine-teammates">
+<span><i class="fa-solid fa-user-group"></i> Teammates</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+<li>
+<a href="#driver-evolution-alpine">
+<span><i class="fa-solid fa-chart-line"></i> Driver Evolution</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+		
+<li>
+<a href="#pilotos">
+<span><i class="fa-solid fa-user-group"></i> Companheiros</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+<li>
+<a href="#lider">
+<span><i class="fa-solid fa-people-group"></i> Equipe</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+<li>
+<a href="#sec">
+<span><i class="fa-solid fa-map"></i> Setores</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+<li>
+	<a href="#creator">
+		<span><i class="fa-solid fa-screwdriver-wrench"></i>Criação</span>
+	<i class="fa-solid fa-chevron-right"></i>
+	</a>
+</li>
+
+	<li>
+	<a href="#numeros">
+		<span><i class="fa-solid fa-chart-column"></i>Estastisticas</span>
+	<i class="fa-solid fa-chevron-right"></i>
+	</a>
+</li>
+	
+	<li>
+	<a href="#hall">
+		<span><i class="fa-solid fa-star"></i>Hall da Fama</span>
+	<i class="fa-solid fa-chevron-right"></i>
+	</a>
+</li>
+	
+	<li>
+	<a href="#alpineevolution">
+		<span><i class="fa-solid fa-car-side"></i>Evolução dos Carros</span>
+	<i class="fa-solid fa-chevron-right"></i>
+	</a>
+</li>
+	
+	<li>
+	<a href="#eras">
+		<span><i class="fa-solid fa-book-open"></i>Historia da equipe</span>
+	<i class="fa-solid fa-chevron-right"></i>
+	</a>
+</li>
+	
+
+	</ul>
+</div>
+	</nav>
+
+  <!-- OVERLAY -->
+  <div class="overlay-alpine" id="overlayalpine"></div>
+
+<div class="painel-noticias-alpine" id="painelNoticiasalpine">
+
+
+<div class="topo-noticias-alpine">
+
+    <h2>
+        <i class="fa-solid fa-newspaper"></i>
+        Alpine News
+    </h2>
+
+    <div class="acoes-topo-alpine">
+
+        <button id="atualizarNoticiasalpine"
+        title="Atualizar notícias">
+
+            <i class="fa-solid fa-rotate"></i>
+
+        </button>
+
+        <button id="fecharNoticiasalpine">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+    </div>
+
+</div>
+
+	
+    <div class="lista-noticias-alpine" id="listaNoticiasalpine">
+
+        <!-- Loading -->
+        <div class="loading-noticias-alpine">
+
+            <div class="spinner-alpine"></div>
+
+            <p>Carregando notícias...</p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="overlay-noticias-alpine"
+id="overlayNoticiasalpine"></div>
+
+
+     
+<section class="alpine-hero" id="inicio">
+
+<div class="alpine-pulsos">
+<span></span><span></span><span></span><span></span><span></span>
+<span></span><span></span><span></span><span></span><span></span>
+<span></span><span></span><span></span><span></span><span></span>
+<span></span><span></span><span></span><span></span><span></span>
+<span></span><span></span><span></span><span></span><span></span>
+<span></span><span></span><span></span><span></span><span></span>
+<span></span><span></span><span></span><span></span><span></span>
+<span></span><span></span><span></span><span></span><span></span>
+<span></span><span></span><span></span><span></span><span></span>
+<span></span><span></span><span></span><span></span><span></span>
+<span></span><span></span><span></span><span></span><span></span>
+<span></span><span></span><span></span><span></span><span></span>
+<span></span><span></span><span></span><span></span><span></span>
+<span></span><span></span><span></span><span></span><span></span>
+<span></span><span></span><span></span><span></span><span></span>
+<span></span><span></span><span></span><span></span><span></span>
+<span></span><span></span><span></span><span></span><span></span>
+<span></span><span></span><span></span><span></span><span></span>
+<span></span><span></span><span></span><span></span><span></span>
+<span></span><span></span><span></span><span></span><span></span>
+</div>
+
+
+<!-- CARRO OCUPANDO TODO O FUNDO -->
+<div class="alpine-car-bg"></div>
+<div class="alpine-overlay"></div>
+
+
+<!-- TOPO -->
+<header class="alpine-top">
+
+<a href="index.html" class="alpine-home">
+<i class="fa-solid fa-house"></i>
+<span>HOME</span>
+</a>
+
+<div class="alpine-status">
+FORMULA 1 • 2026
+</div>
+
+<div class="alpine-logo">
+
+<div class="alpine-logo-glow"></div>
+
+<img
+src="logos/alpine.png"
+alt="alpine Mastercard F1 Team"
+>
+
+</div>
+
+
+</header>
+
+
+<!-- REDES -->
+<div class="alpine-social-top">
+
+<a href="https://www.instagram.com/alpinef1team/"
+ aria-label="Instagram"
+ target="_blank"
+ rel="noopener">
+<i class="fa-brands fa-instagram"></i>
+</a>
+
+<a href="https://x.com/AlpineF1Team"
+ aria-label="X"
+ target="_blank"
+ rel="noopener">
+<i class="fa-brands fa-x-twitter"></i>
+</a>
+
+<a href="https://www.facebook.com/AlpineF1Team/"
+ aria-label="Facebook"
+ target="_blank"
+ rel="noopener">
+<i class="fa-brands fa-facebook-f"></i>
+</a>
+
+<a href="https://www.tiktok.com/@alpinef1team"
+ aria-label="TikTok"
+ target="_blank"
+ rel="noopener">
+<i class="fa-brands fa-tiktok"></i>
+</a>
+
+<a href="https://www.youtube.com/@AlpineCars"
+ aria-label="YouTube"
+ target="_blank"
+ rel="noopener">
+<i class="fa-brands fa-youtube"></i>
+</a>
+
+<a href="https://www.threads.net/@alpinef1team"
+ aria-label="Threads"
+ target="_blank"
+ rel="noopener">
+<i class="fa-brands fa-threads"></i>
+</a>
+
+<a href="https://www.linkedin.com/company/alpine-formula-one-team/"
+ aria-label="LinkedIn"
+ target="_blank"
+ rel="noopener">
+<i class="fa-brands fa-linkedin-in"></i>
+</a>
+
+<a href="https://www.alpinef1.com/"
+ aria-label="Site oficial"
+ target="_blank"
+ rel="noopener">
+<i class="fa-solid fa-globe"></i>
+</a>
+
+</div>
+
+	
+<div class="alpine-main">
+<span class="alpine-kicker">
+BWT ALPINE FORMULA ONE TEAM
+</span>
+
+<h1>
+ALPINE
+<strong>RACING</strong>
+</h1>
+
+<p class="alpine-full-name">
+BWT ALPINE FORMULA ONE TEAM
+</p>
+
+<div class="alpine-title-line"></div>
+</div>	
+<div class="alpine-bottom">
+
+<span>10 PIERRE GASLY</span>
+
+<div></div>
+
+<span>43 FRANCO COLAPINTO</span>
+
+</div>
+
+</section>
+
+	
+
+
+
+	
+<section class="pilotos-alpine" id="overlay">
+
+ <div class="pilotos-titulo-alpine">
+<span>ALPINE FORMULA 1 TEAM</span>
+<h2>OS PILOTOS</h2>
+<p>Conheça a dupla que representa a Alpine na Formula 1.</p>
+ </div>
+
+
+ <div class="dupla-pilotos-alpine">
+
+
+
+<!-- =====================================================
+     DIVISÃO CENTRAL alpine MARTIN 
+====================================================== -->
+
+<div class="centro-alpine">
+
+ <div class="centro-logo-alpine">
+
+<img
+    src="icons/Alpinef1.png"
+    alt="alpine"
+>
+
+ </div>
+
+ <div class="centro-linha-alpine"></div>
+
+ <span class="centro-nome-alpine">
+ALPINE  
+ </span>
+
+</div>
+			
+
+<!-- =========================
+     LANDO fernando 
+========================== -->
+
+<a href="gasly.html" class="piloto-alpine piloto-gasly-alpine">
+
+<div class="piloto-numero-bg-alpine">
+10
+</div>
+
+<div class="piloto-foto-alpine">
+ <img src="gasly/head.webp" alt="Lando fernando ">
+</div>
+
+<div class="piloto-dados-alpine">
+
+ <span class="piloto-pais-alpine">
+    FRANCE
+ </span>
+
+ <h3>
+    PIERRE   
+<strong>GASLY</strong>
+ </h3>
+
+ <div class="piloto-linha-alpine"></div>
+
+ <span class="piloto-categoria-alpine">
+    ALPINE F1 DRIVER
+ </span>
+
+</div>
+
+<div class="piloto-acao-alpine">
+ <span>VER PERFIL</span>
+ <strong>↗</strong>
+</div>
+
+</a>
+
+
+<!-- =========================
+     OSCAR lindblad
+========================== -->
+
+<a href="franco.html" class="piloto-alpine piloto-franco-alpine">
+
+<div class="piloto-numero-bg-alpine">
+43
+</div>
+
+<div class="piloto-foto-alpine">
+	<img src="franco/head.webp" alt="Oscar lindblad">
+</div>
+
+<div class="piloto-dados-alpine">
+
+<span class="piloto-pais-alpine">
+ARGENTINE 
+</span>
+
+<h3>
+FRANCO 
+<strong>COLAPINTO</strong>
+</h3>
+
+<div class="piloto-linha-alpine"></div>
+
+<span class="piloto-categoria-alpine">
+ALPINE F1 DRIVER
+</span>
+
+</div>
+
+<div class="piloto-acao-alpine">
+	<span>VER PERFIL</span>
+<strong>↗</strong>
+</div>
+
+</a>
+
+</div>
+
+</section>	
+
+     
+     
+     
+     
+     
+     
+
+
+<section class="intro-alpine" id="intro">
+
+  <div class="intro-container-alpine">
+
+    <div class="intro-texto-alpine">
+
+      <h2>Alpine F1 Team</h2>
+
+      <p>
+        A Alpine representa a tradição francesa na Fórmula 1, carregando a herança esportiva da Renault dentro da principal categoria do automobilismo mundial.
+      </p>
+
+      <p>
+        Com foco em inovação, aerodinâmica e desenvolvimento técnico, a equipe vive uma fase de transformação buscando voltar ao topo do grid.
+      </p>
+
+      <p>
+        A Alpine mistura juventude, velocidade e ambição em um projeto que busca construir o futuro da Fórmula 1 francesa.
+      </p>
+
+      <div class="intro-dados-alpine">
+
+        <span>🇫🇷 França</span>
+
+        <span>🏁 Desde 2021</span>
+
+        <span>⚡ Alpine Racing</span>
+
+      </div>
+
+    </div>
+
+    <div class="intro-img-alpine">
+
+      <img src="carros/a526.jpg" alt="Alpine F1">
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="alpine-philosophy" id="philo">
+
+  <div class="philosophy-content-alpine">
+
+    <span class="mini-title-alpine">
+      Alpine Racing Philosophy
+    </span>
+
+    <h2>
+      Performance, Inovação e Espírito Francês
+    </h2>
+
+    <h3>
+      A Mentalidade da Alpine na Fórmula 1
+    </h3>
+
+    <p>
+      A Alpine representa a paixão francesa pelo automobilismo, combinando tecnologia, agressividade e inovação dentro da Fórmula 1. Desde o retorno da marca ao grid em 2021, a equipe trabalha para construir uma identidade forte e disputar espaço entre as principais forças do campeonato.
+    </p>
+
+    <div class="philosophy-block-alpine">
+
+      <h4>
+        Uma equipe movida por evolução
+      </h4>
+
+      <p>
+        A Alpine investe constantemente em engenharia, aerodinâmica e desenvolvimento técnico para transformar potencial em resultados. O objetivo da equipe é criar uma estrutura competitiva capaz de lutar por vitórias no futuro.
+      </p>
+
+    </div>
+
+    <div class="philosophy-grid-alpine">
+
+      <div class="philosophy-card-alpine">
+
+        <span>01</span>
+
+        <h5>
+          Identidade francesa
+        </h5>
+
+        <p>
+          A Alpine carrega a tradição do automobilismo francês para a Fórmula 1, unindo elegância, velocidade e inovação tecnológica.
+        </p>
+
+      </div>
+
+      <div class="philosophy-card-alpine">
+
+        <span>02</span>
+
+        <h5>
+          Mentalidade competitiva
+        </h5>
+
+        <p>
+          A equipe busca constantemente evolução para reduzir a distância para as equipes líderes e voltar a disputar pódios regularmente.
+        </p>
+
+      </div>
+
+      <div class="philosophy-card-alpine">
+
+        <span>03</span>
+
+        <h5>
+          Tecnologia e desenvolvimento
+        </h5>
+
+        <p>
+          A Alpine aposta em inovação, simuladores avançados e evolução aerodinâmica para crescer dentro da Fórmula 1 moderna.
+        </p>
+
+      </div>
+
+    </div>
+
+    <div class="philosophy-ending-alpine">
+
+      <h4>
+        O Que Define a Alpine?
+      </h4>
+
+      <p>
+        A Alpine simboliza paixão pelo automobilismo, inovação francesa e ambição competitiva. Sua missão é transformar evolução técnica em resultados e construir uma nova era vencedora na Fórmula 1.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="alpine-factory" id="fac">
+
+  <div class="alpine-factory-content">
+
+    <span class="alpine-factory-mini">
+      Alpine Factory
+    </span>
+
+    <h2>
+      O Centro da Alpine
+    </h2>
+
+    <h3>
+      O lugar onde engenharia francesa, velocidade e inovação moldam o futuro da equipe.
+    </h3>
+
+    <p class="alpine-factory-intro">
+      Em Enstone, no Reino Unido, está localizada a sede principal da Alpine na Fórmula 1. A fábrica representa décadas de tradição no automobilismo e continua sendo o coração do desenvolvimento técnico da equipe.
+    </p>
+
+    <p class="alpine-factory-intro">
+      A estrutura reúne departamentos de aerodinâmica, performance e engenharia avançada em um ambiente totalmente focado em evolução competitiva dentro da Fórmula 1 moderna.
+    </p>
+
+    <div class="alpine-factory-grid">
+
+      <div class="alpine-factory-card">
+
+        <span>01</span>
+
+        <h4>
+          Estrutura moderna
+        </h4>
+
+        <p>
+          A Alpine possui uma infraestrutura preparada para desenvolver carros competitivos utilizando tecnologia avançada e inovação constante.
+        </p>
+
+      </div>
+
+      <div class="alpine-factory-card">
+
+        <span>02</span>
+
+        <h4>
+          Engenharia francesa
+        </h4>
+
+        <p>
+          A equipe combina tradição francesa com desenvolvimento técnico moderno para evoluir aerodinamicamente e melhorar sua performance.
+        </p>
+
+      </div>
+
+      <div class="alpine-factory-card">
+
+        <span>03</span>
+
+        <h4>
+          Ambição competitiva
+        </h4>
+
+        <p>
+          A Alpine trabalha para voltar a disputar vitórias e consolidar seu espaço entre as principais equipes da Fórmula 1.
+        </p>
+
+      </div>
+
+    </div>
+
+    <div class="alpine-factory-ending">
+
+      <blockquote class="alpine-factory-quote">
+        “Performance nasce da inovação.”
+      </blockquote>
+
+      <p class="alpine-factory-text">
+        Em Enstone, engenharia, tecnologia e paixão pelo automobilismo trabalham juntas para construir o futuro da Alpine na Fórmula 1.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="alpine-linha-evolution" id="linha">
+
+<div class="linha-evolution-header-alpine">
+<span>THE ROAD TO BWT ALPINE F1 TEAM</span>
+
+<h2>
+UMA LINHA DE <strong>EVOLUÇÃO</strong>
+</h2>
+
+<p>
+Das origens à atual Alpine na Fórmula 1.
+</p>
+</div>
+
+
+<div class="linha-evolution-grid-alpine">
+
+
+<article class="linha-evolution-team-alpine team-toleman-alpine">
+
+<div class="team-bg-number-alpine">01</div>
+
+<div class="team-image-alpine">
+<img src="alpine/toleman.png" alt="toleman">
+</div>
+
+<div class="team-content-alpine">
+
+<span class="team-era-alpine">1981 — 1985</span>
+
+<h3>TOLEMAN</h3>
+
+<div class="team-line-alpine"></div>
+
+<span class="team-role-alpine">THE BEGINNING</span>
+
+</div>
+
+<div class="team-arrow-alpine">↗</div>
+
+</article>
+	
+<article class="linha-evolution-team-alpine team-benetton-alpine">
+
+<div class="team-bg-number-alpine">02</div>
+
+<div class="team-image-alpine">
+<img src="alpine/benetton.png" alt="toleman">
+</div>
+
+<div class="team-content-alpine">
+
+<span class="team-era-alpine">1986 — 2001</span>
+
+<h3>BENETTON</h3>
+
+<div class="team-line-alpine"></div>
+
+<span class="team-role-alpine">NEW NAME</span>
+
+</div>
+
+<div class="team-arrow-alpine">↗</div>
+
+</article>
+	
+<article class="linha-evolution-team-alpine team-renault-alpine">
+
+<div class="team-bg-number-alpine">03</div>
+
+<div class="team-image-alpine">
+<img src="alpine/toleman.png" alt="toleman">
+</div>
+
+<div class="team-content-alpine">
+
+<span class="team-era-alpine">2002 — 2010</span>
+
+<h3>RENAULT</h3>
+
+<div class="team-line-alpine"></div>
+
+<span class="team-role-alpine">THE SUCESS</span>
+
+</div>
+
+<div class="team-arrow-alpine">↗</div>
+
+</article>
+
+<article class="linha-evolution-team-alpine team-lotus-alpine">
+
+<div class="team-bg-number-alpine">04</div>
+
+<div class="team-image-alpine">
+<img src="alpine/lotus.png" alt="toleman">
+</div>
+
+<div class="team-content-alpine">
+
+<span class="team-era-alpine">2011 — 2015</span>
+
+<h3>LOTUS RENAULT</h3>
+
+<div class="team-line-alpine"></div>
+
+<span class="team-role-alpine">TRANSITION</span>
+
+</div>
+
+<div class="team-arrow-alpine">↗</div>
+
+</article>
+
+<article class="linha-evolution-team-alpine team-renault2-alpine">
+
+<div class="team-bg-number-alpine">05</div>
+
+<div class="team-image-alpine">
+<img src="icons/renault.png" alt="toleman">
+</div>
+
+<div class="team-content-alpine">
+
+<span class="team-era-alpine">2016 — 2020</span>
+
+<h3>RENAULT</h3>
+
+<div class="team-line-alpine"></div>
+
+<span class="team-role-alpine">THE RETURN</span>
+
+</div>
+
+<div class="team-arrow-alpine">↗</div>
+
+</article>
+
+
+<!-- alpine -->
+
+<article class="linha-evolution-team-alpine team-alpine-current">
+
+<div class="team-bg-number-alpine">06</div>
+
+<div class="team-image-alpine">
+<img src="icons/Alpinef1.png" alt="alpine">
+</div>
+
+<div class="team-content-alpine">
+
+<span class="team-era-alpine">2021 — PRESENTE</span>
+
+<h3>ALPINE</h3>
+
+<div class="team-line-alpine"></div>
+
+<span class="team-role-alpine">THE FRECH BLUES</span>
+
+</div>
+
+<div class="team-arrow-alpine">↗</div>
+
+</article>
+
+</div>
+
+
+<div class="linha-evolution-footer-alpine">
+
+<span>01</span>
+
+<div class="footer-line-alpine"></div>
+
+<span>BWT ALPINE F1 TEAM</span>
+
+<div class="footer-line-alpine"></div>
+
+<span>01</span>
+
+</div>
+
+</section>
+
+
+<section class="tabela-alpine" id="tabela">
+
+<h2 class="titulo-tabela-alpine">
+  <img src="icons/Alpinef1.png" class="logo-titulo-allpine">
+  Dados da Alpine
+  </h2>
+
+<div class="box-tabela-alpine">
+<table>
+
+<tr>
+<td>🏎️ Chassi Atual</td>
+<td>A526</td>
+</tr>
+
+<tr>
+<td>⚙️ Motor Atual</td>
+<td>Mercedes</td>
+</tr>
+
+<tr>
+<td>📅 Fundação</td>
+<td>2021</td>
+</tr>
+
+<tr>
+<td>📍 Sede</td>
+<td>
+Enstone – Inglaterra 🇬🇧 <br>
+(Base de motor: Viry-Châtillon – França 🇫🇷)
+</td>
+</tr>
+
+<tr>
+<td>🥇 Primeira vitória</td>
+<td>Esteban Ocon 🇫🇷 – Hungria 2021</td>
+</tr>
+
+<tr>
+<td>🏆 Melhor Resultado</td>
+<td>1º lugar – Esteban Ocon 🇫🇷 (Hungria 2021)</td>
+</tr>
+
+<tr>
+<td>🔥 Melhor Temporada</td>
+<td>2022 – 4º no construtores</td>
+</tr>
+
+<tr>
+<td>👬 Dupla Atual</td>
+<td>
+Pierre Gasly 🇫🇷 <br>
+Franco Colapinto 🇦🇷
+</td>
+</tr>
+
+</table>
+</div>
+</section>
+
+
+<section class="temporada-alpine" id="resultados">
+
+  <h2 class="titulo-temp-alpine">
+    alpine • Temporada 2026
+  </h2>
+
+  <div class="dashboard-alpine">
+
+    <div class="topo-temp-alpine">
+
+      <div class="card-campeonato-alpine">
+        <div class="valor-posicao-alpine" id="posicaoalpine">—</div>
+        <p>Posição campeonato</p>
+      </div>
+
+      <div class="card-grafico-alpine">
+        <svg viewBox="0 0 900 300">
+          <polyline id="linhaGraficoalpine" fill="none"></polyline>
+        </svg>
+      </div>
+
+      <div class="card-pontos-alpine">
+        <div id="pontosalpine">—</div>
+        <p>Pontos</p>
+      </div>
+
+    </div>
+
+    <div class="desempenho-alpine">
+
+      <div><span id="podiosalpine">0</span><p>Pódios</p></div>
+      <div><span id="vitoriasalpine">0</span><p>Vitórias</p></div>
+      <div><span id="top5alpine">0</span><p>Top 5</p></div>
+      <div><span id="avgGridalpine">—</span><p>Avg Grid</p></div>
+
+    </div>
+
+    <div class="resultados-alpine">
+
+      <table>
+        <thead>
+          <tr>
+            <th>Etapa</th>
+            <th>GP</th>
+            <th>Gasly</th>
+            <th>Colapinto</th>
+          </tr>
+        </thead>
+
+        <tbody id="tabelaalpine"></tbody>
+      </table>
+
+      <div class="total-alpine">
+        Total:
+        <span id="totalTabelaalpine">0</span>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+	<section class="alpine-battle" id="alpine-teammates">
+
+    <div class="alpine-battle-card">
+
+        <!-- =====================================
+             HEADER
+        ====================================== -->
+
+        <header class="alpine-header">
+
+            <div class="alpine-title-wrap">
+
+                <h2>TEAMMATE BATTLE</h2>
+
+                <p>ALPINE 2026</p>
+
+            </div>
+
+            <img
+                class="alpine-team-logo"
+                src="icons/Alpinef1.png"
+                alt="alpine"
+            >
+
+        </header>
+
+
+        <!-- =====================================
+             ÁREA PRINCIPAL
+        ====================================== -->
+
+        <div class="alpine-layout">
+
+
+            <!-- =================================
+                 PILOTO ESQUERDO
+            ================================== -->
+
+            <div class="alpine-left">
+
+                <div class="alpine-left-name">
+
+                    <span>PIERRE</span>
+
+                    <h3>GASLY</h3>
+
+                </div>
+
+
+                <div class="alpine-left-image">
+
+                    <img
+                        id="alpineGASLYImg"
+                        src="gasly/head.webp"
+                        alt="PIERRE GASLY"
+                    >
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================
+                 CENTRO
+            ================================== -->
+
+            <div class="alpine-middle">
+
+
+                <!-- VS -->
+
+                <div class="alpine-vs">
+
+                    <div class="alpine-vs-box">
+
+                        VS
+
+                    </div>
+
+                </div>
+
+
+                <!-- TEMPORADA -->
+
+                <div
+                    class="alpine-season"
+                    id="alpineSeason"
+                >
+
+                    TEMPORADA 2026
+
+                </div>
+
+
+
+                <!-- =================================
+                     ESTATÍSTICAS
+                ================================== -->
+
+                <div class="alpine-stats">
+
+
+                    <!-- =============================
+                         WINS
+                    ============================== -->
+
+                    <div class="alpine-stat">
+
+                        <div class="alpine-stat-values">
+
+                            <div class="alpine-value">
+
+                                <span id="alpineWinsLeft">0</span>
+
+                            </div>
+
+
+                            <div class="alpine-label">
+
+                                WINS
+
+                            </div>
+
+
+                            <div class="alpine-value">
+
+                                <span id="alpineWinsRight">0</span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="alpine-bars">
+
+                            <div
+                                class="alpine-bar-left"
+                                id="alpineBarWinsLeft"
+                            ></div>
+
+
+                            <div
+                                class="alpine-bar-right"
+                                id="alpineBarWinsRight"
+                            ></div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =============================
+                         PODIUMS
+                    ============================== -->
+
+                    <div class="alpine-stat">
+
+                        <div class="alpine-stat-values">
+
+                            <div class="alpine-value">
+
+                                <span id="alpinePodiumsLeft">0</span>
+
+                            </div>
+
+
+                            <div class="alpine-label">
+
+                                PODIUMS
+
+                            </div>
+
+
+                            <div class="alpine-value">
+
+                                <span id="alpinePodiumsRight">0</span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="alpine-bars">
+
+                            <div
+                                class="alpine-bar-left"
+                                id="alpineBarPodiumsLeft"
+                            ></div>
+
+
+                            <div
+                                class="alpine-bar-right"
+                                id="alpineBarPodiumsRight"
+                            ></div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =============================
+                         POLES
+                    ============================== -->
+
+                    <div class="alpine-stat">
+
+                        <div class="alpine-stat-values">
+
+                            <div class="alpine-value">
+
+                                <span id="alpinePolesLeft">0</span>
+
+                            </div>
+
+
+                            <div class="alpine-label">
+
+                                POLES
+
+                            </div>
+
+
+                            <div class="alpine-value">
+
+                                <span id="alpinePolesRight">0</span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="alpine-bars">
+
+                            <div
+                                class="alpine-bar-left"
+                                id="alpineBarPolesLeft"
+                            ></div>
+
+
+                            <div
+                                class="alpine-bar-right"
+                                id="alpineBarPolesRight"
+                            ></div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =============================
+                         FASTEST LAPS
+                    ============================== -->
+
+                    <div class="alpine-stat">
+
+                        <div class="alpine-stat-values">
+
+                            <div class="alpine-value">
+
+                                <span id="alpineFastLeft">0</span>
+
+                            </div>
+
+
+                            <div class="alpine-label">
+
+                                FASTEST LAPS
+
+                            </div>
+
+
+                            <div class="alpine-value">
+
+                                <span id="alpineFastRight">0</span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="alpine-bars">
+
+                            <div
+                                class="alpine-bar-left"
+                                id="alpineBarFastLeft"
+                            ></div>
+
+
+                            <div
+                                class="alpine-bar-right"
+                                id="alpineBarFastRight"
+                            ></div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =============================
+                         POINTS
+                    ============================== -->
+
+                    <div class="alpine-stat">
+
+                        <div class="alpine-stat-values">
+
+                            <div class="alpine-value">
+
+                                <span id="alpinePointsLeft">0</span>
+
+                            </div>
+
+
+                            <div class="alpine-label">
+
+                                POINTS
+
+                            </div>
+
+
+                            <div class="alpine-value">
+
+                                <span id="alpinePointsRight">0</span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="alpine-bars">
+
+                            <div
+                                class="alpine-bar-left"
+                                id="alpineBarPointsLeft"
+                            ></div>
+
+
+                            <div
+                                class="alpine-bar-right"
+                                id="alpineBarPointsRight"
+                            ></div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================
+                 PILOTO DIREITO
+            ================================== -->
+
+            <div class="alpine-right">
+
+                <div class="alpine-right-name">
+
+                    <span>FRANCO</span>
+
+                    <h3>COLAPINTO</h3>
+
+                </div>
+
+
+                <div class="alpine-right-image">
+
+                    <img
+                        id="alpineCOLAPINTOImg"
+                        src="franco/head.webp"
+                        alt="FRANCO COLAPINTO"
+                    >
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>    
+
+	
+
+<section class="driver-evolution-alpine" id="driver-evolution-alpine">
+
+	<!-- ==============================
+   HEADER
+============================== -->
+
+<div class="evolution-header-alpine">
+
+<h2>DRIVER EVOLUTION</h2>
+
+<p>Alpine</p>
+
+</div>
+
+
+<!-- ==============================
+CARD PRINCIPAL
+=============================== -->
+
+	<div class="evolution-card-alpine">
+
+ <!-- ==========================
+    TOPO DO CARD
+=========================== -->
+
+ <div class="evolution-card-top-alpine">
+
+ <div class="evolution-intro-alpine">
+
+<h3>
+PIERRE GASLY
+ <span>AND</span>
+FRANCO COLAPINTO</h3>
+
+<p>
+Formula 1 championship points evolution
+</p>
+
+</div>
+
+
+            <!-- SELETOR -->
+
+ <div class="evolution-selector-alpine">
+
+<button
+class="evolution-mode-alpine active" data-mode="both">
+ BOTH
+</button>
+
+ <button
+  class="evolution-mode-alpine"
+data-mode="gasly">
+ GASLY
+</button>
+
+<button
+class="evolution-mode-alpine"
+ data-mode="colapinto">
+COLAPINTO</button>
+
+</div>
+
+ </div>
+
+
+
+        <!-- ==========================
+             CONTEÚDO
+        =========================== -->
+ <div class="evolution-content-alpine">
+
+
+            <!-- ======================
+                 GRÁFICO
+            ======================= -->
+ <div class="evolution-chart-area-alpine">
+
+<div class="y-axis-title-alpine">
+POINTS
+</div>
+
+
+<div class="evolution-chart-alpine">
+
+ <div class="chart-y-labels-alpine">
+</div>
+
+
+ <div class="chart-main-alpine" id="evolutionChart">
+</div>
+
+ </div>
+
+</div>
+
+
+
+            <!-- ======================
+                 LEGENDA
+            ======================= -->
+<aside class="evolution-sidebar-alpine">
+
+
+<div class="sidebar-title-alpine">
+LINE IDENTITY
+ </div>
+
+
+                
+<!-- gasly -->
+
+<div class="driver-identity-alpine">
+
+    <div class="identity-line-alpine gasly-line-alpine">
+        <span></span>
+    </div>
+
+    <div class="identity-driver-info-alpine">
+
+        <small>PIERRE</small>
+
+        <strong>GASLY</strong>
+
+    </div>
+
+    <img
+        class="identity-driver-image-alpine"
+        src="pilotos/gasly.png"
+        alt="PIERRE gasly">
+
+</div>
+
+
+<!-- colapinto -->
+
+<div class="driver-identity-alpine">
+
+    <div class="identity-line-alpine colapinto-line-alpine">
+        <span></span>
+    </div>
+
+    <div class="identity-driver-info-alpine">
+
+        <small>FRANCO</small>
+
+        <strong>COLAPINTO</strong>
+
+    </div>
+
+    <img
+        class="identity-driver-image-alpine"
+        src="pilotos/franco.png"
+        alt="FRANCO colapinto">
+
+</div>
+
+
+                
+                <!-- ==================
+                     LEGEND
+                =================== -->
+
+ <div class="sidebar-title-alpine legend-title-alpine">
+ LEGEND
+</div>
+
+
+                <!-- gasly CARD -->
+
+ <div class="driver-legend-alpine gasly-legend-alpine">
+
+<div class="legend-info-alpine">
+
+ <span>PIERRE</span>
+<strong>GASLY</strong>
+</div>
+
+<img id="legendgasly"
+src="pilotos/gasly.png" alt="pierre gasly">
+ </div>
+
+
+                <!-- colapinto CARD -->
+
+<div class="driver-legend-alpine colapinto-legend-alpine">
+
+<div class="legend-info-alpine">
+
+ <span>FRANCO</span>
+<strong>COLAPINTO</strong>
+</div>
+
+<img id="legendcolapinto" 
+	src="pilotos/franco.png"  alt="FRANCO colapinto">
+</div>
+</aside>
+
+ </div>
+</div>
+
+</section>
+
+
+
+<section class="lideranca-alpine">
+  <h2 class="titulo-lideranca-alpine">Líderes – Alpine F1 Team (2026)</h2>
+
+  <div class="container-lideranca-alpine">
+
+    <div class="card-lider-alpine">
+      <img src="alpine/phillipe.jpeg" alt="">
+      <h3>Phillipe Krief</h3>
+      <span>CEO</span>
+      <p>Responsável pela gestão global e investimentos da equipe Alpine.</p>
+    </div>
+
+    <div class="card-lider-alpine">
+      <img src="alpine/flavio.jpeg" alt="">
+      <h3>Flavio Briatore</h3>
+      <span>Team Principal</span>
+      <p>Chefe de equipe responsável pelas decisões esportivas e estratégicas.</p>
+    </div>
+
+    <div class="card-lider-alpine">
+      <img src="alpine/sanchez.jpeg" alt="">
+      <h3>David Sanchez</h3>
+      <span>Diretor Técnico</span>
+      <p>Lidera o desenvolvimento técnico e estrutural do carro.</p>
+    </div>
+
+    <div class="card-lider-alpine">
+      <img src="icons/AlpineF1.png" alt="">
+      <h3>Cargo dividido</h3>
+      <span>Chefe de Estratégia</span>
+      <p>Coordena as estratégias durante as corridas.</p>
+    </div>
+
+    <div class="card-lider-alpine">
+      <img src="alpine/jason.jpg" alt="">
+      <h3>jason somerville </h3>
+      <span>Chefe de Aerodinâmica</span>
+      <p>Responsável pelo desenvolvimento aerodinâmico do carro.</p>
+    </div>
+
+    <div class="card-lider-alpine">
+      <img src="icons/AlpineF1.png" alt="">
+      <h3>Departamento de Design</h3>
+      <span>Chefe de Designer</span>
+      <p>Coordena o design e estrutura do carro.</p>
+    </div>
+
+    <div class="card-lider-alpine">
+      <img src="alpine/joe.jpeg" alt="">
+      <h3>Joe Burnell</h3>
+      <span>Diretor de Engenharia</span>
+      <p>Responsável pela integração entre chassi e unidade de potência.</p>
+    </div>
+
+    <div class="card-lider-alpine">
+      <img src="alpine/ciaron.jpeg" alt="">
+      <h3>Ciaron Pilbeam</h3>
+      <span>Diretor de Performance</span>
+      <p>Foco em extrair o máximo desempenho do carro durante o fim de semana.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="alpine-sectors" id="sec">
+
+  <div class="alpine-sectors-header">
+
+    <span>Inside Alpine</span>
+
+    <h2>
+      Os Setores Que Movem
+      a Alpine na Fórmula 1
+    </h2>
+
+    <p>
+      A Alpine combina tecnologia, velocidade e inovação para evoluir constantemente na Fórmula 1. Cada setor da equipe trabalha em conjunto para transformar engenharia, estratégia e desenvolvimento em performance nas pistas.
+    </p>
+
+  </div>
+
+  <div class="alpine-sectors-grid">
+
+    <div class="alpine-sector-card">
+      <h3>Pilotos Titulares</h3>
+      <p>
+        Representam a equipe nas pistas e trabalham ao lado dos engenheiros para extrair o máximo desempenho do carro.
+      </p>
+    </div>
+
+    <div class="alpine-sector-card">
+      <h3>Academia de Pilotos</h3>
+      <p>
+        A Alpine investe no desenvolvimento de jovens talentos para construir o futuro da equipe na Fórmula 1.
+      </p>
+    </div>
+
+    <div class="alpine-sector-card">
+      <h3>Engenharia de Performance</h3>
+      <p>
+        Analisa pneus, equilíbrio e ritmo de corrida para otimizar o carro em diferentes condições.
+      </p>
+    </div>
+
+    <div class="alpine-sector-card">
+      <h3>Engenharia de Corrida</h3>
+      <p>
+        Coordena ajustes e decisões estratégicas durante cada fim de semana de GP.
+      </p>
+    </div>
+
+    <div class="alpine-sector-card">
+      <h3>Aerodinâmica</h3>
+      <p>
+        Desenvolve soluções para melhorar downforce, estabilidade e eficiência nas curvas e retas.
+      </p>
+    </div>
+
+    <div class="alpine-sector-card">
+      <h3>Mecânicos</h3>
+      <p>
+        Responsáveis pela montagem dos carros, manutenção e execução dos pit stops.
+      </p>
+    </div>
+
+    <div class="alpine-sector-card">
+      <h3>Estratégia</h3>
+      <p>
+        Analisa cenários de corrida, safety cars e desgaste de pneus para definir as melhores decisões.
+      </p>
+    </div>
+
+    <div class="alpine-sector-card">
+      <h3>Telemetria e Dados</h3>
+      <p>
+        Monitora milhares de informações em tempo real para analisar comportamento e performance do carro.
+      </p>
+    </div>
+
+    <div class="alpine-sector-card">
+      <h3>Pesquisa e Desenvolvimento</h3>
+      <p>
+        Busca novas soluções técnicas para aproximar a equipe das líderes do grid.
+      </p>
+    </div>
+
+    <div class="alpine-sector-card">
+      <h3>Software e Simulações</h3>
+      <p>
+        Sistemas avançados ajudam na análise de dados, simuladores e desenvolvimento do carro.
+      </p>
+    </div>
+
+    <div class="alpine-sector-card">
+      <h3>Logística</h3>
+      <p>
+        Coordena o transporte de carros, peças e equipamentos ao redor do mundo durante toda a temporada.
+      </p>
+    </div>
+
+    <div class="alpine-sector-card">
+      <h3>Marketing e Comunicação</h3>
+      <p>
+        Fortalece a identidade da Alpine e aproxima a equipe dos fãs globalmente.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="alpine-creation" id="creator">
+
+  <div class="alpine-creation-header">
+
+    <span>
+      Alpine Engineering
+    </span>
+
+    <h2>
+      Como Nasce
+      Um Carro da Alpine
+    </h2>
+
+    <p>
+      Em Enstone e Viry-Châtillon, engenharia, inovação e tecnologia trabalham juntas para criar cada novo carro da Alpine. O processo envolve simulações avançadas, estudos aerodinâmicos e evolução constante em busca de desempenho máximo na Fórmula 1.
+    </p>
+
+  </div>
+
+  <div class="alpine-creation-timeline">
+
+    <div class="alpine-creation-step">
+
+      <div class="alpine-step-number">01</div>
+
+      <div class="alpine-step-content">
+
+        <h3>Conceito Inicial</h3>
+
+        <p>
+          O desenvolvimento começa com estudos aerodinâmicos e análise de performance para encontrar equilíbrio e eficiência.
+        </p>
+
+      </div>
+
+    </div>
+
+    <div class="alpine-creation-step">
+
+      <div class="alpine-step-number">02</div>
+
+      <div class="alpine-step-content">
+
+        <h3>Design Digital</h3>
+
+        <p>
+          Engenheiros utilizam softwares avançados para criar modelos virtuais e testar diferentes soluções.
+        </p>
+
+      </div>
+
+    </div>
+
+    <div class="alpine-creation-step">
+
+      <div class="alpine-step-number">03</div>
+
+      <div class="alpine-step-content">
+
+        <h3>Túnel de Vento</h3>
+
+        <p>
+          A equipe ajusta a aerodinâmica para melhorar downforce, estabilidade e velocidade.
+        </p>
+
+      </div>
+
+    </div>
+
+    <div class="alpine-creation-step">
+
+      <div class="alpine-step-number">04</div>
+
+      <div class="alpine-step-content">
+
+        <h3>Construção do Chassi</h3>
+
+        <p>
+          Materiais leves e resistentes são usados para garantir segurança e máxima performance.
+        </p>
+
+      </div>
+
+    </div>
+
+    <div class="alpine-creation-step">
+
+      <div class="alpine-step-number">05</div>
+
+      <div class="alpine-step-content">
+
+        <h3>Simulador e Feedback</h3>
+
+        <p>
+          Pilotos e engenheiros trabalham juntos ajustando comportamento e dirigibilidade do carro.
+        </p>
+
+      </div>
+
+    </div>
+
+    <div class="alpine-creation-step">
+
+      <div class="alpine-step-number">06</div>
+
+      <div class="alpine-step-content">
+
+        <h3>Evolução Contínua</h3>
+
+        <p>
+          Durante toda a temporada, novas atualizações são desenvolvidas para buscar ganhos de desempenho.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="alpine-creation-ending">
+
+    <blockquote>
+      “Na Alpine, cada detalhe é desenvolvido para transformar inovação em velocidade.”
+    </blockquote>
+
+  </div>
+
+</section>
+
+
+
+
+<section class="numeros-alpine" id="numeros">
+
+<img src="secao/a526.png" class="bg-numeros-alpine">
+
+<div class="overlay-numeros-alpine"></div>
+
+
+
+
+<div class="luz-laranja-alpine"></div>
+
+<div class="faíscas-alpine">
+<div class="spark-alpine"></div>
+<div class="spark-alpine"></div>
+<div class="spark-alpine"></div>
+<div class="spark-alpine"></div>
+<div class="spark-alpine"></div>
+</div>
+
+
+
+<h2 class="titulo-numeros-alpine">Estatisticas da alpine</h2>
+
+<div class="stats-grid-alpine">
+
+<div class="card-stat-alpine grande-alpine animar-alpine">
+<span id="corridas-alpine" class="contador-alpine" data-target="0">
+    0</span>
+	<div class="barra-velocidade-alpine"></div>
+<p>🏁 Corridas</p>
+</div>
+
+<div class="card-stat-alpine animar-alpine">
+<span id="top10-alpine" class="contador-alpine" data-target="0">0</span>
+<div class="barra-velocidade-alpine"></div>
+<p>🥇 Top 10</p>
+</div>
+<div class="card-stat-alpine animar-alpine">
+<span id="vitorias-alpine" class="contador-alpine" data-target="0">0</span>
+<div class="barra-velocidade-alpine"></div>
+<p>🥇 vitorias</p>
+</div>
+
+<div class="card-stat-alpine animar-alpine">
+	<span id="podios-alpine" class="contador-alpine" data-target="0">0</span>
+<div class="barra-velocidade-alpine"></div>
+<p>⚡ podios</p>
+</div>
+
+<div class="card-stat-alpine grande-alpine animar-alpine">
+    <span id="pontos-alpine" class="contador-alpine" data-target="0">0</span>
+    <div class="barra-velocidade-alpine"></div>
+    <p>📈 Pontos no Total</p>
+</div>
+	
+</div>
+</section>
+
+
+	
+
+<section class="hall-alpine" id="hall">
+
+  <div class="hall-overlay-alpine"></div>
+
+  <h2 class="titulo-hall-alpine">
+    Hall da Fama Alpine
+  </h2>
+
+  <div class="bg-hall-alpine">
+    <div class="bg-layer-alpine bg1-alpine active"></div>
+    <div class="bg-layer-alpine bg2-alpine"></div>
+  </div>
+
+  <div class="hall-grid-alpine">
+
+    <!-- Fernando Alonso -->
+    <div class="hall-card-alpine" data-bg="hallalpine/al.jpeg">
+
+      <div class="numero-hall-alpine">01</div>
+
+      <img src="hallalpine/fe.jpg">
+
+      <h3>Fernando Alonso</h3>
+
+      <span class="pais-hall-alpine">
+        🇪🇸 Espanha
+      </span>
+
+      <p>
+        Bicampeão mundial com a Renault e peça histórica no retorno da Alpine à Fórmula 1.
+      </p>
+
+      <div class="hall-stats-alpine">
+        <span>2 Títulos</span>
+        <span>2005–2006</span>
+      </div>
+
+      <div class="frase-hall-alpine">
+        “I always want more.”
+      </div>
+
+    </div>
+
+
+    <!-- Kimi -->
+    <div class="hall-card-alpine" data-bg="hallalpine/ra.jpeg">
+
+      <div class="numero-hall-alpine">02</div>
+
+      <img src="hallalpine/ki.jpeg">
+
+      <h3>Kimi Räikkönen</h3>
+
+      <span class="pais-hall-alpine">
+        🇫🇮 Finlândia
+      </span>
+
+      <p>
+        Liderou a Lotus em uma das eras mais competitivas da equipe na Fórmula 1 moderna.
+      </p>
+
+      <div class="hall-stats-alpine">
+        <span>2 Vitórias</span>
+        <span>2012–2013</span>
+      </div>
+
+      <div class="frase-hall-alpine">
+        “Leave me alone, I know what I'm doing.”
+      </div>
+
+    </div>
+
+
+    <!-- Gasly -->
+    <div class="hall-card-alpine" data-bg="hallalpine/ga.jpeg">
+
+      <div class="numero-hall-alpine">03</div>
+
+      <img src="hallalpine/pi.jpeg">
+
+      <h3>Pierre Gasly</h3>
+
+      <span class="pais-hall-alpine">
+        🇫🇷 França
+      </span>
+
+      <p>
+        Tornou-se referência da Alpine na nova geração da Fórmula 1 representando a França.
+      </p>
+
+      <div class="hall-stats-alpine">
+        <span>Pódios Alpine</span>
+        <span>2023–Atual</span>
+      </div>
+
+      <div class="frase-hall-alpine">
+        “Never stop believing.”
+      </div>
+
+    </div>
+
+
+    <!-- Kubica -->
+    <div class="hall-card-alpine" data-bg="hallalpine/ku.jpeg">
+
+      <div class="numero-hall-alpine">04</div>
+
+      <img src="hallalpine/ro.jpeg">
+
+      <h3>Robert Kubica</h3>
+
+      <span class="pais-hall-alpine">
+        🇵🇱 Polônia
+      </span>
+
+      <p>
+        Foi um dos pilotos mais talentosos da era Renault e conquistou vitórias memoráveis.
+      </p>
+
+      <div class="hall-stats-alpine">
+        <span>1 Vitória</span>
+        <span>2008</span>
+      </div>
+
+      <div class="frase-hall-alpine">
+        “Racing is my passion.”
+      </div>
+
+    </div>
+
+
+    <!-- Ocon -->
+    <div class="hall-card-alpine" data-bg="hallalpine/oc.jpeg">
+
+      <div class="numero-hall-alpine">05</div>
+
+      <img src="hallalpine/es.jpeg">
+
+      <h3>Esteban Ocon</h3>
+
+      <span class="pais-hall-alpine">
+        🇫🇷 França
+      </span>
+
+      <p>
+        Conquistou a primeira vitória da Alpine na Fórmula 1 no GP da Hungria de 2021.
+      </p>
+
+      <div class="hall-stats-alpine">
+        <span>1 Vitória</span>
+        <span>2021</span>
+      </div>
+
+      <div class="frase-hall-alpine">
+        “Hard work always pays off.”
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="alpine-evolution" id="alpineEvolution">
+
+  <h1 class="title-alpine">
+    Evolução da Alpine
+  </h1>
+
+  <!-- CARRO -->
+  <div class="car-container-alpine">
+
+    <div class="car-circle-alpine"></div>
+
+    <img
+      id="carImage-alpine"
+      src="icons/alpine.png"
+      alt="Alpine"
+    >
+
+  </div>
+
+  <!-- BOTÕES -->
+  <div class="controls-alpine">
+
+    <button onclick="changeEraAlpine('2000')">
+      Renault
+    </button>
+
+    <button onclick="changeEraAlpine('2010')">
+      Lotus
+    </button>
+
+    <button onclick="changeEraAlpine('2020')">
+      Alpine
+    </button>
+
+  </div>
+
+  <!-- INFOS -->
+  <div class="car-info-alpine">
+
+    <h2 id="carName-alpine">
+      BWT Alpine Formula One Team
+    </h2>
+
+    <div class="info-grid-alpine">
+
+      <div class="info-card-alpine">
+
+        <span>
+          Motor
+        </span>
+
+        <h3 id="carEngine-alpine">
+          ---
+        </h3>
+
+      </div>
+
+      <div class="info-card-alpine">
+
+        <span>
+          Potência
+        </span>
+
+        <h3 id="carPower-alpine">
+          ---
+        </h3>
+
+      </div>
+
+      <div class="info-card-alpine">
+
+        <span>
+          Ano
+        </span>
+
+        <h3 id="carYear-alpine">
+          ---
+        </h3>
+
+      </div>
+
+      <div class="info-card-alpine">
+
+        <span>
+          Pilotos
+        </span>
+
+        <h3 id="carDriver-alpine">
+          ---
+        </h3>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="eras-alpine" id="eras">
+
+  <h2 class="titulo-eras-alpine">Eras da Alpine</h2>
+
+  <div class="botoes-eras-alpine">
+      <button onclick="mostrarEraAlpine(0)" class="ativo">Toleman</button>
+          <button onclick="mostrarEraAlpine(1)">Benetton</button>
+      <button onclick="mostrarEraAlpine(2)">Renault</button>
+      <button onclick="mostrarEraAlpine(3)">Titulos</button>
+      <button onclick="mostrarEraAlpine(4)">Lotus</button>
+       <button onclick="mostrarEraAlpine(5)">Volta da Renault</button>
+        <button onclick="mostrarEraAlpine(6)">Alpine</button>
+  </div>
+
+  <div class="conteudo-era-alpine">
+      <h3 id="tituloEra-alpine"></h3>
+      <p id="textoEra-alpine"></p>
+      <div id="alpine-timeline"></div>
+  </div>
+
+</section>
+
+
+<footer class="footer-f1-alpine">
+
+  <div class="footer-brand-alpine">
+    <p>Alpine</p>
+    <span>BWT Alpine Formula One Team</span>
+  </div>
+
+  <div class="footer-links-alpine">
+    <a href="index.html">Home</a>
+    <a href="f1.html">Regras</a>
+		<a href="info.html">Informações</a>
+    <a href="gasly.html">Gasly</a>
+    <a href="franco.html">Colapinto</a>
+    <a href="about.html">About</a>
+  </div>
+
+  <div class="footer-social-alpine">
+
+    <a 
+      href="https://www.instagram.com/duduxl37?igsh=dnNwM29qYXprbnI4" 
+      target="_blank"
+    >
+      Instagram
+    </a>
+
+    <a 
+      href="https://x.com/Duducrvg1998" 
+      target="_blank"
+    >
+      X
+    </a>
+
+  </div>
+
+  <div class="footer-copy-alpine">
+    © 2026 Fan Project • Inspired by Formula 1
+  </div>
+
+</footer>
+
+ 	<button id="btnTopo" class="btn-topo">
+    <i class="fa-solid fa-arrow-up"></i>
+	</button>
+
+
+
+
+
+<script src="alpine.js"></script>
+</body>
+</html>
+
+	
+
+

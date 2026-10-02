@@ -1,0 +1,1996 @@
+
+
+
+/* =========================================================
+   McLAREN • TEAM PROFILE
+   100dvh + IMAGENS
+========================================================= */
+
+.mclaren-profile {
+    position: relative;
+    width: 100%;
+    height: 100dvh;
+    min-height: 0;
+    box-sizing: border-box;
+    padding: 30px 5vw 22px;
+    overflow: hidden;
+    isolation: isolate;
+    color: #fff;
+
+    background:
+        radial-gradient(
+            circle at 15% 35%,
+            rgba(255,128,0,.16),
+            transparent 27%
+        ),
+        radial-gradient(
+            circle at 85% 70%,
+            rgba(255,128,0,.08),
+            transparent 30%
+        ),
+        linear-gradient(
+            125deg,
+            #020202 0%,
+            #090909 50%,
+            #030303 100%
+        );
+}
+
+
+.mclaren-profile::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #ff8000 20%,
+            #ff8000 80%,
+            transparent
+        );
+
+    box-shadow:
+        0 0 15px rgba(255,128,0,.7);
+}
+
+
+.mclaren-profile-bg {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+
+    opacity: .28;
+
+    pointer-events: none;
+
+    background-image:
+        linear-gradient(
+            rgba(255,255,255,.018) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,.018) 1px,
+            transparent 1px
+        );
+
+    background-size: 40px 40px;
+}
+
+
+.mclaren-profile-watermark {
+    position: absolute;
+    right: -3%;
+    bottom: 3%;
+
+    z-index: -1;
+
+    color: rgba(255,255,255,.025);
+
+    font-size:
+        clamp(100px,17vw,270px);
+
+    line-height: .75;
+
+    font-weight: 1000;
+
+    letter-spacing: -12px;
+
+    transform: skewX(-8deg);
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.mclaren-profile-header {
+    position: relative;
+    z-index: 10;
+
+    width: min(100%,1450px);
+
+    margin: 0 auto;
+}
+
+
+.mclaren-profile-kicker {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    color: rgba(255,255,255,.42);
+
+    font-size: 8px;
+
+    font-weight: 900;
+
+    letter-spacing: 3px;
+}
+
+
+.kicker-line-mclaren {
+    width: 25px;
+    height: 1px;
+
+    background: #ff8000;
+
+    box-shadow:
+        0 0 8px rgba(255,128,0,.7);
+}
+
+
+.mclaren-profile-brand {
+    display: flex;
+    align-items: center;
+
+    gap: 16px;
+
+    margin-top: 9px;
+}
+
+
+.mclaren-profile-logo {
+    width: clamp(42px,5vw,60px);
+    height: clamp(42px,5vw,60px);
+
+    object-fit: contain;
+
+    filter:
+        drop-shadow(
+            0 0 9px rgba(255,128,0,.6)
+        );
+}
+
+
+.mclaren-profile-brand-text > span {
+    display: block;
+
+    color: rgba(255,255,255,.45);
+
+    font-size: 8px;
+
+    font-weight: 900;
+
+    letter-spacing: 2px;
+}
+
+
+.mclaren-profile-brand-text h2 {
+    margin: 4px 0 0;
+
+    color: #fff;
+
+    font-size:
+        clamp(27px,4vw,50px);
+
+    line-height: .9;
+
+    font-weight: 1000;
+
+    letter-spacing: -2px;
+}
+
+
+.mclaren-profile-brand-text h2 em {
+    color: #ff8000;
+
+    font-style: normal;
+}
+
+
+/* =========================================================
+   META
+========================================================= */
+
+.mclaren-profile-meta {
+    position: relative;
+    z-index: 10;
+
+    width: min(100%,1450px);
+
+    margin: 16px auto 0;
+
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 8px 0;
+
+    border-top:
+        1px solid rgba(255,255,255,.08);
+
+    border-bottom:
+        1px solid rgba(255,255,255,.08);
+}
+
+
+.mclaren-profile-meta div {
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+}
+
+
+.mclaren-profile-meta span {
+    color: rgba(255,255,255,.32);
+
+    font-size: 7px;
+
+    font-weight: 900;
+
+    letter-spacing: 1.5px;
+}
+
+
+.mclaren-profile-meta strong {
+    color: rgba(255,255,255,.85);
+
+    font-size: 9px;
+
+    font-weight: 900;
+
+    letter-spacing: 1px;
+}
+
+
+.mclaren-profile-meta i {
+    width: 3px;
+    height: 3px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: #ff8000;
+
+    box-shadow:
+        0 0 7px #ff8000;
+}
+
+
+/* =========================================================
+   CARRO
+========================================================= */
+
+.mclaren-profile-main {
+    position: relative;
+    z-index: 5;
+
+    width: min(100%,1450px);
+
+    height: 28dvh;
+
+    min-height: 180px;
+    max-height: 275px;
+
+    margin: 10px auto 0;
+
+    display: flex;
+    align-items: center;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+
+    border-bottom:
+        1px solid rgba(255,255,255,.08);
+}
+
+
+.mclaren-profile-main::before {
+    content: "";
+
+    position: absolute;
+
+    right: 27%;
+    top: -30%;
+
+    width: 1px;
+    height: 160%;
+
+    background:
+        linear-gradient(
+            to bottom,
+            transparent,
+            rgba(255,128,0,.35),
+            transparent
+        );
+
+    transform: rotate(18deg);
+}
+
+
+.mclaren-technical-label {
+    position: absolute;
+
+    top: 9px;
+    left: 0;
+
+    color: #ff8000;
+
+    font-size: 7px;
+
+    font-weight: 900;
+
+    letter-spacing: 2.5px;
+}
+
+
+.mclaren-technical-label::before {
+    content: "";
+
+    display: inline-block;
+
+    width: 18px;
+    height: 2px;
+
+    margin-right: 7px;
+
+    vertical-align: 1px;
+
+    background: #ff8000;
+
+    box-shadow:
+        0 0 8px rgba(255,128,0,.7);
+}
+
+
+.mclaren-machine {
+    position: relative;
+    z-index: 4;
+
+    padding-top: 8px;
+}
+
+
+.machine-prefix-mclaren {
+    display: block;
+
+    color: rgba(255,255,255,.35);
+
+    font-size: 8px;
+
+    font-weight: 900;
+
+    letter-spacing: 3px;
+}
+
+
+.mclaren-machine h1 {
+    margin: 3px 0 0;
+
+    color: #fff;
+
+    font-size:
+        clamp(80px,13vw,170px);
+
+    line-height: .68;
+
+    font-weight: 1000;
+
+    letter-spacing: -9px;
+}
+
+
+.mclaren-machine h1 span {
+    color: #ff8000;
+
+    text-shadow:
+        0 0 30px rgba(255,128,0,.4);
+}
+
+
+.machine-line-mclaren {
+    width:
+        clamp(130px,22vw,280px);
+
+    height: 2px;
+
+    margin-top: 18px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #ff8000,
+            rgba(255,128,0,.15),
+            transparent
+        );
+}
+
+
+.machine-engine-mclaren {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 8px;
+}
+
+
+.machine-engine-mclaren span {
+    color: rgba(255,255,255,.3);
+
+    font-size: 6px;
+
+    font-weight: 900;
+
+    letter-spacing: 1.5px;
+}
+
+
+.machine-engine-mclaren strong {
+    color: rgba(255,255,255,.9);
+
+    font-size: 10px;
+
+    font-weight: 900;
+
+    letter-spacing: 1.5px;
+}
+
+
+/* =========================================================
+   FOTO DO MCL40
+========================================================= */
+
+.mclaren-car-image {
+    position: absolute;
+
+    z-index: 3;
+
+    right: 4%;
+    bottom: -5%;
+
+    width: 58%;
+    height: 100%;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    pointer-events: none;
+}
+
+
+.mclaren-car-image img {
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    object-position: center bottom;
+
+    filter:
+        drop-shadow(
+            0 15px 25px rgba(0,0,0,.8)
+        )
+        drop-shadow(
+            0 0 18px rgba(255,128,0,.12)
+        );
+
+    opacity: .92;
+
+    transition:
+        transform .6s ease,
+        filter .6s ease;
+}
+
+
+.car-image-glow-mclaren {
+    position: absolute;
+
+    z-index: 1;
+
+    left: 15%;
+    right: 5%;
+    bottom: 8%;
+
+    height: 30%;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255,128,0,.13);
+
+    filter: blur(35px);
+}
+
+
+.mclaren-car-image > span {
+    position: absolute;
+
+    z-index: 4;
+
+    right: 4%;
+    top: 12%;
+
+    color: rgba(255,128,0,.7);
+
+    font-size: 8px;
+
+    font-weight: 900;
+
+    letter-spacing: 3px;
+}
+
+
+.mclaren-profile-main:hover
+.mclaren-car-image img {
+
+    transform:
+        translateX(-8px)
+        scale(1.03);
+
+    filter:
+        drop-shadow(
+            0 15px 25px rgba(0,0,0,.8)
+        )
+        drop-shadow(
+            0 0 25px rgba(255,128,0,.3)
+        );
+}
+
+
+/* =========================================================
+   MARCADOR LATERAL
+========================================================= */
+
+.mclaren-side-marker {
+    position: absolute;
+
+    right: 7px;
+    top: 50%;
+
+    transform:
+        translateY(-50%);
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+
+.mclaren-side-marker span {
+    color: rgba(255,255,255,.25);
+
+    font-size: 6px;
+
+    font-weight: 900;
+
+    letter-spacing: 1.5px;
+
+    writing-mode: vertical-rl;
+}
+
+
+.mclaren-side-marker span:first-child {
+    color: #ff8000;
+}
+
+
+.mclaren-side-marker div {
+    width: 1px;
+
+    height: 45px;
+
+    background:
+        linear-gradient(
+            to bottom,
+            #ff8000,
+            transparent
+        );
+}
+
+
+/* =========================================================
+   HISTÓRIA
+========================================================= */
+
+.mclaren-history {
+    position: relative;
+
+    z-index: 6;
+
+    width: min(100%,1450px);
+
+    height: 15dvh;
+
+    min-height: 105px;
+    max-height: 145px;
+
+    margin: 10px auto 0;
+}
+
+
+.history-heading-mclaren > span {
+    color: #ff8000;
+
+    font-size: 7px;
+
+    font-weight: 900;
+
+    letter-spacing: 2.5px;
+}
+
+
+.history-heading-mclaren h3 {
+    margin: 4px 0 0;
+
+    color: #fff;
+
+    font-size:
+        clamp(20px,2.4vw,31px);
+
+    line-height: .9;
+
+    font-weight: 1000;
+
+    letter-spacing: -1.5px;
+}
+
+
+.history-heading-mclaren h3 strong {
+    color: #ff8000;
+}
+
+
+.history-timeline-mclaren {
+    display: flex;
+
+    align-items: center;
+
+    margin-top: 10px;
+}
+
+
+.history-driver-mclaren {
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns:
+        auto 38px 1fr;
+
+    gap: 9px;
+
+    align-items: center;
+
+    min-width: 330px;
+}
+
+
+.history-year-mclaren {
+    color: rgba(255,255,255,.14);
+
+    font-size: 27px;
+
+    font-weight: 1000;
+
+    letter-spacing: -2px;
+}
+
+
+.history-photo-mclaren {
+    width: 38px;
+    height: 38px;
+
+    overflow: hidden;
+
+    border-radius: 50%;
+
+    border:
+        1px solid rgba(255,128,0,.4);
+
+    background: #080808;
+}
+
+
+.history-photo-mclaren img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    object-position: center bottom;
+
+    filter: grayscale(1);
+
+    opacity: .65;
+
+    transition: .4s ease;
+}
+
+
+.history-driver-mclaren:hover
+.history-photo-mclaren img {
+
+    filter: grayscale(0);
+
+    opacity: 1;
+
+    transform: scale(1.08);
+}
+
+
+.history-marker-mclaren {
+    position: absolute;
+
+    left: 57px;
+    bottom: -7px;
+
+    width: 5px;
+    height: 5px;
+
+    border-radius: 50%;
+
+    background: #ff8000;
+
+    box-shadow:
+        0 0 6px #ff8000;
+}
+
+
+.history-info-mclaren span {
+    display: block;
+
+    color: rgba(255,255,255,.28);
+
+    font-size: 6px;
+
+    font-weight: 900;
+
+    letter-spacing: 1.5px;
+}
+
+
+.history-info-mclaren strong {
+    display: block;
+
+    margin-top: 3px;
+
+    color: rgba(255,255,255,.75);
+
+    font-size: 11px;
+
+    line-height: 1;
+
+    font-weight: 800;
+}
+
+
+.history-info-mclaren strong b {
+    color: #fff;
+}
+
+
+.history-info-mclaren small {
+    display: block;
+
+    margin-top: 4px;
+
+    color: rgba(255,255,255,.3);
+
+    font-size: 6px;
+
+    font-weight: 800;
+}
+
+
+.history-driver-current-mclaren
+.history-year-mclaren {
+
+    color: #ff8000;
+}
+
+
+.history-connector-mclaren {
+    flex: 1;
+
+    height: 1px;
+
+    min-width: 25px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(255,128,0,.65),
+            rgba(255,128,0,.08)
+        );
+}
+
+
+/* =========================================================
+   LENDAS + 1988
+========================================================= */
+
+.mclaren-legends {
+    position: relative;
+
+    z-index: 6;
+
+    width: min(100%,1450px);
+
+    height: 17dvh;
+
+    min-height: 120px;
+    max-height: 170px;
+
+    margin: 10px auto 0;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 50px;
+
+    border-top:
+        1px solid rgba(255,255,255,.07);
+
+    padding-top: 13px;
+
+    box-sizing: border-box;
+}
+
+
+.section-index-mclaren {
+    display: block;
+
+    color: #ff8000;
+
+    font-size: 6px;
+
+    font-weight: 900;
+
+    letter-spacing: 2px;
+}
+
+
+.mclaren-legends-content h3 {
+    margin: 4px 0 8px;
+
+    color: #fff;
+
+    font-size:
+        clamp(19px,2.3vw,29px);
+
+    line-height: .9;
+
+    font-weight: 1000;
+
+    letter-spacing: -1px;
+}
+
+
+.mclaren-legends-content h3 strong {
+    color: #ff8000;
+}
+
+
+.legend-list-mclaren {
+    width: min(100%,450px);
+}
+
+
+.legend-row-mclaren {
+    display: grid;
+
+    grid-template-columns:
+        38px 25px 1fr auto;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 4px 0;
+
+    border-bottom:
+        1px solid rgba(255,255,255,.06);
+}
+
+
+.legend-photo-mclaren {
+    width: 34px;
+    height: 34px;
+
+    overflow: hidden;
+
+    border-radius: 50%;
+
+    background: #090909;
+
+    border:
+        1px solid rgba(255,128,0,.25);
+}
+
+
+.legend-photo-mclaren img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    object-position: center bottom;
+
+    filter: grayscale(1);
+
+    opacity: .65;
+
+    transition: .4s ease;
+}
+
+
+.legend-row-mclaren:hover
+.legend-photo-mclaren img {
+
+    filter: grayscale(0);
+
+    opacity: 1;
+
+    transform: scale(1.08);
+}
+
+
+.legend-position-mclaren span {
+    color: rgba(255,128,0,.4);
+
+    font-size: 7px;
+
+    font-weight: 900;
+}
+
+
+.legend-name-mclaren small {
+    display: block;
+
+    color: rgba(255,255,255,.32);
+
+    font-size: 5px;
+
+    font-weight: 900;
+
+    letter-spacing: 1.5px;
+}
+
+
+.legend-name-mclaren strong {
+    display: block;
+
+    margin-top: 2px;
+
+    color: #fff;
+
+    font-size: 15px;
+
+    line-height: .9;
+
+    font-weight: 1000;
+}
+
+
+.legend-row-mclaren > b {
+    color: #ff8000;
+
+    font-size: 17px;
+
+    font-weight: 1000;
+}
+
+
+/* =========================================================
+   1988
+========================================================= */
+
+.mclaren-1988 {
+    position: relative;
+
+    min-height: 120px;
+
+    padding: 9px 20px;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+
+    border-left:
+        1px solid rgba(255,128,0,.3);
+
+    background:
+        radial-gradient(
+            circle at 75% 45%,
+            rgba(255,128,0,.12),
+            transparent 55%
+        );
+}
+
+
+.mclaren-1988::before {
+    content: "88";
+
+    position: absolute;
+
+    right: 0;
+    bottom: -35px;
+
+    color: rgba(255,128,0,.04);
+
+    font-size: 130px;
+
+    line-height: .7;
+
+    font-weight: 1000;
+
+    letter-spacing: -10px;
+}
+
+
+.season-kicker-mclaren {
+    position: relative;
+
+    color: #ff8000;
+
+    font-size: 6px;
+
+    font-weight: 900;
+
+    letter-spacing: 2px;
+}
+
+
+.season-number-mclaren {
+    position: relative;
+
+    margin-top: 5px;
+
+    color: #fff;
+
+    font-size:
+        clamp(42px,5vw,65px);
+
+    line-height: .7;
+
+    font-weight: 1000;
+
+    letter-spacing: -3px;
+}
+
+
+.season-title-mclaren {
+    position: relative;
+
+    margin-top: 7px;
+
+    color: rgba(255,255,255,.42);
+
+    font-size: 6px;
+
+    font-weight: 900;
+
+    letter-spacing: 1.5px;
+}
+
+
+.season-title-mclaren strong {
+    color: #fff;
+}
+
+
+.season-stats-mclaren {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 9px;
+}
+
+
+.season-stats-mclaren
+div:not(.season-separator-mclaren) {
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.season-stats-mclaren strong {
+    color: #ff8000;
+
+    font-size: 16px;
+
+    line-height: .9;
+
+    font-weight: 1000;
+}
+
+
+.season-stats-mclaren span {
+    margin-top: 3px;
+
+    color: rgba(255,255,255,.3);
+
+    font-size: 5px;
+
+    font-weight: 900;
+
+    letter-spacing: 1px;
+}
+
+
+.season-separator-mclaren {
+    width: 1px;
+
+    height: 20px;
+
+    background:
+        rgba(255,128,0,.3);
+}
+
+
+.season-progress-mclaren {
+    position: absolute;
+
+    left: 20px;
+    right: 20px;
+
+    bottom: 7px;
+
+    height: 2px;
+
+    background:
+        rgba(255,255,255,.07);
+}
+
+
+.season-progress-mclaren span {
+    display: block;
+
+    width: 93.75%;
+
+    height: 100%;
+
+    background: #ff8000;
+
+    box-shadow:
+        0 0 8px rgba(255,128,0,.8);
+}
+
+
+/* =========================================================
+   PILOTOS ATUAIS
+========================================================= */
+
+.mclaren-current-drivers {
+    position: relative;
+
+    z-index: 7;
+
+    width: min(100%,1450px);
+
+    height: 15dvh;
+
+    min-height: 100px;
+    max-height: 145px;
+
+    margin: 10px auto 0;
+
+    padding-top: 11px;
+
+    box-sizing: border-box;
+
+    border-top:
+        1px solid rgba(255,255,255,.07);
+}
+
+
+.current-drivers-header-mclaren > span {
+    color: #ff8000;
+
+    font-size: 6px;
+
+    font-weight: 900;
+
+    letter-spacing: 2px;
+}
+
+
+.current-drivers-header-mclaren h3 {
+    margin: 3px 0 6px;
+
+    color: #fff;
+
+    font-size:
+        clamp(20px,2.5vw,32px);
+
+    line-height: .8;
+
+    font-weight: 1000;
+
+    letter-spacing: -1.5px;
+}
+
+
+.current-drivers-header-mclaren h3 strong {
+    color: #ff8000;
+}
+
+
+.current-drivers-mclaren {
+    display: grid;
+
+    grid-template-columns:
+        1fr 45px 1fr;
+
+    align-items: center;
+}
+
+
+.current-driver-mclaren {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    min-height: 55px;
+}
+
+
+.current-driver-mclaren.current-piastri-mclaren {
+    justify-content: flex-end;
+
+    text-align: right;
+}
+
+
+.current-number-mclaren {
+    color: rgba(255,128,0,.8);
+
+    font-size:
+        clamp(38px,5vw,60px);
+
+    line-height: .7;
+
+    font-weight: 1000;
+
+    letter-spacing: -4px;
+}
+
+
+.current-driver-photo-mclaren {
+    width: 70px;
+    height: 65px;
+
+    overflow: hidden;
+
+    position: relative;
+
+    align-self: flex-end;
+}
+
+
+.current-driver-photo-mclaren img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    object-position: center bottom;
+
+    filter: grayscale(.2);
+
+    transition: .5s ease;
+}
+
+
+.current-driver-mclaren:hover
+.current-driver-photo-mclaren img {
+
+    filter: grayscale(0);
+
+    transform: scale(1.06);
+}
+
+
+.current-driver-info-mclaren span {
+    display: block;
+
+    color: rgba(255,255,255,.3);
+
+    font-size: 5px;
+
+    font-weight: 900;
+
+    letter-spacing: 1px;
+}
+
+
+.current-driver-info-mclaren strong {
+    display: block;
+
+    margin-top: 4px;
+
+    color: #fff;
+
+    font-size:
+        clamp(13px,1.6vw,19px);
+
+    font-weight: 1000;
+}
+
+
+.current-divider-mclaren {
+    position: relative;
+
+    height: 45px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+.current-divider-mclaren::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+
+    left: 50%;
+
+    width: 1px;
+
+    background:
+        linear-gradient(
+            to bottom,
+            transparent,
+            rgba(255,128,0,.45),
+            transparent
+        );
+}
+
+
+.current-divider-mclaren span {
+    position: relative;
+
+    z-index: 2;
+
+    padding: 5px;
+
+    color: #ff8000;
+
+    background: #050505;
+
+    font-size: 5px;
+
+    font-weight: 900;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.mclaren-profile-footer {
+    position: absolute;
+
+    z-index: 10;
+
+    left: 5vw;
+    right: 5vw;
+
+    bottom: 8px;
+
+    display: flex;
+
+    align-items: center;
+
+    color: rgba(255,255,255,.2);
+
+    font-size: 6px;
+
+    font-weight: 900;
+
+    letter-spacing: 1.5px;
+}
+
+
+.mclaren-profile-footer div {
+    flex: 1;
+
+    height: 1px;
+
+    margin: 0 12px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255,128,0,.25),
+            transparent
+        );
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width:900px) {
+
+    .mclaren-profile {
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
+
+
+    .mclaren-profile-main {
+        height: 27dvh;
+    }
+
+
+    .mclaren-machine h1 {
+        font-size:
+            clamp(75px,16vw,145px);
+    }
+
+
+    .mclaren-car-image {
+        width: 55%;
+
+        right: 2%;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width:700px) {
+
+    .mclaren-profile {
+
+        height: 100dvh;
+
+        padding:
+            22px 14px 28px;
+    }
+
+
+    .mclaren-profile-kicker {
+
+        font-size: 6px;
+
+        letter-spacing: 2px;
+    }
+
+
+    .kicker-line-mclaren {
+
+        width: 17px;
+    }
+
+
+    .mclaren-profile-brand {
+
+        gap: 10px;
+
+        margin-top: 7px;
+    }
+
+
+    .mclaren-profile-logo {
+
+        width: 38px;
+        height: 38px;
+    }
+
+
+    .mclaren-profile-brand-text > span {
+
+        font-size: 5px;
+
+        letter-spacing: 1px;
+    }
+
+
+    .mclaren-profile-brand-text h2 {
+
+        font-size: 23px;
+    }
+
+
+    .mclaren-profile-meta {
+
+        margin-top: 12px;
+
+        gap: 9px;
+
+        padding: 7px 0;
+    }
+
+
+    .mclaren-profile-meta span {
+
+        font-size: 5px;
+    }
+
+
+    .mclaren-profile-meta strong {
+
+        font-size: 7px;
+    }
+
+
+    /* CARRO */
+
+    .mclaren-profile-main {
+
+        height: 26dvh;
+
+        min-height: 165px;
+
+        max-height: 225px;
+
+        margin-top: 7px;
+    }
+
+
+    .mclaren-technical-label {
+
+        top: 8px;
+
+        font-size: 6px;
+    }
+
+
+    .mclaren-machine h1 {
+
+        font-size:
+            clamp(72px,25vw,115px);
+
+        letter-spacing: -7px;
+    }
+
+
+    .machine-line-mclaren {
+
+        width: 130px;
+
+        margin-top: 14px;
+    }
+
+
+    .machine-engine-mclaren {
+
+        margin-top: 6px;
+    }
+
+
+    .mclaren-car-image {
+
+        width: 64%;
+
+        right: -3%;
+
+        bottom: -2%;
+
+        opacity: .8;
+    }
+
+
+    .mclaren-car-image > span {
+
+        display: none;
+    }
+
+
+    .mclaren-side-marker {
+
+        display: none;
+    }
+
+
+    /* HISTÓRIA */
+
+    .mclaren-history {
+
+        height: 16dvh;
+
+        min-height: 100px;
+
+        max-height: 125px;
+
+        margin-top: 7px;
+    }
+
+
+    .history-heading-mclaren h3 {
+
+        font-size: 21px;
+    }
+
+
+    .history-timeline-mclaren {
+
+        margin-top: 8px;
+    }
+
+
+    .history-driver-mclaren {
+
+        min-width: 0;
+
+        grid-template-columns:
+            45px 32px 1fr;
+
+        gap: 5px;
+    }
+
+
+    .history-year-mclaren {
+
+        font-size: 21px;
+    }
+
+
+    .history-photo-mclaren {
+
+        width: 32px;
+        height: 32px;
+    }
+
+
+    .history-marker-mclaren {
+
+        left: 39px;
+    }
+
+
+    .history-info-mclaren strong {
+
+        font-size: 8px;
+    }
+
+
+    .history-info-mclaren span,
+    .history-info-mclaren small {
+
+        font-size: 4px;
+    }
+
+
+    .history-connector-mclaren {
+
+        min-width: 10px;
+    }
+
+
+    /* LENDAS */
+
+    .mclaren-legends {
+
+        height: 18dvh;
+
+        min-height: 118px;
+
+        max-height: 140px;
+
+        grid-template-columns:
+            1fr 1fr;
+
+        gap: 10px;
+
+        margin-top: 7px;
+
+        padding-top: 10px;
+    }
+
+
+    .mclaren-legends-content h3 {
+
+        font-size: 19px;
+    }
+
+
+    .legend-row-mclaren {
+
+        grid-template-columns:
+            30px 16px 1fr auto;
+
+        gap: 4px;
+    }
+
+
+    .legend-photo-mclaren {
+
+        width: 28px;
+        height: 28px;
+    }
+
+
+    .legend-name-mclaren strong {
+
+        font-size: 11px;
+    }
+
+
+    .legend-row-mclaren > b {
+
+        font-size: 14px;
+    }
+
+
+    .mclaren-1988 {
+
+        padding: 8px 11px;
+    }
+
+
+    .season-number-mclaren {
+
+        font-size: 44px;
+    }
+
+
+    /* PILOTOS */
+
+    .mclaren-current-drivers {
+
+        height: 16dvh;
+
+        min-height: 100px;
+
+        max-height: 125px;
+
+        margin-top: 7px;
+
+        padding-top: 9px;
+    }
+
+
+    .current-drivers-header-mclaren h3 {
+
+        font-size: 20px;
+    }
+
+
+    .current-drivers-mclaren {
+
+        grid-template-columns:
+            1fr 30px 1fr;
+    }
+
+
+    .current-driver-mclaren {
+
+        gap: 5px;
+
+        min-height: 50px;
+    }
+
+
+    .current-number-mclaren {
+
+        font-size: 40px;
+    }
+
+
+    .current-driver-photo-mclaren {
+
+        width: 50px;
+
+        height: 50px;
+    }
+
+
+    .current-driver-info-mclaren span {
+
+        font-size: 4px;
+    }
+
+
+    .current-driver-info-mclaren strong {
+
+        font-size: 10px;
+    }
+
+
+    .current-divider-mclaren {
+
+        height: 40px;
+    }
+
+
+    .mclaren-profile-footer {
+
+        left: 14px;
+
+        right: 14px;
+
+        bottom: 7px;
+
+        font-size: 5px;
+    }
+
+}
+
+
+/* =========================================================
+   CELULARES MUITO PEQUENOS
+========================================================= */
+
+@media (max-width:400px) {
+
+    .mclaren-profile {
+
+        padding-top: 19px;
+    }
+
+
+    .mclaren-profile-brand-text h2 {
+
+        font-size: 21px;
+    }
+
+
+    .mclaren-profile-meta {
+
+        gap: 6px;
+    }
+
+
+    .mclaren-profile-meta strong {
+
+        font-size: 6px;
+    }
+
+
+    .mclaren-machine h1 {
+
+        font-size: 80px;
+    }
+
+
+    .mclaren-car-image {
+
+        width: 67%;
+
+        opacity: .7;
+    }
+
+
+    .history-heading-mclaren h3 {
+
+        font-size: 18px;
+    }
+
+
+    .history-year-mclaren {
+
+        font-size: 18px;
+    }
+
+
+    .history-info-mclaren strong {
+
+        font-size: 7px;
+    }
+
+
+    .mclaren-legends-content h3 {
+
+        font-size: 17px;
+    }
+
+
+    .legend-name-mclaren strong {
+
+        font-size: 10px;
+    }
+
+
+    .season-number-mclaren {
+
+        font-size: 40px;
+    }
+
+
+    .current-number-mclaren {
+
+        font-size: 36px;
+    }
+
+
+    .current-driver-photo-mclaren {
+
+        width: 43px;
+
+        height: 45px;
+    }
+
+
+    .current-driver-info-mclaren strong {
+
+        font-size: 9px;
+    }
+
+}
+
+
+/* =========================================================
+   ACESSIBILIDADE
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .mclaren-profile-main:hover
+    .mclaren-car-image img,
+
+    .history-driver-mclaren:hover
+    .history-photo-mclaren img,
+
+    .legend-row-mclaren:hover
+    .legend-photo-mclaren img,
+
+    .current-driver-mclaren:hover
+    .current-driver-photo-mclaren img {
+
+        transform: none;
+    }
+
+}

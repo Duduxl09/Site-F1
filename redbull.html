@@ -1,0 +1,2782 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Red Bull</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="stylemain.css">
+</head>
+<body class="redbull">
+
+
+
+<header class="topbar-redbull">
+
+
+	
+<!-- MENU -->
+<button class="menu-toggle-redbull" id="menuToggleredbull">
+<i class="fa-solid fa-bars"></i>
+</button>
+
+<!-- NOME -->
+<div class="topbar-title-redbull">
+
+<img src="icons/redbull.png" alt="McLaren">
+
+<span>Red Bull Formula 1 Team</span>
+
+</div>
+<!-- NOTÍCIAS -->
+<button class="news-toggle-redbull" id="abrirNoticiasredbull">
+<i class="fa-solid fa-newspaper"></i>
+</button>
+
+</header>
+
+
+	
+<nav class="side-menu-redbull" id="sideMenuredbull">
+
+<div class="close-menu-redbull" id="closeMenuredbull">✕</div>
+
+<div class="menu-profile-redbull">
+
+<img
+src="api/red_bull.avif"
+alt="Lando Norris">
+
+<p>Red Bull Formula 1 Team</p>
+
+</div>
+
+
+<div class="menu-links-redbull">
+	<ul>
+
+<li>
+<a href="#overlay">
+<span><i class="fa-solid fa-users"></i> Pilotos</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+<li>
+<a href="#intro">
+<span><i class="fa-solid fa-id-card"></i> Introdução</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+<li>
+<a href="#philo">
+<span><i class="fa-solid fa-lightbulb"></i> Filosofia</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+<li>
+<a href="#fac">
+<span><i class="fa-solid fa-industry"></i> Fabrica</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+<li>
+<a href="#linha">
+<span><i class="fa-solid fa-timeline"></i> Linha Geneólogica</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+<li>
+<a href="#tabela">
+<span><i class="fa-solid fa-circle-info"></i> Infos</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+<li>
+<a href="#resultados">
+<span><i class="fa-solid fa-flag-checkered"></i> Temporada</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+<li>
+<a href="#redbull-teammates">
+<span><i class="fa-solid fa-user-group"></i> H2H</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+		
+<li>
+<a href="#driver-evolution-redbull">
+<span><i class="fa-solid fa-chart-line"></i> Driver Evolution</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+<li>
+<a href="#lider">
+<span><i class="fa-solid fa-people-group"></i> Equipe</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+<li>
+<a href="#sec">
+<span><i class="fa-solid fa-map"></i> Setores</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+<li>
+	<a href="#creator">
+		<span><i class="fa-solid fa-screwdriver-wrench"></i>Criação</span>
+	<i class="fa-solid fa-chevron-right"></i>
+	</a>
+</li>
+
+	<li>
+	<a href="#numeros">
+		<span><i class="fa-solid fa-chart-column"></i>Estastisticas</span>
+	<i class="fa-solid fa-chevron-right"></i>
+	</a>
+</li>
+	
+	<li>
+	<a href="#tpilotos">
+		<span><i class="fa-solid fa-trophy"></i>Titulos de Pilotos</span>
+	<i class="fa-solid fa-chevron-right"></i>
+	</a>
+</li>
+	
+	<li>
+	<a href="#car">
+		<span><i class="fa-solid fa-medal"></i>Titulos de Construtores</span>
+	<i class="fa-solid fa-chevron-right"></i>
+	</a>
+</li>
+
+	<li>
+	<a href="#hall">
+		<span><i class="fa-solid fa-star"></i>Hall da Fama</span>
+	<i class="fa-solid fa-chevron-right"></i>
+	</a>
+</li>
+	
+	<li>
+	<a href="#redbullevolution">
+		<span><i class="fa-solid fa-car-side"></i>Evolução dos Carros</span>
+	<i class="fa-solid fa-chevron-right"></i>
+	</a>
+</li>
+	
+	<li>
+	<a href="#eras">
+		<span><i class="fa-solid fa-book-open"></i>Historia da equipe</span>
+	<i class="fa-solid fa-chevron-right"></i>
+	</a>
+</li>
+	
+
+	</ul>
+</div>
+	</nav>
+
+<!-- OVERLAY -->
+<div class="overlay-redbull" id="overlayredbull"></div>
+
+
+	
+<!-- ==========================
+PAINEL DE NOTÍCIAS
+========================== -->
+
+<div class="painel-noticias-redbull" id="painelNoticiasredbull">
+
+
+<div class="topo-noticias-redbull">
+
+<h2>
+<i class="fa-solid fa-newspaper"></i>
+Red Bull News
+</h2>
+
+<div class="acoes-topo-redbull">
+
+<button id="atualizarNoticiasredbull"
+title="Atualizar notícias">
+
+<i class="fa-solid fa-rotate"></i>
+
+</button>
+
+<button id="fecharNoticiasredbull">
+
+<i class="fa-solid fa-xmark"></i>
+
+</button>
+
+</div>
+
+</div>
+
+	
+<div class="lista-noticias-redbull" id="listaNoticiasredbull">
+
+<!-- Loading -->
+<div class="loading-noticias-redbull">
+
+<div class="spinner-redbull"></div>
+
+<p>Carregando notícias...</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="overlay-noticias-redbull"
+id="overlayNoticiasredbull"></div>
+
+
+
+	<section class="redbull-hero" id="inicio">
+
+<div class="redbull-pulsos">
+<span></span><span></span><span></span><span></span><span></span>
+<span></span><span></span><span></span><span></span><span></span>
+<span></span><span></span><span></span><span></span><span></span>
+<span></span><span></span><span></span><span></span><span></span>
+<span></span><span></span><span></span><span></span><span></span>
+<span></span><span></span><span></span><span></span><span></span>
+<span></span><span></span><span></span><span></span><span></span>
+<span></span><span></span><span></span><span></span><span></span>
+<span></span><span></span><span></span><span></span><span></span>
+<span></span><span></span><span></span><span></span><span></span>
+<span></span><span></span><span></span><span></span><span></span>
+<span></span><span></span><span></span><span></span><span></span>
+<span></span><span></span><span></span><span></span><span></span>
+<span></span><span></span><span></span><span></span><span></span>
+<span></span><span></span><span></span><span></span><span></span>
+<span></span><span></span><span></span><span></span><span></span>
+<span></span><span></span><span></span><span></span><span></span>
+<span></span><span></span><span></span><span></span><span></span>
+<span></span><span></span><span></span><span></span><span></span>
+<span></span><span></span><span></span><span></span><span></span>
+</div>
+
+
+<!-- CARRO OCUPANDO TODO O FUNDO -->
+<div class="redbull-car-bg"></div>
+<div class="redbull-overlay"></div>
+
+
+<!-- TOPO -->
+<header class="redbull-top">
+
+<a href="index.html" class="redbull-home">
+<i class="fa-solid fa-house"></i>
+<span>HOME</span>
+</a>
+
+<div class="redbull-status">
+FORMULA 1 • 2026
+</div>
+
+<div class="redbull-logo">
+
+<div class="redbull-logo-glow"></div>
+
+<img
+src="logos/redbull.png"
+alt="Oracle Red Bull Racing"
+>
+
+</div>
+
+
+</header>
+
+
+<!-- REDES -->
+<div class="redbull-social-top">
+
+<a href="https://www.instagram.com/redbullracing/" aria-label="Instagram" target="_blank" rel="noopener">
+<i class="fa-brands fa-instagram"></i>
+</a>
+
+<a href="https://x.com/redbullracing" aria-label="X" target="_blank" rel="noopener">
+<i class="fa-brands fa-x-twitter"></i>
+</a>
+
+<a href="https://www.facebook.com/redbullracing/" aria-label="Facebook" target="_blank" rel="noopener">
+<i class="fa-brands fa-facebook-f"></i>
+</a>
+
+<a href="https://www.tiktok.com/@redbullracing" aria-label="TikTok" target="_blank" rel="noopener">
+<i class="fa-brands fa-tiktok"></i>
+</a>
+
+<a href="https://www.youtube.com/redbullracing" aria-label="YouTube" target="_blank" rel="noopener">
+<i class="fa-brands fa-youtube"></i>
+</a>
+
+<a href="https://www.threads.net/@redbullracing" aria-label="Threads" target="_blank" rel="noopener">
+<i class="fa-brands fa-threads"></i>
+</a>
+
+<a href="https://www.linkedin.com/company/red-bull-racing/" aria-label="LinkedIn" target="_blank" rel="noopener">
+<i class="fa-brands fa-linkedin-in"></i>
+</a>
+
+<a href="https://www.redbullracing.com/" aria-label="Site oficial" target="_blank" rel="noopener">
+<i class="fa-solid fa-globe"></i>
+</a>
+
+</div>
+
+
+<!-- NOME -->
+<div class="redbull-main">
+
+<span class="redbull-kicker">
+ORACLE PRESENTS
+</span>
+
+<h1>
+RED BULL
+<strong>RACING</strong>
+</h1>
+
+<p class="redbull-full-name">
+ORACLE RED BULL RACING
+</p>
+
+<div class="redbull-title-line"></div>
+
+</div>
+
+
+<!-- PILOTOS -->
+
+
+<!-- TÍTULOS -->
+<!-- RODAPÉ -->
+<div class="redbull-bottom">
+
+<span>3 MAX VERSTAPPEN</span>
+
+<div></div>
+
+<span>6 ISACK HADJAR</span>
+
+</div>
+
+</section>
+
+
+
+
+	
+
+<section class="pilotos-redbull" id="overlay">
+
+<div class="pilotos-titulo-redbull">
+<span>RED BULL FORMULA 1 TEAM</span>
+<h2>OS PILOTOS</h2>
+<p>Conheça a dupla que representa a Red Bull na Formula 1.</p>
+</div>
+
+
+<div class="dupla-pilotos-redbull">
+
+
+
+<!-- =====================================================
+DIVISÃO CENTRAL redbull
+====================================================== -->
+
+<div class="centro-redbull">
+
+<div class="centro-logo-redbull">
+
+<img
+src="icons/redbull.png"
+alt="redbull"
+>
+
+</div>
+
+<div class="centro-linha-redbull"></div>
+
+<span class="centro-nome-redbull">
+Red Bull 
+</span>
+
+</div>
+			
+
+<!-- =========================
+LANDO verstappen
+========================== -->
+
+<a href="max.html" class="piloto-redbull piloto-verstappen-redbull">
+
+<div class="piloto-numero-bg-redbull">
+3
+</div>
+
+<div class="piloto-foto-redbull">
+<img src="max/head.png" alt="Lando verstappen">
+</div>
+
+<div class="piloto-dados-redbull">
+
+<span class="piloto-pais-redbull">
+NETHERLANDS
+</span>
+
+<h3>
+MAX 
+									<strong>VERSTAPPEN</strong>
+</h3>
+
+<div class="piloto-linha-redbull"></div>
+
+<span class="piloto-categoria-redbull">
+RED BULL F1 DRIVER
+</span>
+
+</div>
+
+<div class="piloto-acao-redbull">
+<span>VER PERFIL</span>
+<strong>↗</strong>
+</div>
+
+</a>
+
+
+<!-- =========================
+OSCAR hadjar
+========================== -->
+
+<a href="hadjar.html" class="piloto-redbull piloto-hadjar-redbull">
+
+<div class="piloto-numero-bg-redbull">
+6
+</div>
+
+<div class="piloto-foto-redbull">
+<img src="hadjar/head.png" alt="Oscar hadjar">
+</div>
+
+<div class="piloto-dados-redbull">
+
+<span class="piloto-pais-redbull">
+FRANCE</span>
+
+<h3>
+ISACK
+<strong>HADJAR</strong>
+</h3>
+
+<div class="piloto-linha-redbull"></div>
+
+<span class="piloto-categoria-redbull">
+RED BULL F1 DRIVER
+</span>
+
+</div>
+
+<div class="piloto-acao-redbull">
+<span>VER PERFIL</span>
+<strong>↗</strong>
+</div>
+
+</a>
+
+</div>
+
+</section>	
+
+
+<section class="intro-redbull" id="intro">
+
+<div class="intro-container-redbull">
+
+<div class="intro-texto-redbull">
+<h2>Red Bull Formula 1 Team</h2>
+
+<p>
+A Red Bull Racing é uma das equipes mais dominantes da era moderna da Fórmula 1. Entrando na categoria em 2005, a equipe rapidamente se estabeleceu como uma força competitiva, combinando inovação, estratégia agressiva e forte desenvolvimento aerodinâmico.
+</p>
+
+<p>
+Seu período de maior domínio começou entre 2010 e 2013, quando conquistou quatro campeonatos consecutivos de pilotos e construtores com Sebastian Vettel. Os carros projetados por Adrian Newey ficaram conhecidos pelo desempenho superior em curvas e eficiência aerodinâmica, marcando uma era de superioridade técnica.
+</p>
+
+<p>
+Após anos de evolução e reconstrução, a Red Bull voltou ao topo na era híbrida, com Max Verstappen liderando uma nova fase de domínio. A equipe segue sendo referência em performance, estratégia e desenvolvimento, mantendo-se como uma das principais forças da Fórmula 1 atual.
+</p>
+
+
+
+<div class="intro-dados-redbull">
+<span>🏆 6x Construtores</span>
+<span>🥇 8x Pilotos</span>
+<span>🏁 +120 vitórias</span>
+</div>
+
+</div>
+
+<div class="intro-img-redbull">
+<img src="carros/rb22.jpg" alt="McLaren F1">
+</div>
+
+</div>
+
+</section>
+
+<section class="redbull-philosophy" id="philo">
+
+<div class="philosophy-content-redbull">
+
+<span class="mini-title-redbull">
+Oracle Red Bull Racing Philosophy
+</span>
+
+<h2>
+Speed, Risk and Relentless Innovation
+</h2>
+
+<h3>
+A Mentalidade da Red Bull na Fórmula 1
+</h3>
+
+<p>
+Na Red Bull Racing, o sucesso nasce da ousadia. Diferente de equipes tradicionais, a Red Bull construiu sua identidade apostando em inovação agressiva, decisões rápidas e uma cultura que valoriza o talento bruto. Sob a liderança de Christian Horner e com a genialidade técnica de Adrian Newey, a equipe se tornou sinônimo de criatividade e domínio técnico, sempre buscando ultrapassar limites ao invés de apenas segui-los.
+</p>
+
+<div class="philosophy-block-redbull">
+
+<h4>
+Liberdade para arriscar e vencer
+</h4>
+
+<p>
+Um dos pilares da Red Bull é permitir que seus membros tomem decisões ousadas sem medo. A equipe entende que grandes conquistas exigem riscos calculados. Essa liberdade cria um ambiente onde ideias inovadoras surgem constantemente, transformando pressão em vantagem competitiva.
+</p>
+
+</div>
+
+<div class="philosophy-grid-redbull">
+
+<div class="philosophy-card-redbull">
+
+<span>01</span>
+
+<h5>
+Inovação sem limites
+</h5>
+
+<p>
+A Red Bull é conhecida por desafiar conceitos tradicionais. Com soluções aerodinâmicas revolucionárias, a equipe frequentemente redefine padrões técnicos na Fórmula 1.
+</p>
+
+</div>
+
+<div class="philosophy-card-redbull">
+
+<span>02</span>
+
+<h5>
+Mentalidade agressiva
+</h5>
+
+<p>
+Competir para a Red Bull significa dominar. A equipe entra em cada temporada com o objetivo claro de vencer, sem medo de confrontar rivais ou assumir protagonismo.
+</p>
+
+</div>
+
+<div class="philosophy-card-redbull">
+
+<span>03</span>
+
+<h5>
+Talento jovem e velocidade
+</h5>
+
+<p>
+A Red Bull investe fortemente em jovens pilotos e no desenvolvimento de talentos, criando uma cultura dinâmica onde velocidade, instinto e performance são prioridade absoluta.
+</p>
+
+</div>
+
+</div>
+
+<div class="philosophy-ending-redbull">
+
+<h4>
+O Que Define a Red Bull?
+</h4>
+
+<p>
+A Red Bull não apenas compete — ela redefine o jogo. Sua força está na combinação de ousadia, inovação técnica e mentalidade dominante. É uma equipe que transforma risco em vitória e velocidade em legado.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="redbull-factory" id="fac">
+
+<div class="redbull-factory-content">
+
+<span class="redbull-factory-mini">
+Oracle Red Bull Racing Factory
+</span>
+
+<h2>
+O Núcleo da Red Bull
+</h2>
+
+<h3>
+Onde velocidade, agressividade e inovação nascem antes da pista.
+</h3>
+
+<p class="redbull-factory-intro">
+Em Milton Keynes, está o centro de uma das equipes mais explosivas da Fórmula 1 moderna. A fábrica da Red Bull não é apenas um local de desenvolvimento — é um ambiente onde criatividade, risco calculado e performance extrema definem cada decisão.
+</p>
+
+<p class="redbull-factory-intro">
+Antes do carro tocar o asfalto, milhares de simulações, testes e ajustes já aconteceram. Cada detalhe é pensado para extrair o máximo desempenho possível, transformando ideias ousadas em vantagem real na pista.
+</p>
+
+<div class="redbull-factory-grid">
+
+<div class="redbull-factory-card">
+<span>01</span>
+<h4>Inovação Agressiva</h4>
+<p>
+A Red Bull não segue padrões — ela cria. Soluções ousadas e designs inovadores fazem parte da identidade da equipe, sempre buscando vantagem competitiva onde outros não enxergam.
+</p>
+</div>
+
+<div class="redbull-factory-card">
+<span>02</span>
+<h4>Velocidade de Desenvolvimento</h4>
+<p>
+Atualizações constantes e decisões rápidas definem a equipe. A capacidade de evoluir o carro corrida após corrida é uma das maiores armas da Red Bull.
+</p>
+</div>
+
+<div class="redbull-factory-card">
+<span>03</span>
+<h4>Mentalidade de Domínio</h4>
+<p>
+A equipe trabalha com uma mentalidade ofensiva: não apenas competir, mas controlar o ritmo e impor sua performance sobre os adversários.
+</p>
+</div>
+
+</div>
+
+<div class="redbull-factory-ending">
+
+<blockquote class="redbull-factory-quote">
+“Na Red Bull, velocidade não é objetivo. É identidade.”
+</blockquote>
+
+<p class="redbull-factory-text">
+A verdadeira força da Red Bull nasce dentro da fábrica. É lá que ideias se transformam em milésimos, e milésimos viram vitórias. Um ambiente onde inovação e agressividade definem o futuro da equipe na Fórmula 1.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="redbull-linha-evolution" id="linha">
+
+<div class="linha-evolution-header-redbull">
+<span>THE ROAD TO ORACLE RED BULL RACING</span>
+
+<h2>
+UMA LINHA DE <strong>EVOLUÇÃO</strong>
+</h2>
+
+<p>
+Das origens à atual Red Bull na Fórmula 1.
+</p>
+</div>
+
+
+<div class="linha-evolution-grid-redbull">
+
+
+<article class="linha-evolution-team-redbull team-stewart-redbull">
+
+<div class="team-bg-number-redbull">01</div>
+
+<div class="team-image-redbull">
+<img src="titulosred/stewart.png" alt="stewart">
+</div>
+
+<div class="team-content-redbull">
+
+<span class="team-era-redbull">1997 — 1999</span>
+
+<h3>STEWART</h3>
+
+<div class="team-line-redbull"></div>
+
+<span class="team-role-redbull">THE BEGINNING</span>
+
+</div>
+
+<div class="team-arrow-redbull">↗</div>
+
+</article>
+	
+<article class="linha-evolution-team-redbull team-jaguar-redbull">
+
+<div class="team-bg-number-redbull">02</div>
+
+<div class="team-image-redbull">
+<img src="titulosred/jaguar.png" alt="stewart">
+</div>
+
+<div class="team-content-redbull">
+
+<span class="team-era-redbull">2000 — 2004</span>
+
+<h3>JAGUAR</h3>
+
+<div class="team-line-redbull"></div>
+
+<span class="team-role-redbull">THE TRANSITION</span>
+
+</div>
+
+<div class="team-arrow-redbull">↗</div>
+
+</article>
+
+
+<!-- redbull -->
+
+<article class="linha-evolution-team-redbull team-redbull-current">
+
+<div class="team-bg-number-redbull">03</div>
+
+<div class="team-image-redbull">
+<img src="icons/redbull.png" alt="redbull">
+</div>
+
+<div class="team-content-redbull">
+
+<span class="team-era-redbull">2026 — PRESENTE</span>
+
+<h3>RED BULL</h3>
+
+<div class="team-line-redbull"></div>
+
+<span class="team-role-redbull">THE BULLS</span>
+
+</div>
+
+<div class="team-arrow-redbull">↗</div>
+
+</article>
+
+</div>
+
+
+<div class="linha-evolution-footer-redbull">
+
+<span>01</span>
+
+<div class="footer-line-redbull"></div>
+
+<span>ORACLE RED BULL RACING</span>
+
+<div class="footer-line-redbull"></div>
+
+<span>01</span>
+
+</div>
+
+</section>
+
+
+<section class="tabela-redbull" id="tabela">
+<h2 class="titulo-tabela-redbull">
+<img src="icons/redbull.png" class="logo-titulo-red">
+Dados da Red Bull
+</h2>
+ 
+ <div class="box-tabela-redbull">
+<table>
+
+<tr>
+<td>🏎️ Chassi Atual</td>
+<td>RB22</td>
+</tr>
+
+<tr>
+<td>⚙️ Motor Atual</td>
+<td>Ford</td>
+</tr>
+
+<tr>
+<td>📅 Fundação</td>
+<td>2005</td>
+</tr>
+
+<tr>
+<td>📍 Sede</td>
+<td>Milton Keynes – Inglaterra</td>
+</tr>
+
+<tr>
+<td>🥇 Primeiro Campeão</td>
+<td>Sebastian Vettel 🇩🇪 – 2010</td>
+</tr>
+
+<tr>
+<td>🏆 Último Campeão</td>
+<td>Max Verstappen 🇳🇱– 2024</td>
+</tr>
+
+<tr>
+<td>👑 Maior Campeão</td>
+<td>Sebastian Vettel 🇩🇪 <br>
+Max Verstappen 🇳🇱 4x
+</td>
+</tr>
+
+<tr>
+<td>🔥 Melhor Temporada</td>
+<td>2023 – 22 vitórias em 23 corridas</td>
+</tr>
+
+
+<tr>
+<td>👬 Dupla Atual</td>
+<td>Verstappen 🇳🇱<br>
+Hadjar 🇨🇵
+</td>
+</tr>
+
+</table>
+</div>
+</section>
+
+
+<section class="temporada-redbull" id="resultados">
+
+<h2 class="titulo-temp-redbull">
+Red Bull • Temporada 2026
+</h2>
+
+<div class="dashboard-redbull">
+
+<div class="topo-temp-redbull">
+
+<div class="card-campeonato-redbull">
+
+<div class="valor-posicao-redbull" id="posicaoRedbull">
+—
+</div>
+
+<p>Posição campeonato</p>
+
+</div>
+
+<div class="card-grafico-redbull">
+
+<svg viewBox="0 0 900 300">
+<polyline
+id="linhaGraficoRedbull"
+fill="none">
+</polyline>
+</svg>
+
+</div>
+
+<div class="card-pontos-redbull">
+
+<div id="pontosRedbull">—</div>
+
+<p>Pontos</p>
+
+</div>
+
+</div>
+
+<div class="desempenho-redbull">
+
+<div>
+<span id="podiosRedbull">0</span>
+<p>Pódios</p>
+</div>
+
+<div>
+<span id="vitoriasRedbull">0</span>
+<p>Vitórias</p>
+</div>
+
+<div>
+<span id="top5Redbull">0</span>
+<p>Top 5</p>
+</div>
+
+<div>
+<span id="avgGridRedbull">—</span>
+<p>Avg Grid</p>
+</div>
+
+</div>
+
+<div class="resultados-redbull">
+
+<table>
+
+<thead>
+<tr>
+<th>Etapa</th>
+<th>GP</th>
+<th>Verstappen</th>
+<th>Hadjar</th>
+</tr>
+</thead>
+
+<tbody id="tabelaRedbull"></tbody>
+
+</table>
+
+<div class="total-redbull">
+Total:
+<span id="totalTabelaRedbull">0</span>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="redbull-battle" id="redbull-teammates">
+
+<div class="redbull-battle-card">
+
+<!-- =====================================
+HEADER
+====================================== -->
+
+<header class="redbull-header">
+
+<div class="redbull-title-wrap">
+
+<h2>TEAMMATE BATTLE</h2>
+
+<p>RED BULL 2026</p>
+
+</div>
+
+<img
+class="redbull-team-logo"
+src="icons/redbull.png"
+alt="redbull"
+>
+
+</header>
+
+
+<!-- =====================================
+ÁREA PRINCIPAL
+====================================== -->
+
+<div class="redbull-layout">
+
+
+<!-- =================================
+PILOTO ESQUERDO
+================================== -->
+
+<div class="redbull-left">
+
+<div class="redbull-left-name">
+
+<span>MAX</span>
+
+<h3>VERSTAPPEN</h3>
+
+</div>
+
+
+<div class="redbull-left-image">
+
+<img
+id="redbullVerstappenImg"
+src="max/head.png"
+alt="MAX VERSTAPPEN"
+>
+
+</div>
+
+</div>
+
+
+
+<!-- =================================
+CENTRO
+================================== -->
+
+<div class="redbull-middle">
+
+
+<!-- VS -->
+
+<div class="redbull-vs">
+
+<div class="redbull-vs-box">
+
+VS
+
+</div>
+
+</div>
+
+
+<!-- TEMPORADA -->
+
+<div
+class="redbull-season"
+id="redbullSeason"
+>
+
+TEMPORADA 2026
+
+</div>
+
+
+
+<!-- =================================
+ ESTATÍSTICAS
+================================== -->
+
+<div class="redbull-stats">
+
+
+<!-- =============================
+WINS
+============================== -->
+
+<div class="redbull-stat">
+
+<div class="redbull-stat-values">
+
+<div class="redbull-value">
+
+<span id="redbullWinsLeft">0</span>
+
+</div>
+
+
+<div class="redbull-label">
+
+WINS
+
+</div>
+
+
+<div class="redbull-value">
+
+<span id="redbullWinsRight">0</span>
+
+</div>
+
+</div>
+
+
+<div class="redbull-bars">
+
+<div
+class="redbull-bar-left"
+id="redbullBarWinsLeft"
+></div>
+
+
+<div
+class="redbull-bar-right"
+id="redbullBarWinsRight"
+></div>
+
+</div>
+
+</div>
+
+
+
+<!-- =============================
+PODIUMS
+============================== -->
+
+<div class="redbull-stat">
+
+<div class="redbull-stat-values">
+
+<div class="redbull-value">
+
+<span id="redbullPodiumsLeft">0</span>
+
+</div>
+
+
+<div class="redbull-label">
+
+PODIUMS
+
+</div>
+
+
+<div class="redbull-value">
+
+<span id="redbullPodiumsRight">0</span>
+
+</div>
+
+</div>
+
+
+<div class="redbull-bars">
+
+<div
+class="redbull-bar-left"
+id="redbullBarPodiumsLeft"
+></div>
+
+
+<div
+class="redbull-bar-right"
+id="redbullBarPodiumsRight"
+></div>
+
+</div>
+
+</div>
+
+
+
+<!-- =============================
+POLES
+============================== -->
+
+<div class="redbull-stat">
+
+<div class="redbull-stat-values">
+
+<div class="redbull-value">
+
+<span id="redbullPolesLeft">0</span>
+
+</div>
+
+
+<div class="redbull-label">
+
+POLES
+
+</div>
+
+
+<div class="redbull-value">
+
+<span id="redbullPolesRight">0</span>
+
+</div>
+
+</div>
+
+
+<div class="redbull-bars">
+
+<div
+class="redbull-bar-left"
+id="redbullBarPolesLeft"
+></div>
+
+
+<div
+class="redbull-bar-right"
+id="redbullBarPolesRight"
+></div>
+
+</div>
+
+</div>
+
+
+
+<!-- =============================
+FASTEST LAPS
+============================== -->
+
+<div class="redbull-stat">
+
+<div class="redbull-stat-values">
+
+<div class="redbull-value">
+
+<span id="redbullFastLeft">0</span>
+
+</div>
+
+
+<div class="redbull-label">
+
+FASTEST LAPS
+
+</div>
+
+
+<div class="redbull-value">
+
+<span id="redbullFastRight">0</span>
+
+</div>
+
+</div>
+
+
+<div class="redbull-bars">
+
+<div
+class="redbull-bar-left"
+id="redbullBarFastLeft"
+></div>
+
+
+<div
+class="redbull-bar-right"
+id="redbullBarFastRight"
+></div>
+
+</div>
+
+</div>
+
+
+
+<!-- =============================
+POINTS
+============================== -->
+
+<div class="redbull-stat">
+
+<div class="redbull-stat-values">
+
+<div class="redbull-value">
+
+<span id="redbullPointsLeft">0</span>
+
+</div>
+
+
+<div class="redbull-label">
+
+POINTS
+
+</div>
+
+
+<div class="redbull-value">
+
+<span id="redbullPointsRight">0</span>
+
+</div>
+
+</div>
+
+
+<div class="redbull-bars">
+
+<div
+class="redbull-bar-left"
+id="redbullBarPointsLeft"
+></div>
+
+
+<div
+class="redbull-bar-right"
+id="redbullBarPointsRight"
+></div>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+
+<!-- =================================
+PILOTO DIREITO
+================================== -->
+
+<div class="redbull-right">
+
+<div class="redbull-right-name">
+
+<span>ISACK</span>
+
+<h3>HADJAR</h3>
+
+</div>
+
+
+<div class="redbull-right-image">
+
+<img
+id="redbullHadjarImg"
+src="hadjar/head.png"
+alt="Isack Hadjar"
+>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+	
+
+<section class="driver-evolution-redbull" id="driver-evolution-redbull">
+
+	<!-- ==============================
+HEADER
+============================== -->
+
+<div class="evolution-header-redbull">
+
+<h2>DRIVER EVOLUTION</h2>
+
+<p>Red Bull</p>
+
+</div>
+
+
+<!-- ==============================
+CARD PRINCIPAL
+=============================== -->
+
+	<div class="evolution-card-redbull">
+
+ <!-- ==========================
+TOPO DO CARD
+=========================== -->
+
+ <div class="evolution-card-top-redbull">
+
+ <div class="evolution-intro-redbull">
+
+<h3>
+ MAX VERSTAPPEN
+ <span>AND</span>
+ISACK HADJAR
+</h3>
+
+<p>
+Formula 1 championship points evolution
+</p>
+
+</div>
+
+
+<!-- SELETOR -->
+
+ <div class="evolution-selector-redbull">
+
+<button
+class="evolution-mode-redbull active" data-mode="both">
+ BOTH
+</button>
+
+ <button
+class="evolution-mode-redbull"
+data-mode="verstappen">
+ VERSTAPPEN
+</button>
+
+<button
+class="evolution-mode-redbull"
+ data-mode="hadjar">
+ HADJAR
+</button>
+
+</div>
+
+ </div>
+
+
+
+<!-- ==========================
+CONTEÚDO
+=========================== -->
+ <div class="evolution-content-redbull">
+
+
+<!-- ======================
+GRÁFICO
+======================= -->
+ <div class="evolution-chart-area-redbull">
+
+<div class="y-axis-title-redbull">
+POINTS
+</div>
+
+
+<div class="evolution-chart-redbull">
+
+ <div class="chart-y-labels-redbull">
+</div>
+
+
+ <div class="chart-main-redbull" id="evolutionChart">
+</div>
+
+ </div>
+
+</div>
+
+
+
+<!-- ======================
+LEGENDA
+======================= -->
+<aside class="evolution-sidebar-redbull">
+
+
+<div class="sidebar-title-redbull">
+LINE IDENTITY
+ </div>
+
+
+
+<!-- verstappen -->
+
+<div class="driver-identity-redbull">
+
+<div class="identity-line-redbull verstappen-line-redbull">
+<span></span>
+</div>
+
+<div class="identity-driver-info-redbull">
+
+<small>MAX</small>
+
+<strong>VERSTAPPEN</strong>
+
+</div>
+
+<img
+class="identity-driver-image-redbull"
+src="pilotos/max.png"
+alt="max verstappen">
+
+</div>
+
+
+<!-- hadjar -->
+
+<div class="driver-identity-redbull">
+
+<div class="identity-line-redbull hadjar-line-redbull">
+<span></span>
+</div>
+
+<div class="identity-driver-info-redbull">
+
+<small>ISACK</small>
+
+<strong>HADJAR</strong>
+
+</div>
+
+<img
+class="identity-driver-image-redbull"
+src="pilotos/hadjar.png"
+alt="isack hadjar">
+
+</div>
+
+
+
+<!-- ==================
+ LEGEND
+=================== -->
+
+ <div class="sidebar-title-redbull legend-title-redbull">
+ LEGEND
+</div>
+
+
+<!-- verstappen CARD -->
+
+ <div class="driver-legend-redbull verstappen-legend-redbull">
+
+<div class="legend-info-redbull">
+
+ <span>MAX</span>
+<strong>VERSTAPPEN</strong>
+</div>
+
+<img id="legendverstappen"
+src="pilotos/max.png" alt="max verstappen">
+ </div>
+
+
+<!-- hadjar CARD -->
+
+<div class="driver-legend-redbull hadjar-legend-redbull">
+
+<div class="legend-info-redbull">
+
+ <span>ISACK</span>
+<strong>HADJAR</strong>
+</div>
+
+<img id="legendhadjar" 
+	src="pilotos/hadjar.png"alt="isack hadjar">
+</div>
+</aside>
+
+ </div>
+</div>
+
+</section>
+
+
+
+
+<section class="redbull-lideranca" id="lider">
+
+<!-- CABEÇALHO -->
+<header class="redbull-lideranca-header">
+
+<div class="redbull-lideranca-kicker">
+<span></span>
+ RED BULL RACING
+<span></span>
+</div>
+
+<div class="redbull-lideranca-titulo-area">
+
+<div class="redbull-lideranca-indice">
+04
+</div>
+
+<div>
+<span class="redbull-lideranca-subtitulo">
+RACING STRUCTURE
+</span>
+
+<h2 class="redbull-lideranca-titulo">
+LIDERANÇA <strong>RED BULL</strong>
+</h2>
+
+<p class="redbull-lideranca-descricao">
+As principais figuras responsáveis pela direção,
+engenharia e desempenho da Red Bull.
+</p>
+</div>
+
+</div>
+
+</header>
+
+
+<!-- LINHA DECORATIVA -->
+<div class="redbull-lideranca-linha">
+<span></span>
+</div>
+
+
+<!-- ESTRUTURA -->
+<div class="redbull-lideranca-estrutura">
+
+
+<!-- CEO -->
+<article class="redbull-lideranca-card redbull-lideranca-card-destaque">
+
+<div class="redbull-lideranca-card-topo">
+
+<span class="redbull-lideranca-card-numero">
+01
+</span>
+
+<span class="redbull-lideranca-card-cargo">
+EXECUTIVE
+</span>
+
+</div>
+
+<div class="redbull-lideranca-foto">
+
+<img
+src="lideres/RedBull/oliver.jpeg"
+alt="Benedetto Vigna"
+>
+
+<div class="redbull-lideranca-foto-overlay"></div>
+
+</div>
+
+<div class="redbull-lideranca-info">
+
+<span class="redbull-lideranca-funcao">
+CEO
+</span>
+
+<h3>
+Oliver
+<strong>Mintzlaff</strong>
+</h3>
+
+<p>
+Responsável pela direção executiva e comercial
+da Red Bull.
+</p>
+
+</div>
+
+</article>
+
+<!-- TEAM PRINCIPAL -->
+<article class="redbull-lideranca-card redbull-lideranca-card-principal">
+
+<div class="redbull-lideranca-card-topo">
+
+<span class="redbull-lideranca-card-numero">
+02
+</span>
+
+<span class="redbull-lideranca-card-cargo">
+SPORTING
+</span>
+
+</div>
+
+<div class="redbull-lideranca-foto">
+
+<img
+src="lideres/RedBull/laurient.jpeg"
+alt="Frédéric Vasseur"
+>
+
+<div class="redbull-lideranca-foto-overlay"></div>
+
+</div>
+
+<div class="redbull-lideranca-info">
+
+<span class="redbull-lideranca-funcao">
+TEAM PRINCIPAL
+</span>
+
+<h3>
+Laurent
+<strong>Mekies</strong>
+</h3>
+
+<p>
+Responsável pelas decisões esportivas,
+estratégicas e pela gestão da equipe.
+</p>
+
+</div>
+
+</article>
+	
+
+<!-- LOÏC SERRA -->
+<article class="redbull-lideranca-card">
+
+<div class="redbull-lideranca-card-topo">
+
+<span class="redbull-lideranca-card-numero">
+03
+</span>
+
+<span class="redbull-lideranca-card-cargo">
+ENGINEERING
+</span>
+
+</div>
+
+<div class="redbull-lideranca-foto">
+
+<img
+src="lideres/RedBull/pierre.jpeg"
+alt="Loïc Serra"
+>
+
+<div class="redbull-lideranca-foto-overlay"></div>
+
+</div>
+
+<div class="redbull-lideranca-info">
+
+<span class="redbull-lideranca-funcao">
+DIRETOR TÉCNICO
+</span>
+
+<h3>
+Pierre
+<strong>Waché</strong>
+</h3>
+
+<p>
+Atua no desenvolvimento técnico e na área
+de performance da equipe.
+</p>
+
+</div>
+
+</article>
+
+
+<article class="redbull-lideranca-card redbull-lideranca-card-engenharia">
+
+<div class="redbull-lideranca-card-topo">
+
+<span class="redbull-lideranca-card-numero">
+04
+</span>
+
+<span class="redbull-lideranca-card-cargo">
+AERODYNAMICS
+</span>
+
+</div>
+
+<div class="redbull-lideranca-foto redbull-lideranca-foto-logo">
+
+<img
+src="lideres/RedBull/enrico.jpg"
+alt="redbull"
+>
+
+<div class="redbull-lideranca-foto-overlay"></div>
+
+
+</div>
+
+<div class="redbull-lideranca-info">
+
+<span class="redbull-lideranca-funcao">
+CHEFE DE AERODINÂMICA
+</span>
+
+<h3>
+Enrico
+<strong>Balboa</strong>
+</h3>
+
+<p>
+Coordena as estratégias da equipe durante
+os finais de semana de corrida.
+</p>
+
+</div>
+
+</article>
+
+	
+<!-- DIEGO TONDI -->
+<article class="redbull-lideranca-card">
+
+<div class="redbull-lideranca-card-topo">
+
+<span class="redbull-lideranca-card-numero">
+05
+</span>
+
+<span class="redbull-lideranca-card-cargo">
+PERFORMANCE 
+</span>
+
+</div>
+
+<div class="redbull-lideranca-foto">
+
+<img
+src="lideres/RedBull/andrea.jpg"
+alt="Diego Tondi"
+>
+
+<div class="redbull-lideranca-foto-overlay"></div>
+
+</div>
+
+<div class="redbull-lideranca-info">
+
+<span class="redbull-lideranca-funcao">
+DIRETOR DE PERFORMANCE
+</span>
+
+<h3>
+Andrea
+<strong>Ladin</strong>
+</h3>
+
+<p>
+Coordena o desenvolvimento do carro.
+</p>
+
+</div>
+
+</article>
+
+
+<!-- FLAVIO MANZONI -->
+<article class="redbull-lideranca-card">
+
+<div class="redbull-lideranca-card-topo">
+
+<span class="redbull-lideranca-card-numero">
+06
+</span>
+
+<span class="redbull-lideranca-card-cargo">
+DESIGN
+</span>
+
+</div>
+
+<div class="redbull-lideranca-foto">
+
+<img
+src="lideres/RedBull/ben.webp"
+alt="Flavio Manzoni"
+>
+
+<div class="redbull-lideranca-foto-overlay"></div>
+
+</div>
+
+<div class="redbull-lideranca-info">
+
+<span class="redbull-lideranca-funcao">
+CHEFE DE DESIGN
+</span>
+
+<h3>
+Ben
+<strong>WaterHouse</strong>
+</h3>
+
+<p>
+Coordena o conceito e o design do carro
+da redbull.
+</p>
+
+</div>
+
+</article>
+
+
+<!-- RAVIN JAIN -->
+<article class="redbull-lideranca-card">
+
+<div class="redbull-lideranca-card-topo">
+
+<span class="redbull-lideranca-card-numero">
+07
+</span>
+
+<span class="redbull-lideranca-card-cargo">
+STRATEGY
+</span>
+
+</div>
+
+<div class="redbull-lideranca-foto">
+
+<img
+src="lideres/RedBull/hanna.jpeg"
+alt="Ravin Jain"
+>
+
+<div class="redbull-lideranca-foto-overlay"></div>
+
+</div>
+
+<div class="redbull-lideranca-info">
+
+<span class="redbull-lideranca-funcao">
+CHEFE DE ESTRATÉGIA
+</span>
+
+<h3>
+Hanna
+<strong>Schmitz</strong>
+</h3>
+
+<p>
+Coordena as estratégias da equipe durante
+os finais de semana de corrida.
+</p>
+
+</div>
+
+</article>
+
+
+<!-- ENGENHARIA -->
+<article class="redbull-lideranca-card redbull-lideranca-card-engenharia">
+
+<div class="redbull-lideranca-card-topo">
+
+<span class="redbull-lideranca-card-numero">
+08
+</span>
+
+<span class="redbull-lideranca-card-cargo">
+TECHNICAL
+</span>
+
+</div>
+
+<div class="redbull-lideranca-foto redbull-lideranca-foto-logo">
+
+<img
+src="lideres/RedBull/paul.webp"
+alt="redbull"
+>
+
+<div class="redbull-lideranca-foto-overlay"></div>
+
+
+</div>
+
+<div class="redbull-lideranca-info">
+
+<span class="redbull-lideranca-funcao">
+DIRETORIA DE ENGENHARIA
+</span>
+
+<h3>
+Paul
+<strong>Monaghan</strong>
+</h3>
+
+<p>
+Responsável pela coordenação
+das áreas de engenharia da equipe.
+</p>
+
+</div>
+
+</article>
+
+
+</div>
+
+
+<!-- RODAPÉ -->
+<footer class="redbull-lideranca-footer">
+
+<span>RED BULL RACING</span>
+
+<div></div>
+
+<span>ENGINEERING • PERFORMANCE • RACING</span>
+
+</footer>
+
+</section>
+
+<section class="redbull-sectors" id="sec">
+
+<div class="redbull-sectors-header">
+
+<span>Inside Oracle Red Bull Racing</span>
+
+<h2>
+Os Setores Por Trás
+da Máquina de Performance
+</h2>
+
+<p>
+Na Red Bull Racing, cada milésimo é resultado de uma estrutura altamente agressiva e dinâmica. A equipe combina criatividade, tecnologia e tomada de decisão rápida para transformar ideias em vantagem competitiva dentro da pista.
+</p>
+
+</div>
+
+<div class="redbull-sectors-grid">
+
+<div class="redbull-sector-card">
+<h3>Pilotos Titulares</h3>
+<p>
+Pilotos como Max Verstappen operam no limite absoluto, contribuindo com feedback agressivo e precisão em situações de alta pressão.
+</p>
+</div>
+
+<div class="redbull-sector-card">
+<h3>Pilotos de Simulador</h3>
+<p>
+Testam setups extremos e estratégias ousadas no simulador, permitindo decisões rápidas e soluções inovadoras antes das corridas.
+</p>
+</div>
+
+<div class="redbull-sector-card">
+<h3>Engenharia de Performance</h3>
+<p>
+Otimiza cada detalhe do carro com foco em velocidade pura, explorando limites aerodinâmicos e mecânicos.
+</p>
+</div>
+
+<div class="redbull-sector-card">
+<h3>Engenharia de Corrida</h3>
+<p>
+Atua com decisões instantâneas durante as corridas, ajustando estratégias em tempo real sob pressão extrema.
+</p>
+</div>
+
+<div class="redbull-sector-card">
+<h3>Aerodinâmica</h3>
+<p>
+Desenvolve soluções inovadoras que priorizam downforce eficiente e estabilidade em alta velocidade.
+</p>
+</div>
+
+<div class="redbull-sector-card">
+<h3>Mecânicos</h3>
+<p>
+Executam pit stops explosivos e trabalham com precisão sob pressão máxima em frações de segundo.
+</p>
+</div>
+
+<div class="redbull-sector-card">
+<h3>Estratégia</h3>
+<p>
+Trabalha de forma agressiva, antecipando movimentos dos adversários e criando estratégias de ataque constantes.
+</p>
+</div>
+
+<div class="redbull-sector-card">
+<h3>Telemetria e Dados</h3>
+<p>
+Analisa dados em tempo real para encontrar qualquer vantagem possível durante a corrida.
+</p>
+</div>
+
+<div class="redbull-sector-card">
+<h3>Pesquisa e Desenvolvimento</h3>
+<p>
+Foco em inovação radical, criando soluções fora do padrão para manter vantagem competitiva.
+</p>
+</div>
+
+<div class="redbull-sector-card">
+<h3>Software e Tecnologia</h3>
+<p>
+Sistemas rápidos e eficientes que suportam decisões imediatas dentro da corrida.
+</p>
+</div>
+
+<div class="redbull-sector-card">
+<h3>Logística</h3>
+<p>
+Opera com precisão para manter a equipe sempre pronta para qualquer circuito no mundo.
+</p>
+</div>
+
+<div class="redbull-sector-card">
+<h3>Marketing e Comunicação</h3>
+<p>
+Foca em energia, impacto global e presença digital agressiva conectada à marca Red Bull.
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="redbull-creation" id="creator">
+
+<div class="redbull-creation-header">
+
+<span>
+Oracle Red Bull Racing Development
+</span>
+
+<h2>
+Como Nasce
+Um Carro Vencedor
+</h2>
+
+<p>
+Na Red Bull Racing, um carro de Fórmula 1 nasce de um processo rápido, agressivo e altamente inovador. A equipe combina engenharia de ponta com decisões ousadas para transformar conceitos em performance real na pista.
+</p>
+
+</div>
+
+<div class="redbull-creation-timeline">
+
+<div class="redbull-creation-step">
+<div class="redbull-step-number">01</div>
+<div class="redbull-step-content">
+<h3>Conceito Agressivo</h3>
+<p>
+O projeto começa com ideias ousadas e foco em performance extrema. A filosofia da Red Bull é sempre buscar vantagem onde outros não arriscam.
+</p>
+</div>
+</div>
+
+<div class="redbull-creation-step">
+<div class="redbull-step-number">02</div>
+<div class="redbull-step-content">
+<h3>Simulação Digital</h3>
+<p>
+Modelos virtuais testam soluções rápidas e radicais, permitindo decisões ágeis antes da construção física.
+</p>
+</div>
+</div>
+
+<div class="redbull-creation-step">
+<div class="redbull-step-number">03</div>
+<div class="redbull-step-content">
+<h3>Túnel de Vento</h3>
+<p>
+Validação aerodinâmica com foco em downforce máximo e eficiência em alta velocidade.
+</p>
+</div>
+</div>
+
+<div class="redbull-creation-step">
+<div class="redbull-step-number">04</div>
+<div class="redbull-step-content">
+<h3>Fabricação Rápida</h3>
+<p>
+Componentes são produzidos com agilidade e precisão, acelerando o ciclo de desenvolvimento do carro.
+</p>
+</div>
+</div>
+
+<div class="redbull-creation-step">
+<div class="redbull-step-number">05</div>
+<div class="redbull-step-content">
+<h3>Simulador de Alta Performance</h3>
+<p>
+Pilotos testam limites extremos do carro em ambientes virtuais antes de levá-lo para a pista.
+</p>
+</div>
+</div>
+
+<div class="redbull-creation-step">
+<div class="redbull-step-number">06</div>
+<div class="redbull-step-content">
+<h3>Evolução Constante</h3>
+<p>
+O carro muda durante toda a temporada, com atualizações rápidas baseadas em dados reais e agressividade técnica.
+</p>
+</div>
+</div>
+
+</div>
+
+<div class="redbull-creation-ending">
+
+<blockquote>
+“Na Red Bull, um carro não nasce pronto. Ele nasce para dominar.”
+</blockquote>
+
+</div>
+
+</section>
+
+
+
+<section class="numeros-redbull" id="numeros">
+
+<img src="secao/rb22.png" class="bg-numeros-redbull">
+
+<div class="overlay-numeros-redbull"></div>
+
+
+
+
+<div class="luz-laranja-redbull"></div>
+
+<div class="faíscas-redbull">
+<div class="spark-redbull"></div>
+<div class="spark-redbull"></div>
+<div class="spark-redbull"></div>
+<div class="spark-redbull"></div>
+<div class="spark-redbull"></div>
+</div>
+
+
+
+<h2 class="titulo-numeros-redbull">Estatisticas da redbull</h2>
+
+<div class="stats-grid-redbull">
+
+<div class="card-stat-redbull grande-redbull animar-redbull">
+<span id="corridas-redbull" class="contador-redbull" data-target="481">
+0</span>
+	<div class="barra-velocidade-redbull"></div>
+<p>🏁 Corridas</p>
+</div>
+
+<div class="card-stat-redbull animar-redbull">
+<span id="vitorias-redbull" class="contador-redbull" data-target="130">0</span>
+<div class="barra-velocidade-redbull"></div>
+<p>🥇 Vitórias</p>
+</div>
+
+<div class="card-stat-redbull animar-redbull">
+	<span id="poles-redbull" class="contador-redbull" data-target="111">0</span>
+<div class="barra-velocidade-redbull"></div>
+<p>⚡ Poles</p>
+</div>
+
+<div class="card-stat-redbull animar-redbull">
+	<span id="podios-redbull" class="contador-redbull" data-target="297">0</span>
+<div class="barra-velocidade-redbull"></div>
+<p>🥉 Pódios</p>
+</div>
+
+<div class="card-stat-redbull grande-redbull animar-redbull">
+<span id="pontos-redbull" class="contador-redbull" data-target="0">0</span>
+<div class="barra-velocidade-redbull"></div>
+<p>📈 Pontos no Total</p>
+</div>
+	
+</div>
+</section>
+ 
+
+
+	
+
+<section class="timeline-redbull" id="tpilotos">
+
+<h2 class="titulo-timeline-redbull">Títulos Mundiais de Pilotos</h2>
+
+<div class="linha-box-redbull">
+
+<div class="linha-cinza-redbull"></div>
+<div class="linha-progresso-redbull"></div>
+<div class="luz-redbull"></div>
+
+<div class="ponto-redbull" style="left:2%">
+
+<div class="foto-cima-redbull"><img src="titulosred/vettel.jpeg"></div>
+
+<div class="ano-redbull baixo">2010</div>
+
+
+<div class="info-baixo-redbull">
+<p>🇩🇪 Vettel</p>
+<span class="titulo-num-redbull">1° 🏆</span>
+</div>
+</div>
+
+<div class="ponto-redbull" style="left:15%">
+
+<div class="ano-redbull cima">2011</div>
+
+<div class="info-cima-redbull">
+<p>🇩🇪 Vettel</p>
+<span class="titulo-num-redbull">2° 🏆</span>
+</div>
+
+
+<div class="foto-baixo-redbull"><img src="titulosred/vettel.jpeg"></div>
+</div>
+
+<div class="ponto-redbull" style="left:30%">
+
+<div class="foto-cima-redbull"><img src="titulosred/vettel.jpeg"></div>
+
+<div class="ano-redbull baixo">2012</div>
+
+<div class="info-baixo-redbull">
+<p>🇩🇪 Vettel</p>
+<span class="titulo-num-redbull">3° 🏆</span>
+</div>
+</div>
+<div class="ponto-redbull" style="left:46%">
+
+<div class="ano-redbull cima">2013</div>
+
+<div class="info-cima-redbull">
+<p>🇩🇪 Vettel</p>
+<span class="titulo-num-redbull">4°🏆</span>
+</div>
+
+<div class="foto-baixo-redbull"><img src="titulosred/vettel.jpeg"></div>
+</div>
+
+<div class="ponto-redbull" style="left:56%">
+
+<div class="foto-cima-redbull"><img src="titulosred/Max.jpeg"></div>
+
+<div class="ano-redbull baixo">2021</div>
+
+<div class="info-baixo-redbull">
+<p>🇳🇱 Verstappen</p>
+<span class="titulo-num-redbull">1° 🏆</span>
+</div>
+</div>
+
+<div class="ponto-redbull" style="left:67%">
+
+<div class="ano-redbull cima">2022</div>
+
+<div class="info-cima-redbull">
+<p>🇳🇱 Verstappen</p>
+<span class="titulo-num-redbull">2° 🏆</span>
+</div>
+
+
+<div class="foto-baixo-redbull"><img src="titulosred/Max.jpeg"></div>
+</div>
+
+<div class="ponto-redbull" style="left:83%">
+
+<div class="foto-cima-redbull"><img src="titulosred/Max.jpeg"></div>
+
+<div class="ano-redbull baixo">2023</div>
+
+<div class="info-baixo-redbull">
+<p>🇳🇱 Verstappen</p>
+<span class="titulo-num-redbull">3° 🏆</span>
+</div>
+</div>
+
+<div class="ponto-redbull" style="left:97%">
+
+<div class="ano-redbull cima">2024</div>
+
+<div class="info-cima-redbull">
+<p>🇳🇱 Verstappen</p>
+<span class="titulo-num-redbull">4° 🏆</span>
+</div>
+
+
+<div class="foto-baixo-redbull"><img src="titulosred/Max.jpeg"></div>
+</div>
+</div>
+</section>
+
+
+
+
+<section class="timeline-redbull-car" id="car">
+
+<h2 class="titulo-timeline-car-redbull">Títulos Mundiais de Construtores</h2>
+
+
+<div class="linha-box-car-redbull">
+<div class="linha-cinza-car-redbull"></div>
+<div class="linha-progresso-car-redbull"></div>
+<div class="luz-car-redbull"></div>
+
+
+<div class="ponto-car-redbull" style="left:6%">
+<div class="info-car-redbull cima">
+<h3>2010</h3>
+<span class="modelo-car-redbull">RB6</span>
+<p>Vettel <br>
+Webber</p>
+</div>
+
+<div class="foto-car-redbull baixo"><img src="titulosred/rb6.png">
+</div>
+</div>
+
+<div class="ponto-car-redbull" style="left:23%">
+<div class="foto-car-redbull cima"><img src="titulosred/rb7.png"></div>
+
+<div class="info-car-redbull baixo">
+<h3>2011</h3>
+<span class="modelo-car-redbull">RB7</span>
+<p>Vettel <br>
+Webber</p>
+</div>
+</div>
+
+
+
+<div class="ponto-car-redbull" style="left:38%">
+<div class="foto-car-redbull baixo"><img src="titulosred/rb8.png"></div>
+
+<div class="info-car-redbull cima">
+<h3>2012</h3>
+<span class="modelo-car-redbull">RB8</span>
+<p>Vettel <br>
+Webber</p>
+</div>
+</div>
+
+<div class="ponto-car-redbull" style="left:55%">
+<div class="info-car-redbull baixo">
+<h3>2013</h3>
+<span class="modelo-car-redbull">RB9</span>
+<p>Vettel <br>
+Webber</p>
+</div>
+<div class="foto-car-redbull cima"><img src="titulosred/rb9.png"></div>
+</div>
+
+
+
+<div class="ponto-car-redbull" style="left:74%">
+<div class="foto-car-redbull baixo"><img src="titulosred/rb18.png"></div>
+<div class="info-car-redbull cima">
+<h3>2022</h3>
+<span class="modelo-car-redbull">RB18</span>
+<p>Verstappen <br>
+Perez</p>
+</div>
+</div>
+
+<div class="ponto-car-redbull" style="left:94%">
+<div class="info-car-redbull baixo">
+<h3>2023</h3>
+<span class="modelo-car-redbull">RB19</span>
+<p>Verstappen <br>
+Perez</p>
+</div>
+<div class="foto-car-redbull cima"><img src="titulosred/rb19.png"></div>
+</div>
+
+
+</div>
+</section>
+
+
+<section class="hall-redbull" id="hall">
+
+<div class="hall-overlay-redbull"></div>
+
+<h2 class="titulo-hall-redbull">
+Hall da Fama Red Bull
+</h2>
+
+<div class="bg-hall-redbull">
+<div class="bg-layer-redbull bg1-redbull active"></div>
+<div class="bg-layer-redbull bg2-redbull"></div>
+</div>
+
+<div class="hall-grid-redbull">
+
+<!-- Vettel -->
+<div class="hall-card-redbull" data-bg="hallred/seb.jpeg">
+
+<div class="numero-hall-redbull">01</div>
+
+<img src="titulosred/vettel.jpg">
+
+<h3>Sebastian Vettel</h3>
+
+<span class="pais-hall-redbull">
+🇩🇪 Alemanha
+</span>
+
+<p>
+Liderou a primeira era dominante da Red Bull
+</p>
+
+<div class="hall-stats-redbull">
+<span>4 Títulos</span>
+<span>2010–2013</span>
+</div>
+
+<div class="frase-hall-redbull">
+“Everyone is a genius.”
+</div>
+
+</div>
+
+<!-- Verstappen -->
+<div class="hall-card-redbull" data-bg="hallred/max.jpg">
+
+<div class="numero-hall-redbull">02</div>
+
+<img src="titulosred/max.jpeg">
+
+<h3>Max Verstappen</h3>
+
+<span class="pais-hall-redbull">
+🇳🇱 Holanda
+</span>
+
+<p>
+Símbolo da nova geração dominante da equipe
+</p>
+
+<div class="hall-stats-redbull">
+<span>4 Títulos</span>
+<span>2021–2024</span>
+</div>
+
+<div class="frase-hall-redbull">
+“Simply lovely.”
+</div>
+
+</div>
+
+<!-- Webber -->
+<div class="hall-card-redbull" data-bg="hallred/webber.jpg">
+
+<div class="numero-hall-redbull">03</div>
+
+<img src="hallred/mark.jpeg">
+
+<h3>Mark Webber</h3>
+
+<span class="pais-hall-redbull">
+🇦🇺 Austrália
+</span>
+
+<p>
+Peça fundamental da ascensão da Red Bull
+</p>
+
+<div class="hall-stats-redbull">
+<span>9 Vitórias</span>
+<span>2007–2013</span>
+</div>
+
+<div class="frase-hall-redbull">
+“Mate, that's racing.”
+</div>
+
+</div>
+
+<!-- Ricciardo -->
+<div class="hall-card-redbull" data-bg="hallred/dani.png">
+
+<div class="numero-hall-redbull">04</div>
+
+<img src="hallred/ric.jpeg">
+
+<h3>Daniel Ricciardo</h3>
+
+<span class="pais-hall-redbull">
+🇦🇺 Austrália
+</span>
+
+<p>
+Um dos pilotos mais carismáticos da era Red Bull
+</p>
+
+<div class="hall-stats-redbull">
+<span>7 Vitórias</span>
+<span>2014–2018</span>
+</div>
+
+<div class="frase-hall-redbull">
+“Sometimes you've just gotta lick the stamp and send it.”
+</div>
+
+</div>
+
+
+
+<!-- Perez -->
+<div class="hall-card-redbull" data-bg="hallred/peres.jpg">
+
+<div class="numero-hall-redbull">05</div>
+
+<img src="hallred/sergio.jpeg">
+
+<h3>Sergio Pérez</h3>
+
+<span class="pais-hall-redbull">
+🇲🇽 México
+</span>
+
+<p>
+Importante nas conquistas recentes da equipe
+</p>
+
+<div class="hall-stats-redbull">
+<span>Construtores</span>
+<span>2021–2024</span>
+</div>
+
+<div class="frase-hall-redbull">
+“Never give up.”
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="redbull-evolution" id="redbullEvolution">
+
+<h1 class="title-redbull">Evolução da Red Bull</h1>
+
+<!-- CARRO -->
+<div class="car-container-redbull">
+
+<div class="car-circle-redbull"></div>
+
+<img
+id="carImage-redbull"
+src="icons/redbull.png"
+alt="Red Bull"
+>
+
+</div>
+
+<!-- BOTÕES (ERAS) -->
+<div class="controls-redbull">
+
+<button onclick="changeDecadeRedbull('2005s')">2005</button>
+
+<button onclick="changeDecadeRedbull('2010s')">2010</button>
+
+<button onclick="changeDecadeRedbull('2013s')">2013</button>
+
+<button onclick="changeDecadeRedbull('2021s')">2021</button>
+
+<button onclick="changeDecadeRedbull('2025s')">2025</button>
+
+</div>
+
+<!-- INFOS -->
+<div class="car-info-redbull">
+
+<h2 id="carName-redbull">Red Bull Racing</h2>
+
+<div class="info-grid-redbull">
+
+<div class="info-card-redbull">
+<span>Motor</span>
+<h3 id="carEngine-redbull">---</h3>
+</div>
+
+<div class="info-card-redbull">
+<span>Potência</span>
+<h3 id="carPower-redbull">---</h3>
+</div>
+
+<div class="info-card-redbull">
+<span>Ano</span>
+<h3 id="carYear-redbull">---</h3>
+</div>
+
+<div class="info-card-redbull">
+<span>Pilotos</span>
+<h3 id="carDriver-redbull">---</h3>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+<section class="eras-redbull" id="eras">
+
+<h2 class="titulo-eras-redbull">Eras da Red Bull</h2>
+
+<div class="botoes-eras-redbull">
+<button onclick="mostrarEra(0)" class="ativo">O Inicio</button>
+<button onclick="mostrarEra(1)">Sebastian Vettel</button>
+<button onclick="mostrarEra(2)">Momentoem baixa</button>
+	<button onclick="mostrarEra(3)">MaxVerstappen</button>
+	
+</div>
+
+<div class="conteudo-era-redbull">
+<h3 id="tituloEra-redbull"></h3>
+<p id="textoEra-redbull"></p>
+<div id="redbull-timeline"></div>
+</div>
+
+</section>
+
+
+<footer class="footer-f1-redbull">
+
+<div class="footer-brand-redbull">
+<p>Red Bull</p>
+<span>Team Red Bull Mastercard Formula 1 </span>
+</div>
+
+<div class="footer-links-redbull">
+<a href="index.html">Home</a>
+<a href="f1.html">Regras</a>
+				<a href="info.html">Informações</a>
+
+<a href="max.html">Verstappen</a>
+<a href="hadjar.html">Hadjar</a>
+<a href="about.html">About</a>
+</div>
+
+<div class="footer-social-redbull">
+<a href="https://www.instagram.com/duduxl37?igsh=dnNwM29qYXprbnI4" target="_blank">Instagram</a>
+<a href="https://x.com/Duducrvg1998" target="_blank">X</a>
+</div>
+
+<div class="footer-copy-redbull">
+© 2026 Fan Project • Inspired by Formula 1
+</div>
+
+</footer>
+
+
+ 	<button id="btnTopo" class="btn-topo">
+<i class="fa-solid fa-arrow-up"></i>
+	</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="redbull.js"></script>
+</body>
+</html>
+
+

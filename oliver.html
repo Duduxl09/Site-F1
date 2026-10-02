@@ -1,0 +1,2122 @@
+  <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+ <body bgcolor="#ffffff">
+  <title>Oliver Bearman</title>
+
+  <!-- CSS do piloto -->
+  <link rel="stylesheet" href="stylemain.css">
+</head>
+<body>
+  
+  
+<header class="topbar-oliver">
+
+    <!-- MENU -->
+    <button class="menu-toggle-oliver" id="menuToggleoliver">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <!-- NOME -->
+<div class="topbar-title-oliver">
+
+    <img src="icons/HaasF1.png" alt="McLaren">
+
+    <span>Oliver Bearman </span>
+
+</div>
+    <!-- NOTÍCIAS -->
+    <button class="news-toggle-oliver" id="abrirNoticiasoliver">
+        <i class="fa-solid fa-newspaper"></i>
+    </button>
+
+</header>
+	
+  <nav class="side-menu-oliver" id="sideMenuoliver">
+    
+    <div class="close-menu-oliver" id="closeMenuoliver">✕</div>
+
+<div class="menu-profile-oliver">
+
+    <img
+        src="pilotos/bearman.png"
+        alt="oliver Norris">
+
+    <h2>Oliver Bearman</h2>
+
+    <span>#87</span>
+
+    <p>Haas Formula 1 Team</p>
+
+</div>
+
+<div class="menu-links-oliver">
+	<ul>
+
+		
+	<li>
+<a href="#intro-oliver">
+<span><i class="fa-solid fa-house"></i> Introdução</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+<li>
+<a href="#about">
+<span><i class="fa-solid fa-id-card"></i> Dados</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+<li>
+<a href="#carreira">
+<span><i class="fa-solid fa-flag-checkered"></i> Carreira</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+<li>
+<a href="#pilotos">
+<span><i class="fa-solid fa-scale-balanced"></i> Comparação</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+<li>
+<a href="#numeros">
+<span><i class="fa-solid fa-chart-column"></i> Estatísticas</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+<li>
+<a href="#resultados">
+<span><i class="fa-solid fa-calendar"></i> Temporadas</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+<li>
+    <a href="#oliver-season-2026">
+        <span>
+            <i class="fa-solid fa-ranking-star"></i>
+            Temporada Atual
+        </span>
+        <i class="fa-solid fa-chevron-right"></i>
+    </a>
+</li>
+
+		
+<li>
+<a href="#pilotagem">
+<span><i class="fa-solid fa-gauge-high"></i> Pilotagem</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+<li>
+<a href="#teammates">
+<span><i class="fa-solid fa-users"></i> Companheiros</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+<li>
+<a href="#radio">
+<span><i class="fa-solid fa-radio"></i> Rádio</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+<li>
+<a href="#galeria">
+<span><i class="fa-solid fa-image"></i> Galeria</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+	</ul>
+</div>		
+	</nav>
+
+  <!-- OVERLAY -->
+  <div class="overlay-oliver" id="overlayoliver"></div>
+
+<div class="painel-noticias-oliver" id="painelNoticiasoliver">
+
+
+<div class="topo-noticias-oliver">
+
+    <h2>
+        <i class="fa-solid fa-newspaper"></i>
+        Oliver News
+    </h2>
+
+    <div class="acoes-topo-oliver">
+
+        <button id="atualizarNoticiasoliver"
+        title="Atualizar notícias">
+
+            <i class="fa-solid fa-rotate"></i>
+
+        </button>
+
+        <button id="fecharNoticiasoliver">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+    </div>
+
+</div>
+
+	
+    <div class="lista-noticias-oliver" id="listaNoticiasoliver">
+
+        <!-- Loading -->
+        <div class="loading-noticias-oliver">
+
+            <div class="spinner-oliver"></div>
+
+            <p>Carregando notícias...</p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="overlay-noticias-oliver"
+id="overlayNoticiasoliver"></div>
+
+
+
+
+    <div class="oliver-banner-bg">
+
+  <!-- CHUVA -->
+  <div class="oliver-rain">
+    <span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span>
+  </div>
+
+  <!-- BOTÃO HOME -->
+  <a href="index.html" class="home-btn-oliver">
+    <img src="logos/f1-logo.png" alt="Home">
+    <span>Home</span>
+  </a>
+
+  <!-- INFO -->
+  <div class="oliver-banner-info">
+
+    <div class="oliver-nome">
+      <span>Oliver</span>
+      <strong>Bearman</strong>
+    </div>
+
+    <div class="oliver-pais">
+        🇬🇧 UNITED KINGDOM
+    </div>
+
+    <div class="oliver-equipe">
+       Haas F1 Team
+    </div>
+
+    <div class="oliver-frase">
+      "I want to be the best one day."
+    </div>
+
+  </div>
+
+  <!-- NÚMERO -->
+  <div class="oliver-numero-bg">
+    87
+  </div>
+
+  <!-- PARTÍCULAS -->
+  <div class="oliver-particles">
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+   <div class="oliver-socials">
+
+ <a href="https://x.com/OllieBearman" target="_blank" class="social-link-oliver">
+    <i class="fab fa-twitter"></i>
+  </a>
+
+  <a href="https://www.instagram.com/olliebearman/" target="_blank" class="social-link-oliver">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <a href="https://www.tiktok.com/@olliebearman" target="_blank" class="social-link-oliver">
+    <i class="fab fa-tiktok"></i>
+ </a>
+
+</div>
+
+</div> 
+  
+  
+  <section class="intro-oliver" id="intro-oliver">
+
+  <div class="intro-oliver-container">
+
+    <div class="intro-oliver-texto">
+
+      <h2>Oliver Bearman</h2>
+
+      <p>
+        Oliver Bearman é uma das maiores promessas da nova geração da Fórmula 1. O piloto britânico chamou atenção desde o kart e rapidamente conquistou destaque nas categorias de base graças à sua velocidade, maturidade e capacidade de adaptação.
+      </p>
+
+      <p>
+        Integrante da Ferrari Driver Academy durante sua formação, oliver acumulou vitórias importantes na Fórmula 3 e na Fórmula 2, demonstrando talento suficiente para receber oportunidades na Fórmula 1 ainda muito jovem. Suas atuações impressionantes diante de equipes e pilotos experientes confirmaram seu enorme potencial.
+      </p>
+
+      <p>
+        Como piloto da Haas F1 Team, Bearman inicia sua trajetória completa na Fórmula 1 buscando desenvolver sua experiência e consolidar seu nome entre os futuros protagonistas da categoria.
+      </p>
+
+      <div class="intro-oliver-dados">
+        <span>🇬🇧 British Driver</span>
+        <span>⭐ Ferrari Driver Academy</span>
+        <span>🚀 Uma das maiores promessas da F1</span>
+      </div>
+
+    </div>
+
+    <div class="intro-oliver-img">
+      <img src="oliver/intro.jpeg" alt="Oliver oliver">
+    </div>
+
+  </div>
+
+</section>
+  
+  
+ <section class="about-bearman" id="about">
+
+<div class="about-bearman-container">
+
+<div class="about-bearman-image">
+<img src="oliver/about.webp">
+</div>
+
+<div class="about-bearman-content">
+
+<span class="about-bearman-tag">
+MoneyGram Haas F1 Team
+</span>
+
+<h2>Oliver Bearman</h2>
+
+<p class="about-bearman-text">
+Oliver Bearman é um piloto britânico que rapidamente chamou atenção nas categorias de base pela velocidade e maturidade em corrida.
+</p>
+
+<p class="about-bearman-text">
+Após anos ligado ao programa da Ferrari, conquistou vaga definitiva na Fórmula 1 e passou a representar a nova geração da Haas.
+</p>
+
+<div class="about-bearman-stats">
+
+<div class="about-stat-bearman">
+<span>2005</span>
+<h3>Nascimento</h3>
+<p>8 de Maio</p>
+</div>
+
+<div class="about-stat-bearman">
+<span>CHELMSFORD</span>
+<h3>Origem</h3>
+<p>Reino Unido</p>
+</div>
+
+<div class="about-stat-bearman">
+<span>🇬🇧</span>
+<h3>Nacionalidade</h3>
+<p>Britânico</p>
+</div>
+
+<div class="about-stat-bearman">
+<span>#87</span>
+<h3>Número</h3>
+<p>Carreira</p>
+</div>
+
+<div class="about-stat-bearman">
+<span>Ferrari</span>
+<h3>Academia</h3>
+<p>Base</p>
+</div>
+
+<div class="about-stat-bearman">
+<span>2024</span>
+<h3>Estreia</h3>
+<p>Fórmula 1</p>
+</div>
+
+<div class="about-stat-bearman">
+<span>F2</span>
+<h3>Base</h3>
+<p>Categorias</p>
+</div>
+
+<div class="about-stat-bearman">
+<span>Haas</span>
+<h3>Equipe</h3>
+<p>2026</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+ 
+ 
+<section class="slider-oliver" id="carreira">
+<div class="bg-slider-oliver"></div>
+
+  <h2 class="titulo-oliver-slider">Carreira</h2>
+
+  <div class="slider-oliver-container">
+
+    <div class="slider-oliver-track">
+
+      <!-- KART -->
+      <div class="slide-oliver">
+        <img src="oliver/kart.jpeg">
+        <div class="slide-oliver-texto">
+          <h3>Kart</h3>
+          <p>Oliver Bearman iniciou sua trajetória no kart e rapidamente se destacou como uma das maiores promessas do automobilismo britânico.</p>
+        </div>
+      </div>
+
+      <!-- BASE -->
+      <div class="slide-oliver">
+        <img src="oliver/base.jpg">
+        <div class="slide-oliver-texto">
+          <h3>Categorias de Base</h3>
+          <p>Seu talento chamou atenção desde cedo, acumulando vitórias e títulos nas principais competições de formação da Europa.</p>
+        </div>
+      </div>
+
+      <!-- FDA -->
+      <div class="slide-oliver">
+        <img src="oliver/ferrariacademy.jpg">
+        <div class="slide-oliver-texto">
+          <h3>Ferrari Driver Academy</h3>
+          <p>Bearman passou a integrar a Ferrari Driver Academy, programa responsável por desenvolver alguns dos maiores talentos do automobilismo.</p>
+        </div>
+      </div>
+
+      <!-- F3 -->
+      <div class="slide-oliver">
+        <img src="oliver/f3.jpeg">
+        <div class="slide-oliver-texto">
+          <h3>Fórmula 3</h3>
+          <p>Na Fórmula 3 demonstrou velocidade consistente e maturidade acima da média para sua idade.</p>
+        </div>
+      </div>
+
+      <!-- F2 -->
+      <div class="slide-oliver">
+        <img src="oliver/f2.jpeg">
+        <div class="slide-oliver-texto">
+          <h3>Fórmula 2</h3>
+          <p>Na Fórmula 2 conquistou vitórias importantes e consolidou seu nome entre os principais candidatos à Fórmula 1.</p>
+        </div>
+      </div>
+
+      <!-- FERRARI -->
+      <div class="slide-oliver">
+        <img src="oliver/ferrari2024.jpeg">
+        <div class="slide-oliver-texto">
+          <h3>Estreia pela Ferrari</h3>
+          <p>No GP da Arábia Saudita de 2024, substituiu Carlos Sainz e impressionou o paddock ao marcar pontos em sua estreia pela Ferrari.</p>
+        </div>
+      </div>
+
+      <!-- HAAS RESERVA -->
+      <div class="slide-oliver">
+        <img src="oliver/haasreserve.jpeg">
+        <div class="slide-oliver-texto">
+          <h3>Experiência na Haas</h3>
+          <p>Além das atividades como piloto reserva, participou de corridas pela Haas demonstrando competitividade imediata.</p>
+        </div>
+      </div>
+
+      <!-- TITULAR -->
+      <div class="slide-oliver">
+        <img src="oliver/haas2025.jpg">
+        <div class="slide-oliver-texto">
+          <h3>Piloto Titular</h3>
+          <p>Em 2025, iniciou sua primeira temporada completa na Fórmula 1 como piloto titular da Haas F1 Team.</p>
+        </div>
+      </div>
+
+      <!-- FUTURO -->
+      <div class="slide-oliver">
+        <img src="oliver/future.jpg">
+        <div class="slide-oliver-texto">
+          <h3>Futuro Promissor</h3>
+          <p>Considerado um dos maiores talentos de sua geração, Bearman é apontado como um dos pilotos com maior potencial para o futuro da Fórmula 1.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="dots-oliver"></div>
+
+    <button class="btn-oliver prev">‹</button>
+    <button class="btn-oliver next">›</button>
+
+  </div>
+
+</section> 
+ 
+ <section class="numeros-oliver" id="numeros">
+
+<img src="oliver/numeros.jpeg" class="bg-numeros-oliver">
+
+<div class="overlay-numeros-oliver"></div>
+
+<div class="luz-vermelha-oliver"></div>
+
+<div class="faíscas-oliver">
+<div class="spark-oliver"></div>
+<div class="spark-oliver"></div>
+<div class="spark-oliver"></div>
+<div class="spark-oliver"></div>
+<div class="spark-oliver"></div>
+</div>
+
+<h2 class="titulo-numeros-oliver">
+Estatísticas de Oliver Bearman
+</h2>
+
+<div class="stats-grid-oliver">
+
+<div class="card-stat-oliver grande-oliver animar-oliver">
+<span class="contador-oliver" data-target="27">0</span>
+<div class="barra-velocidade-oliver"></div>
+<p>🏁 Corridas</p>
+</div>
+
+<div class="card-stat-oliver animar-oliver">
+<span class="contador-oliver" data-target="0">0</span>
+<div class="barra-velocidade-oliver"></div>
+<p>🥇 Vitórias</p>
+</div>
+
+<div class="card-stat-oliver animar-oliver">
+<span class="contador-oliver" data-target="0">0</span>
+<div class="barra-velocidade-oliver"></div>
+<p>⚡ Poles</p>
+</div>
+
+<div class="card-stat-oliver animar-oliver">
+<span class="contador-oliver" data-target="0">0</span>
+<div class="barra-velocidade-oliver"></div>
+<p>🥉 Pódios</p>
+</div>
+
+<div class="card-stat-oliver animar-oliver">
+<span class="contador-oliver" data-target="0">0</span>
+<div class="barra-velocidade-oliver"></div>
+<p>🟣 Voltas Mais Rápidas</p>
+</div>
+
+<div class="card-stat-oliver animar-oliver">
+<span class="contador-oliver" data-target="8">0</span>
+<div class="barra-velocidade-oliver"></div>
+<p>⏰ Q3</p>
+</div>
+
+<div class="card-stat-oliver animar-oliver">
+<span class="contador-oliver" data-target="48">0</span>
+<div class="barra-velocidade-oliver"></div>
+<p>📈 Pontos na Carreira</p>
+</div>
+
+</div>
+
+</section>
+ 
+ 
+ <section class="oliver-timeline" id="resultados">
+
+  <div class="oliver-top-timeline">
+
+    <h2 class="oliver-timeline-title">
+      Oliver Bearman Seasons
+    </h2>
+
+    <div class="oliver-anos">
+
+      <button class="oliver-ano-btn" data-year="2024">2024</button>
+      <button class="oliver-ano-btn" data-year="2025">2025</button>
+      <button class="oliver-ano-btn active" data-year="2026">2026</button>
+
+    </div>
+
+  </div>
+
+  <div class="oliver-corridas-container"></div>
+  <div class="oliver-season-summary"></div>
+
+</section> 
+  
+
+
+<section class="oliver-season-2026" id="oliver-season-2026">
+
+    <div class="oliver-season-2026-container">
+
+        <!-- IMAGEM DO oliver-->
+        <div class="oliver-season-2026-image">
+
+            <div class="oliver-season-2026-image-overlay"></div>
+
+            <img
+                src="oliver/head.webp"
+                alt="oliveroliver— Temporada 2026">
+
+            <div class="oliver-season-2026-number">
+               87
+            </div>
+
+        </div>
+
+
+        <!-- CONTEÚDO -->
+        <div class="oliver-season-2026-content">
+
+            <span class="oliver-season-2026-tag">
+                Haas Formula 1 Team
+            </span>
+<h1 
+class="oliver-season-2026-driver-name">
+	<strong>Oliver Bearman</strong>
+
+            <h2>
+                Temporada 2026
+            </h2>
+
+            <p class="oliver-season-2026-subtitle">
+                Estatísticas de Oliver Bearman temporada atual
+            </p>
+
+
+            <!-- POSIÇÃO NO CAMPEONATO -->
+            <div class="oliver-season-2026-championship">
+
+                <div class="oliver-season-2026-championship-info">
+
+                    <span>
+                        POSIÇÃO NO CAMPEONATO
+                    </span>
+
+                    <strong id="oliver-season-position">
+                        —
+                    </strong>
+
+                </div>
+
+                <div class="oliver-season-2026-points">
+
+                    <span id="oliver-season-points">
+                        —
+                    </span>
+
+                    <small>
+                        PONTOS
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <!-- GRID DE ESTATÍSTICAS -->
+            <div class="oliver-season-2026-stats">
+
+
+                <!-- CORRIDAS -->
+                <div class="oliver-season-2026-stat">
+
+                    <div class="oliver-season-2026-stat-icon">
+                        🏁
+                    </div>
+
+                    <div class="oliver-season-2026-stat-info">
+
+                        <span
+                            id="oliver-season-races">
+                            —
+                        </span>
+
+                        <p>
+                            Corridas
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- VITÓRIAS -->
+                <div class="oliver-season-2026-stat">
+
+                    <div class="oliver-season-2026-stat-icon">
+                        🥇
+                    </div>
+
+                    <div class="oliver-season-2026-stat-info">
+
+                        <span
+                            id="oliver-season-wins">
+                            —
+                        </span>
+
+                        <p>
+                            Vitórias
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PÓDIOS -->
+                <div class="oliver-season-2026-stat">
+
+                    <div class="oliver-season-2026-stat-icon">
+                        🏆
+                    </div>
+
+                    <div class="oliver-season-2026-stat-info">
+
+                        <span
+                            id="oliver-season-podiums">
+                            —
+                        </span>
+
+                        <p>
+                            Pódios
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- POLES -->
+                <div class="oliver-season-2026-stat">
+
+                    <div class="oliver-season-2026-stat-icon">
+                        ⚡
+                    </div>
+
+                    <div class="oliver-season-2026-stat-info">
+
+                        <span
+                            id="oliver-season-poles">
+                            —
+                        </span>
+
+                        <p>
+                            Poles
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TOP 5 -->
+                <div class="oliver-season-2026-stat">
+
+                    <div class="oliver-season-2026-stat-icon">
+                        🔥
+                    </div>
+
+                    <div class="oliver-season-2026-stat-info">
+
+                        <span
+                            id="oliver-season-top5">
+                            —
+                        </span>
+
+                        <p>
+                            Top 5
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- VOLTAS MAIS RÁPIDAS -->
+                <div class="oliver-season-2026-stat">
+
+                    <div class="oliver-season-2026-stat-icon">
+                        ⏱️
+                    </div>
+
+                    <div class="oliver-season-2026-stat-info">
+
+                        <span
+                            id="oliver-season-fastest-laps">
+                            —
+                        </span>
+
+                        <p>
+                            Voltas rápidas
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ABANDONOS -->
+                <div class="oliver-season-2026-stat">
+
+                    <div class="oliver-season-2026-stat-icon">
+                        ❌
+                    </div>
+
+                    <div class="oliver-season-2026-stat-info">
+
+                        <span
+                            id="oliver-season-dnfs">
+                            —
+                        </span>
+
+                        <p>
+                            Abandonos
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- MELHOR RESULTADO -->
+                <div class="oliver-season-2026-stat">
+
+                    <div class="oliver-season-2026-stat-icon">
+                        🚀
+                    </div>
+
+                    <div class="oliver-season-2026-stat-info">
+
+                        <span
+                            id="oliver-season-best-result">
+                            —
+                        </span>
+
+                        <p>
+                            Melhor resultado
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- RESUMO -->
+            <div class="oliver-season-2026-summary">
+
+                <div class="oliver-season-2026-summary-item">
+
+                    <span>
+                        MÉDIA DE CHEGADA
+                    </span>
+
+                    <strong id="oliver-season-average-finish">
+                        —
+                    </strong>
+
+                </div>
+
+
+                <div class="oliver-season-2026-summary-item">
+
+                    <span>
+                        MÉDIA NA CLASSIFICAÇÃO
+                    </span>
+
+                    <strong id="oliver-season-average-quali">
+                        —
+                    </strong>
+
+                </div>
+
+
+                <div class="oliver-season-2026-summary-item">
+
+                    <span>
+                        MELHOR GRID
+                    </span>
+
+                    <strong id="oliver-season-best-quali">
+                        —
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+	
+<section class="pilotagem-bearman" id="pilotagem">
+
+  <!-- =======================================================
+       CABEÇALHO
+  ======================================================== -->
+
+  <div class="pilotagem-header-bearman">
+
+    <span class="pilotagem-tag-bearman">
+      ANÁLISE TÉCNICA
+    </span>
+
+    <h2 class="titulo-pilotagem-bearman">
+      ESTILO DE <span>PILOTAGEM</span>
+    </h2>
+
+    <p class="pilotagem-intro-bearman">
+      Uma análise das principais características que definem
+      o estilo de Oliver Bearman dentro da Fórmula 1.
+    </p>
+
+  </div>
+
+
+  <!-- =======================================================
+       CARD PRINCIPAL
+  ======================================================== -->
+
+  <div class="pilotagem-card-principal-bearman">
+
+
+    <div class="pilotagem-perfil-bearman reveal-bearman">
+
+      <div class="perfil-imagem-container-bearman">
+
+        <img
+          src="oliver/head.webp"
+          alt="Oliver Bearman"
+          class="perfil-imagem-bearman"
+        >
+
+      </div>
+
+
+      <div class="perfil-info-bearman">
+
+        <span class="perfil-numero-bearman">
+          87
+        </span>
+
+        <h3 class="perfil-nome-bearman">
+
+          OLIVER
+
+          <span>
+            BEARMAN
+          </span>
+
+        </h3>
+
+
+        <p class="perfil-equipe-bearman">
+          HAAS F1 TEAM
+        </p>
+
+
+        <div class="perfil-frase-bearman">
+
+          <i class="fa-solid fa-quote-left"></i>
+
+          <p>
+            Destemido, agressivo e extremamente talentoso.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         DESCRIÇÃO
+    ====================================================== -->
+
+    <div class="pilotagem-analise-bearman reveal-bearman">
+
+      <div class="analise-topo-bearman">
+
+        <span class="analise-label-bearman">
+          PERFIL DE PILOTAGEM
+        </span>
+
+        <h3>
+          TALENTO E <span>AGRESSIVIDADE</span>
+        </h3>
+
+      </div>
+
+
+      <p>
+        Oliver Bearman se destaca pela velocidade natural e pela
+        confiança com que ataca as situações de corrida. Mesmo
+        sendo um dos pilotos mais jovens do grid, demonstra
+        personalidade e coragem em disputas diretas.
+      </p>
+
+
+      <p>
+        Seu estilo combina agressividade com uma capacidade natural
+        de adaptação. Bearman possui bom ritmo e não hesita em
+        aproveitar oportunidades para ganhar posições.
+      </p>
+
+
+      <!-- CARACTERÍSTICAS -->
+
+      <div class="caracteristicas-bearman">
+
+
+        <div class="caracteristica-bearman">
+
+          <div class="caracteristica-icone-bearman">
+            <i class="fa-solid fa-fire"></i>
+          </div>
+
+          <div>
+
+            <h4>
+              AGRESSIVO
+            </h4>
+
+            <p>
+              Ataca oportunidades e não evita disputas diretas.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="caracteristica-bearman">
+
+          <div class="caracteristica-icone-bearman">
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+
+          <div>
+
+            <h4>
+              VELOZ
+            </h4>
+
+            <p>
+              Possui velocidade natural e forte ritmo de corrida.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="caracteristica-bearman">
+
+          <div class="caracteristica-icone-bearman">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+
+          <div>
+
+            <h4>
+              DESTEMIDO
+            </h4>
+
+            <p>
+              Demonstra confiança mesmo em situações de pressão.
+            </p>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- =======================================================
+       HABILIDADES
+  ======================================================== -->
+
+  <div class="pilotagem-skills-section-bearman">
+
+
+    <div class="skills-header-bearman">
+
+      <span>
+        HABILIDADES
+      </span>
+
+      <h3>
+        ÍNDICE DE <span>PERFORMANCE</span>
+      </h3>
+
+    </div>
+
+
+    <div class="skills-grid-bearman">
+
+
+      <div class="skill-card-bearman reveal-bearman">
+
+        <div class="skill-topo-bearman">
+
+          <div class="skill-nome-bearman">
+
+            <i class="fa-solid fa-bolt"></i>
+
+            <span>
+              VELOCIDADE
+            </span>
+
+          </div>
+
+          <strong
+            class="skill-numero-bearman"
+            data-value="88"
+          >
+            0
+          </strong>
+
+        </div>
+
+        <div class="skill-barra-bearman">
+
+          <div
+            class="skill-progresso-bearman"
+            data-width="88%"
+          ></div>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="skill-card-bearman reveal-bearman">
+
+        <div class="skill-topo-bearman">
+
+          <div class="skill-nome-bearman">
+
+            <i class="fa-solid fa-chart-line"></i>
+
+            <span>
+              CONSISTÊNCIA
+            </span>
+
+          </div>
+
+          <strong
+            class="skill-numero-bearman"
+            data-value="84"
+          >
+            0
+          </strong>
+
+        </div>
+
+        <div class="skill-barra-bearman">
+
+          <div
+            class="skill-progresso-bearman"
+            data-width="84%"
+          ></div>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="skill-card-bearman reveal-bearman">
+
+        <div class="skill-topo-bearman">
+
+          <div class="skill-nome-bearman">
+
+            <i class="fa-solid fa-brain"></i>
+
+            <span>
+              INTELIGÊNCIA DE CORRIDA
+            </span>
+
+          </div>
+
+          <strong
+            class="skill-numero-bearman"
+            data-value="87"
+          >
+            0
+          </strong>
+
+        </div>
+
+        <div class="skill-barra-bearman">
+
+          <div
+            class="skill-progresso-bearman"
+            data-width="87%"
+          ></div>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="skill-card-bearman reveal-bearman">
+
+        <div class="skill-topo-bearman">
+
+          <div class="skill-nome-bearman">
+
+            <i class="fa-solid fa-circle-dot"></i>
+
+            <span>
+              GESTÃO DE PNEUS
+            </span>
+
+          </div>
+
+          <strong
+            class="skill-numero-bearman"
+            data-value="85"
+          >
+            0
+          </strong>
+
+        </div>
+
+        <div class="skill-barra-bearman">
+
+          <div
+            class="skill-progresso-bearman"
+            data-width="85%"
+          ></div>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="skill-card-bearman reveal-bearman">
+
+        <div class="skill-topo-bearman">
+
+          <div class="skill-nome-bearman">
+
+            <i class="fa-solid fa-forward"></i>
+
+            <span>
+              ULTRAPASSAGEM
+            </span>
+
+          </div>
+
+          <strong
+            class="skill-numero-bearman"
+            data-value="90"
+          >
+            0
+          </strong>
+
+        </div>
+
+        <div class="skill-barra-bearman">
+
+          <div
+            class="skill-progresso-bearman"
+            data-width="90%"
+          ></div>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="skill-card-bearman reveal-bearman">
+
+        <div class="skill-topo-bearman">
+
+          <div class="skill-nome-bearman">
+
+            <i class="fa-solid fa-stopwatch"></i>
+
+            <span>
+              CLASSIFICAÇÃO
+            </span>
+
+          </div>
+
+          <strong
+            class="skill-numero-bearman"
+            data-value="87"
+          >
+            0
+          </strong>
+
+        </div>
+
+        <div class="skill-barra-bearman">
+
+          <div
+            class="skill-progresso-bearman"
+            data-width="87%"
+          ></div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+
+  <!-- =======================================================
+       PERFIL VISUAL
+  ======================================================== -->
+
+  <div class="pilotagem-grafico-section-bearman reveal-bearman">
+
+    <div class="grafico-header-bearman">
+
+      <span>
+        PERFIL COMPLETO
+      </span>
+
+      <h3>
+        RADAR DE <span>PILOTAGEM</span>
+      </h3>
+
+    </div>
+
+
+    <div class="grafico-layout-bearman">
+
+
+      <!-- RADAR -->
+
+      <div class="radar-container-bearman">
+
+        <svg
+          class="radar-bearman"
+          viewBox="0 0 500 500"
+        >
+
+          <circle cx="250" cy="250" r="200" class="radar-linha-bearman" />
+          <circle cx="250" cy="250" r="150" class="radar-linha-bearman" />
+          <circle cx="250" cy="250" r="100" class="radar-linha-bearman" />
+          <circle cx="250" cy="250" r="50" class="radar-linha-bearman" />
+
+
+          <line x1="250" y1="250" x2="250" y2="50" class="radar-eixo-bearman" />
+          <line x1="250" y1="250" x2="423" y2="150" class="radar-eixo-bearman" />
+          <line x1="250" y1="250" x2="423" y2="350" class="radar-eixo-bearman" />
+          <line x1="250" y1="250" x2="250" y2="450" class="radar-eixo-bearman" />
+          <line x1="250" y1="250" x2="77" y2="350" class="radar-eixo-bearman" />
+          <line x1="250" y1="250" x2="77" y2="150" class="radar-eixo-bearman" />
+
+
+          <polygon
+            class="radar-area-bearman"
+            points="250,250 250,250 250,250 250,250 250,250 250,250"
+          />
+
+
+          <circle cx="250" cy="250" r="6" class="radar-ponto-bearman" />
+          <circle cx="250" cy="250" r="6" class="radar-ponto-bearman" />
+          <circle cx="250" cy="250" r="6" class="radar-ponto-bearman" />
+          <circle cx="250" cy="250" r="6" class="radar-ponto-bearman" />
+          <circle cx="250" cy="250" r="6" class="radar-ponto-bearman" />
+          <circle cx="250" cy="250" r="6" class="radar-ponto-bearman" />
+
+        </svg>
+
+
+        <span class="radar-label-bearman radar-top-bearman">
+          VELOCIDADE
+        </span>
+
+        <span class="radar-label-bearman radar-top-right-bearman">
+          CONSISTÊNCIA
+        </span>
+
+        <span class="radar-label-bearman radar-bottom-right-bearman">
+          INTELIGÊNCIA
+        </span>
+
+        <span class="radar-label-bearman radar-bottom-bearman">
+          PNEUS
+        </span>
+
+        <span class="radar-label-bearman radar-bottom-left-bearman">
+          ULTRAPASSAGEM
+        </span>
+
+        <span class="radar-label-bearman radar-top-left-bearman">
+          CLASSIFICAÇÃO
+        </span>
+
+      </div>
+
+
+
+      <!-- RESUMO -->
+
+      <div class="grafico-resumo-bearman">
+
+
+        <div class="resumo-card-bearman forte">
+
+          <div class="resumo-icone-bearman">
+            <i class="fa-solid fa-star"></i>
+          </div>
+
+          <div>
+
+            <span>
+              PRINCIPAL QUALIDADE
+            </span>
+
+            <h4>
+              ULTRAPASSAGEM
+            </h4>
+
+            <p>
+              Demonstra confiança e agressividade para atacar
+              e aproveitar oportunidades em disputas diretas.
+            </p>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="resumo-card-bearman evoluir">
+
+          <div class="resumo-icone-bearman">
+            <i class="fa-solid fa-arrow-trend-up"></i>
+          </div>
+
+          <div>
+
+            <span>
+              ÁREA DE EVOLUÇÃO
+            </span>
+
+            <h4>
+              CONSISTÊNCIA
+            </h4>
+
+            <p>
+              A experiência pode ajudá-lo a manter um nível
+              de performance ainda mais constante.
+            </p>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="resumo-card-bearman destaque">
+
+          <div class="resumo-icone-bearman">
+            <i class="fa-solid fa-fire"></i>
+          </div>
+
+          <div>
+
+            <span>
+              ESTILO PRINCIPAL
+            </span>
+
+            <h4>
+              AGRESSIVO
+            </h4>
+
+            <p>
+              Gosta de atacar oportunidades e demonstra
+              coragem em disputas lado a lado.
+            </p>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- =======================================================
+       CONCLUSÃO
+  ======================================================== -->
+
+  <div class="pilotagem-conclusao-bearman reveal-bearman">
+
+    <span>
+      RESUMO DA ANÁLISE
+    </span>
+
+    <h3>
+      UM PILOTO <strong>AGRESSIVO</strong>, <strong>RÁPIDO</strong>
+      E <strong>DESTEMIDO</strong>
+    </h3>
+
+    <p>
+      O estilo de Oliver Bearman é baseado na combinação entre
+      velocidade natural, coragem e agressividade. Com mais
+      experiência na Fórmula 1, seu potencial pode transformá-lo
+      em um piloto ainda mais completo.
+    </p>
+
+  </div>
+
+
+</section>
+
+
+<section class="bearman-battle" id="teammates">
+
+<div class="bearman-battle-card">
+
+<!-- HEADER -->
+<div class="bearman-header">
+
+<div class="bearman-title-wrap">
+
+<h2>TEAMMATE BATTLE</h2>
+
+<p>Oliver Bearman</p>
+
+</div>
+
+<img
+class="bearman-team-logo"
+src="icons/HaasF1.png">
+
+</div>
+
+
+
+<!-- CONTEUDO -->
+<div class="bearman-layout">
+
+<!-- NOME ESQUERDA -->
+<div class="bearman-left-name">
+
+<span>
+OLIVER
+</span>
+
+<h3>
+BEARMAN
+</h3>
+
+</div>
+
+
+
+<!-- NOME DIREITA -->
+<div class="bearman-right-name">
+
+<span id="mateFirst">
+ESTEBAN
+</span>
+
+<h3 id="mateLast">
+OCON
+</h3>
+
+</div>
+
+
+
+<!-- IMAGENS -->
+<div class="bearman-images">
+
+<div class="bearman-side bearman-left">
+
+<img
+src="oliver/head.webp"
+alt="bearman bearman">
+
+</div>
+
+
+
+<div class="bearman-side bearman-right">
+
+<img
+id="mateImg"
+alt="Teammate">
+
+</div>
+
+</div>
+
+
+
+<!-- CENTRO -->
+<div class="bearman-middle">
+
+<div class="bearman-vs">
+
+<div class="bearman-vs-box">
+
+VS
+
+</div>
+
+</div>
+
+
+
+<div class="bearman-years"
+id="bearmanYears">
+
+2025
+
+</div>
+
+
+
+<div class="bearman-stats">
+
+<!-- QUALI -->
+
+<div class="bearman-row">
+
+<div class="bearman-value">
+
+<span id="bearmanQualiLeft">
+0
+</span>
+
+</div>
+
+<div class="bearman-label">
+
+QUALI
+
+</div>
+
+<div class="bearman-value">
+
+<span id="bearmanQualiRight">
+0
+</span>
+
+</div>
+
+</div>
+
+<div class="bearman-bars">
+
+<div
+class="bearman-bar-left"
+id="bearmanBarQualiLeft">
+
+</div>
+
+<div
+class="bearman-bar-right"
+id="bearmanBarQualiRight">
+
+</div>
+
+</div>
+
+
+
+<!-- CORRIDAS -->
+
+<div class="bearman-row">
+
+<div class="bearman-value">
+
+<span id="bearmanRaceLeft">
+0
+</span>
+
+</div>
+
+<div class="bearman-label">
+
+RACES
+
+</div>
+
+<div class="bearman-value">
+
+<span id="bearmanRaceRight">
+0
+</span>
+
+</div>
+
+</div>
+
+<div class="bearman-bars">
+
+<div
+class="bearman-bar-left"
+id="bearmanBarRaceLeft">
+
+</div>
+
+<div
+class="bearman-bar-right"
+id="bearmanBarRaceRight">
+
+</div>
+
+</div>
+
+
+
+<!-- PODIOS -->
+
+<div class="bearman-row">
+
+<div class="bearman-value">
+
+<span id="bearmanPodLeft">
+0
+</span>
+
+</div>
+
+<div class="bearman-label">
+
+PODIUMS
+
+</div>
+
+<div class="bearman-value">
+
+<span id="bearmanPodRight">
+0
+</span>
+
+</div>
+
+</div>
+
+<div class="bearman-bars">
+
+<div
+class="bearman-bar-left"
+id="bearmanBarPodLeft">
+
+</div>
+
+<div
+class="bearman-bar-right"
+id="bearmanBarPodRight">
+
+</div>
+
+</div>
+
+
+
+<!-- VITORIAS -->
+
+<div class="bearman-row">
+
+<div class="bearman-value">
+
+<span id="bearmanWinLeft">
+0
+</span>
+
+</div>
+
+<div class="bearman-label">
+
+WINS
+
+</div>
+
+<div class="bearman-value">
+
+<span id="bearmanWinRight">
+0
+</span>
+
+</div>
+
+</div>
+
+<div class="bearman-bars">
+
+<div
+class="bearman-bar-left"
+id="bearmanBarWinLeft">
+
+</div>
+
+<div
+class="bearman-bar-right"
+id="bearmanBarWinRight">
+
+</div>
+
+</div>
+
+
+<div class="bearman-row">
+
+<div class="bearman-value">
+
+<span id="bearmanPoleLeft">
+0
+</span>
+
+</div>
+
+<div class="bearman-label">
+
+POLES
+
+</div>
+
+<div class="bearman-value">
+
+<span id="bearmanPoleRight">
+0
+</span>
+
+</div>
+
+</div>
+
+
+<div class="bearman-bars">
+
+<div
+class="bearman-bar-left"
+id="bearmanBarPoleLeft">
+
+</div>
+
+<div
+class="bearman-bar-right"
+id="bearmanBarPoleRight">
+
+</div>
+
+</div>
+
+
+<div class="bearman-row">
+
+<div class="bearman-value">
+
+<span id="bearmanPointsLeft">
+0
+</span>
+
+</div>
+
+<div class="bearman-label">
+
+POINTS
+
+</div>
+
+<div class="bearman-value">
+
+<span id="bearmanPointsRight">
+0
+</span>
+
+</div>
+
+</div>
+
+
+<div class="bearman-bars">
+
+<div
+class="bearman-bar-left"
+id="bearmanBarPointsLeft">
+
+</div>
+
+<div
+class="bearman-bar-right"
+id="bearmanBarPointsRight">
+
+</div>
+
+</div>
+
+
+
+	
+</div>
+
+</div>
+
+</div>
+
+
+
+	
+
+
+<!-- CONTROLES -->
+<div class="bearman-controls">
+
+<button class="bearman-arrow left">
+‹
+</button>
+
+
+<div class="bearman-tabs">
+
+<button
+class="bearman-tab active"
+data-id="0">
+
+BEARMAN
+
+</button>
+
+	
+	
+	
+	
+</div>
+
+
+<button class="bearman-arrow right">
+›
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+	
+  <section class="radio-f1-oliver" id="radio">
+
+  <!-- STATUS -->
+  <div class="radio-status-oliver">TEAM RADIO</div>
+
+  <!-- INFO CORRIDA -->
+  <div class="race-info-oliver">
+    <span>P1</span>
+    <span>LAP 52</span>
+    <span>+0.000</span>
+  </div>
+
+  <!-- CARD -->
+  <div class="card-oliver" id="radioCard">
+
+    <!-- ESQUERDA -->
+    <div class="left-oliver">
+      <span class="number-oliver">87</span>
+    </div>
+
+    <!-- DIREITA -->
+    <div class="right-oliver">
+      <h1>Bearman</h1>
+      <h2>RADIO</h2>
+      <img src="icons/HaasF1.png" class="logo-oliver">
+    </div>
+
+    <!-- WAVE -->
+    <div class="wave-oliver">
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <!-- CONTEÚDO -->
+    <div class="content-oliver">
+      <div class="text-oliver">
+        <p class="eng-oliver" id="eng-text"></p>
+        <p class="pil-oliver" id="pil-text"></p>
+      </div>
+    </div>
+
+  </div>
+
+  <audio id="radio-audio" src="f1.mp3"></audio>
+
+</section>
+
+<section class="galeria-oliver" id="galeria">
+
+  <h2 class="titulo-galeria-oliver">Galeria</h2>
+
+  <div class="grid-galeria-oliver">
+
+    <div class="item-galeria-oliver">
+      <img src="oliver/capacete.jpeg">
+      <div class="overlay-oli">
+           <h3>Capacete</h3>
+           <p>Capacete de 2026</p>
+           </div>
+    </div>
+
+    <div class="item-galeria-oliver">
+      <img src="oliver/race.webp">
+      <div class="overlay-oli">
+           <h3>Corrida</h3>
+           <p>oliver em Corrida</p>
+           </div>
+    </div>
+
+    <div class="item-galeria-oliver">
+      <img src="oliver/cele.jpg">
+      <div class="overlay-oli">
+           <h3>Comemoração</h3>
+           <p>oliver Comemorando</p>
+           </div>
+    </div>
+
+
+    <div class="item-galeria-oliver">
+      <img src="oliver/team.jpeg">
+      <div class="overlay-oli">
+           <h3>Equipe</h3>
+           <p>oliver com Equipe</p>
+           </div>
+    </div>
+
+    <div class="item-galeria-oliver">
+      <img src="oliver/logo.png">
+      <div class="overlay-oli">
+          <h3>Marca</h3>
+           <p>Marca de Designer</p>
+           </div>
+    </div>
+
+  </div>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox-oliver">
+    <span class="fechar-oliver">×</span>
+    <img class="img-lightbox-oliver">
+  </div>
+
+</section>
+
+<footer class="footer-f1-oliver">
+
+  <div class="footer-brand-oliver">
+    <p>Oliver Bearman</p>
+    <span>Formula 1 Driver for Haas Formula 1 Team</span>
+  </div>
+
+  <div class="footer-links-oliver">
+    <a href="index.html">Home</a>
+    <a href="f1.html">Regras</a>
+				<a href="info.html">Informações</a>
+
+    <a href="haas.html">Haas</a>
+    <a href="ocon.html">Ocon</a>
+    <a href="about.html">About</a>
+  </div>
+
+  <div class="footer-social-oliver">
+    <a href="https://www.instagram.com/duduxl37?igsh=dnNwM29qYXprbnI4" target="_blank">Instagram</a>
+    <a href="https://x.com/Duducrvg1998" target="_blank">X</a>
+  
+  </div>
+
+  <div class="footer-copy-oliver">
+    © 2026 Fan Project • Inspired by Formula 1
+  </div>
+
+</footer>
+
+
+  <!-- BOTÃO VOLTAR AO TOPO -->
+ 	<button id="btnTopo" class="btn-topo">
+    <i class="fa-solid fa-arrow-up"></i>
+	</button>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+      <script src="oliver.js"></script>
+</body>
+</html>

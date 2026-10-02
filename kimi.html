@@ -1,0 +1,2260 @@
+ <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+ <body bgcolor="#00d2be">
+  <title>Kimi Antonelli</title>
+
+  <!-- CSS do piloto -->
+  <link rel="stylesheet" href="stylemain.css">
+</head>
+<body>
+ 
+ 
+
+
+<header class="topbar-kimi">
+
+    <!-- MENU -->
+    <button class="menu-toggle-kimi" id="menuTogglekimi">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <!-- NOME -->
+<div class="topbar-title-kimi">
+
+    <img src="icons/Mercedesa.png" alt="McLaren">
+
+    <span>Kimi Antonelli </span>
+
+</div>
+    <!-- NOTÍCIAS -->
+    <button class="news-toggle-kimi" id="abrirNoticiaskimi">
+        <i class="fa-solid fa-newspaper"></i>
+    </button>
+
+</header>
+	
+  <nav class="side-menu-kimi" id="sideMenukimi">
+    
+    <div class="close-menu-kimi" id="closeMenukimi">✕</div>
+
+<div class="menu-profile-kimi">
+
+    <img
+        src="pilotos/kimi.png"
+        alt="kimi Norris">
+
+    <h2>Kimi Antonelli</h2>
+
+    <span>#12</span>
+
+    <p>Mercedes Formula 1 Team</p>
+
+</div>
+
+<div class="menu-links-kimi">
+	<ul>
+
+		
+	<li>
+<a href="#intro-kimi">
+<span><i class="fa-solid fa-house"></i> Introdução</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+<li>
+<a href="#about">
+<span><i class="fa-solid fa-id-card"></i> Dados</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+<li>
+<a href="#carreira">
+<span><i class="fa-solid fa-flag-checkered"></i> Carreira</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+<li>
+<a href="#pilotos">
+<span><i class="fa-solid fa-scale-balanced"></i> Comparação</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+<li>
+<a href="#numeros">
+<span><i class="fa-solid fa-chart-column"></i> Estatísticas</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+<li>
+<a href="#resultados">
+<span><i class="fa-solid fa-calendar"></i> Temporadas</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+<li>
+<a href="#kimi-title-container">
+<span><i class="fa-solid fa-trophy"></i> Titulos</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+<li>
+    <a href="#kimi-season-2026">
+        <span>
+            <i class="fa-solid fa-ranking-star"></i>
+            Temporada Atual
+        </span>
+        <i class="fa-solid fa-chevron-right"></i>
+    </a>
+</li>
+		
+<li>
+<a href="#pilotagem">
+<span><i class="fa-solid fa-gauge-high"></i> Pilotagem</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+<li>
+<a href="#teammates">
+<span><i class="fa-solid fa-users"></i> Companheiros</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+<li>
+<a href="#radio">
+<span><i class="fa-solid fa-radio"></i> Rádio</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+<li>
+<a href="#galeria">
+<span><i class="fa-solid fa-image"></i> Galeria</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+	</ul>
+</div>		
+	</nav>
+
+  <!-- OVERLAY -->
+  <div class="overlay-kimmi" id="overlaykimi"></div>
+
+<div class="painel-noticias-kimi" id="painelNoticiaskimi">
+
+
+<div class="topo-noticias-kimi">
+
+    <h2>
+        <i class="fa-solid fa-newspaper"></i>
+        Kimi News
+    </h2>
+
+    <div class="acoes-topo-kimi">
+
+        <button id="atualizarNoticiaskimi"
+        title="Atualizar notícias">
+
+            <i class="fa-solid fa-rotate"></i>
+
+        </button>
+
+        <button id="fecharNoticiaskimi">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+    </div>
+
+</div>
+
+	
+    <div class="lista-noticias-kimi" id="listaNoticiaskimi">
+
+        <!-- Loading -->
+        <div class="loading-noticias-kimi">
+
+            <div class="spinner-kimi"></div>
+
+            <p>Carregando notícias...</p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="overlay-noticias-kimi"
+id="overlayNoticiaskimi"></div>
+
+
+
+	
+ <div class="kimi-banner-bg">
+
+  <div class="kimi-rain">
+
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+
+  </div>
+
+  <a href="index.html" class="home-btn-kimi">
+    <img src="logos/f1-logo.png" alt="Home">
+    <span>Home</span>
+  </a>
+
+  <!-- INFORMAÇÕES -->
+  <div class="kimi-banner-info">
+
+    <div class="kimi-nome">
+      <span>Kimi</span>
+      <strong>Antonelli</strong>
+    </div>
+
+    <div class="kimi-pais">
+      🇮🇹 ITALY
+    </div>
+
+    <div class="kimi-equipe">
+      Mercedes-AMG F1
+    </div>
+
+    <div class="kimi-frase">
+      "The future starts now."
+    </div>
+
+  </div>
+
+  <!-- NÚMERO GIGANTE -->
+  <div class="kimi-numero-bg">
+    12
+  </div>
+
+  <!-- PARTÍCULAS -->
+  <div class="kimi-particles">
+
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+
+  </div>
+
+  <!-- REDES -->
+  <div class="kimi-socials">
+
+    <a href="https://www.instagram.com/kimi.antonelli/"
+       target="_blank"
+       class="social-link-kimi">
+      <i class="fab fa-instagram"></i>
+    </a>
+
+    <a href="https://twitter.com/AntonelliKimi"
+       target="_blank"
+       class="social-link-kimi">
+      <i class="fab fa-twitter"></i>
+    </a>
+
+    <a href="https://www.youtube.com/@MercedesAMGF1"
+       target="_blank"
+       class="social-link-kimi">
+      <i class="fab fa-youtube"></i>
+    </a>
+
+    <a href="https://www.tiktok.com/@mercedesamgf1"
+       target="_blank"
+       class="social-link-kimi">
+      <i class="fab fa-tiktok"></i>
+    </a>
+
+  </div>
+
+</div>
+ 
+ <section class="intro-kimi" id="intro-kimi">
+
+  <div class="intro-container-kimi">
+
+    <div class="intro-texto-kimi">
+
+      <h2>Kimi Antonelli</h2>
+
+      <p>
+        Andrea Kimi Antonelli é um piloto italiano da Mercedes-AMG Petronas Formula 1 Team e uma das maiores promessas da nova geração do automobilismo mundial. Conhecido pela velocidade natural, agressividade controlada e enorme talento, Kimi chamou atenção desde muito jovem nas categorias de base.
+      </p>
+
+      <p>
+        Dominando campeonatos no kart e avançando rapidamente pelas fórmulas de acesso, Antonelli construiu uma reputação impressionante graças à sua adaptação rápida, ritmo forte e maturidade nas pistas. Seu desenvolvimento acelerado fez dele uma das maiores apostas da Mercedes para o futuro.
+      </p>
+
+      <p>
+        Agora na Fórmula 1, Kimi busca evoluir corrida após corrida, adquirindo experiência enquanto demonstra potencial para disputar vitórias e títulos nos próximos anos. Sua combinação de talento bruto e mentalidade competitiva o coloca entre os pilotos mais promissores do grid.
+      </p>
+
+      <div class="intro-dados-kimi">
+        <span>🏁 Piloto Mercedes</span>
+        <span>🇮🇹 Jovem Talento Italiano</span>
+        <span>⭐ Futuro da Fórmula 1</span>
+      </div>
+
+    </div>
+
+    <div class="intro-img-kimi">
+      <img src="kimi/intro.jpg" alt="Kimi Antonelli">
+    </div>
+
+  </div>
+
+</section>
+ 
+<section class="about-antonelli" id="about">
+
+<div class="about-antonelli-container">
+
+<div class="about-antonelli-image">
+<img src="kimi/about.jpg" alt="Kimi Antonelli">
+</div>
+
+<div class="about-antonelli-content">
+
+<span class="about-antonelli-tag">
+Mercedes Formula One Team
+</span>
+
+<h2>Kimi Antonelli</h2>
+
+<p class="about-antonelli-text">
+Andrea Kimi Antonelli é um piloto italiano considerado um dos maiores talentos da nova geração do automobilismo.
+</p>
+
+<p class="about-antonelli-text">
+Depois de conquistar títulos nas categorias de base e acelerar sua subida rumo ao topo, entrou na Fórmula 1 como um dos projetos mais importantes da Mercedes.
+</p>
+
+<div class="about-antonelli-stats">
+
+<div class="about-stat-antonelli">
+<span>2006</span>
+<h3>Nascimento</h3>
+<p>25 de Agosto</p>
+</div>
+
+<div class="about-stat-antonelli">
+<span>BOLOGNA</span>
+<h3>Origem</h3>
+<p>Itália</p>
+</div>
+
+<div class="about-stat-antonelli">
+<span>19</span>
+<h3>Idade</h3>
+<p>Anos</p>
+</div>
+
+<div class="about-stat-antonelli">
+<span>🇮🇹</span>
+<h3>Nacionalidade</h3>
+<p>Italiano</p>
+</div>
+
+<div class="about-stat-antonelli">
+<span>#12</span>
+<h3>Número</h3>
+<p>Carreira</p>
+</div>
+
+<div class="about-stat-antonelli">
+<span>2025</span>
+<h3>Estreia</h3>
+<p>Fórmula 1</p>
+</div>
+
+<div class="about-stat-antonelli">
+<span>Mercedes</span>
+<h3>Equipe</h3>
+<p>Atual</p>
+</div>
+
+<div class="about-stat-antonelli">
+<span>F2</span>
+<h3>Última Categoria</h3>
+<p>Antes da F1</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+ 
+ <section class="slider-kimi" id="carreira">
+
+  <div class="bg-slider-kimi"></div>
+
+  <h2 class="titulo-kimi-slider">Carreira</h2>
+
+  <div class="slider-kimi-container">
+
+    <div class="slider-kimi-track">
+
+      <!-- KART -->
+      <div class="slide-kimi">
+        <img src="kimi/kart.jpeg">
+
+        <div class="slide-kimi-texto">
+          <h3>Kart</h3>
+
+          <p>
+            Kimi Antonelli iniciou sua trajetória no kart ainda muito jovem e rapidamente se destacou nas principais competições italianas e europeias. Sua velocidade natural e agressividade controlada chamaram atenção desde cedo.
+          </p>
+        </div>
+      </div>
+
+      <!-- F4 -->
+      <div class="slide-kimi">
+        <img src="kimi/f4.jpeg">
+
+        <div class="slide-kimi-texto">
+          <h3>Fórmula 4</h3>
+
+          <p>
+            Antonelli brilhou na Fórmula 4 ao conquistar títulos importantes e dominar corridas com enorme consistência. Seu desempenho consolidou seu nome como uma das maiores promessas do automobilismo europeu.
+          </p>
+        </div>
+      </div>
+
+      <!-- FRECA -->
+      <div class="slide-kimi">
+        <img src="kimi/freca.jpg">
+
+        <div class="slide-kimi-texto">
+          <h3>FRECA</h3>
+
+          <p>
+            Na Formula Regional European Championship, Kimi impressionou pelo ritmo forte e maturidade nas corridas. Suas atuações consistentes aceleraram ainda mais seu caminho rumo às categorias superiores.
+          </p>
+        </div>
+      </div>
+
+      <!-- F2 -->
+      <div class="slide-kimi">
+        <img src="kimi/f2.jpeg">
+
+        <div class="slide-kimi-texto">
+          <h3>Fórmula 2</h3>
+
+          <p>
+            Mesmo muito jovem, Antonelli chegou à Fórmula 2 cercado de expectativa. Sua adaptação rápida e velocidade em classificação mostraram que ele possuía potencial para alcançar a Fórmula 1 rapidamente.
+          </p>
+        </div>
+      </div>
+
+
+      <!-- ESTREIA F1 -->
+      <div class="slide-kimi">
+        <img src="kimi/f1.jpeg">
+
+        <div class="slide-kimi-texto">
+          <h3>Fórmula 1</h3>
+
+          <p>
+            Antonelli chegou à Fórmula 1 como uma das maiores promessas da nova geração. Sua estreia marcou o início de uma nova etapa na carreira, carregando grandes expectativas para o futuro da Mercedes.
+          </p>
+        </div>
+      </div>
+
+<!-- PRIMEIRO PÓDIO -->
+<div class="slide-kimi">
+  <img src="kimi/podio.jpeg">
+
+  <div class="slide-kimi-texto">
+    <h3>Primeiro Pódio - Canadá 2025</h3>
+
+    <p>
+      No GP do Canadá de 2025, Kimi Antonelli conquistou o primeiro pódio de sua carreira na Fórmula 1 ainda em sua temporada de estreia. Com uma corrida madura, ritmo consistente e ótima defesa nas voltas finais, o jovem italiano confirmou todo o potencial esperado pela Mercedes.
+    </p>
+  </div>
+</div>
+
+    </div>
+
+    <div class="dots-kimi"></div>
+
+    <!-- BOTÕES -->
+    <button class="btn-kimi prev">‹</button>
+    <button class="btn-kimi next">›</button>
+
+  </div>
+
+</section>
+ 
+
+
+<section class="numeros-kimi" id="numeros">
+
+<img src="kimi/numeros.jpeg" class="bg-numeros-kimi">
+
+<div class="overlay-numeros-kimi"></div>
+
+
+
+
+<div class="luz-laranja-kimi"></div>
+
+<div class="faíscas-kimi">
+<div class="spark-kimi"></div>
+<div class="spark-kimi"></div>
+<div class="spark-kimi"></div>
+<div class="spark-kimi"></div>
+<div class="spark-kimi"></div>
+</div>
+
+
+
+<h2 class="titulo-numeros-kimi">Estatisticas do Kimi Antonelli</h2>
+
+<div class="stats-grid-kimi">
+
+<div class="card-stat-kimi grande-kimi animar-kimi">
+<span id="corridas-kimi" class="contador-kimi" data-target="0">
+    0</span>
+	<div class="barra-velocidade-kimi"></div>
+<p>🏁 Corridas</p>
+</div>
+
+<div class="card-stat-kimi animar-kimi">
+<span id="poles-kimi" class="contador-kimi" data-target="0">0</span>
+<div class="barra-velocidade-kimi"></div>
+<p>⚡ Poles</p>
+</div>
+<div class="card-stat-kimi animar-kimi">
+<span id="vitorias-kimi" class="contador-kimi" data-target="0">0</span>
+<div class="barra-velocidade-kimi"></div>
+<p>🥇 Vitorias</p>
+</div>
+
+<div class="card-stat-kimi animar-kimi">
+	<span id="podios-kimi" class="contador-kimi" data-target="0">0</span>
+<div class="barra-velocidade-kimi"></div>
+<p>🥉 Pódios</p>
+</div>
+
+<div class="card-stat-kimi grande-kimi animar-kimi">
+    <span id="pontos-kimi" class="contador-kimi" data-target="0">0</span>
+    <div class="barra-velocidade-kimi"></div>
+    <p>📈 Pontos no Total</p>
+</div>
+	
+</div>
+</section>
+
+
+	
+ <section class="kimi-timeline" id="resultados">
+
+  <div class="kimi-top-timeline">
+
+    <h2 class="kimi-timeline-title">
+      Kimi Antonelli Seasons
+    </h2>
+
+    <div class="kimi-anos">
+
+      <button class="kimi-ano-btn" data-year="2025">2025</button>
+			<button class="kimi-ano-btn active" data-year="2026">2026</button>
+
+    </div>
+
+  </div>
+
+  <div class="kimi-corridas-container"></div>
+
+  <div class="kimi-season-summary"></div>
+
+</section>
+
+
+<section class="kimi-season-2026" id="kimi-season-2026">
+
+    <div class="kimi-season-2026-container">
+
+        <!-- IMAGEM DO kimi -->
+        <div class="kimi-season-2026-image">
+
+            <div class="kimi-season-2026-image-overlay"></div>
+
+            <img
+                src="kimi/head.png"
+                alt="kimi antonelli — Temporada 2026">
+
+            <div class="kimi-season-2026-number">
+                12
+            </div>
+
+        </div>
+
+
+        <!-- CONTEÚDO -->
+        <div class="kimi-season-2026-content">
+
+            <span class="kimi-season-2026-tag">
+                Mercedes Formula 1 Team
+            </span>
+<h1 
+class="kimi-season-2026-driver-name">
+	<strong>Kimi Antonelli</strong>
+
+            <h2>
+                Temporada 2026
+						</h2>
+
+            <p class="kimi-season-2026-subtitle">
+                Estatísticas de Kimi Antonelli na temporada atual
+            </p>
+
+
+            <!-- POSIÇÃO NO CAMPEONATO -->
+            <div class="kimi-season-2026-championship">
+
+                <div class="kimi-season-2026-championship-info">
+
+                    <span>
+                        POSIÇÃO NO CAMPEONATO
+                    </span>
+
+                    <strong id="kimi-season-position">
+                        —
+                    </strong>
+
+                </div>
+
+                <div class="kimi-season-2026-points">
+
+                    <span id="kimi-season-points">
+                        —
+                    </span>
+
+                    <small>
+                        PONTOS
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <!-- GRID DE ESTATÍSTICAS -->
+            <div class="kimi-season-2026-stats">
+
+
+                <!-- CORRIDAS -->
+                <div class="kimi-season-2026-stat">
+
+                    <div class="kimi-season-2026-stat-icon">
+                        🏁
+                    </div>
+
+                    <div class="kimi-season-2026-stat-info">
+
+                        <span
+                            id="kimi-season-races">
+                            —
+                        </span>
+
+                        <p>
+                            Corridas
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- VITÓRIAS -->
+                <div class="kimi-season-2026-stat">
+
+                    <div class="kimi-season-2026-stat-icon">
+                        🥇
+                    </div>
+
+                    <div class="kimi-season-2026-stat-info">
+
+                        <span
+                            id="kimi-season-wins">
+                            —
+                        </span>
+
+                        <p>
+                            Vitórias
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PÓDIOS -->
+                <div class="kimi-season-2026-stat">
+
+                    <div class="kimi-season-2026-stat-icon">
+                        🏆
+                    </div>
+
+                    <div class="kimi-season-2026-stat-info">
+
+                        <span
+                            id="kimi-season-podiums">
+                            —
+                        </span>
+
+                        <p>
+                            Pódios
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- POLES -->
+                <div class="kimi-season-2026-stat">
+
+                    <div class="kimi-season-2026-stat-icon">
+                        ⚡
+                    </div>
+
+                    <div class="kimi-season-2026-stat-info">
+
+                        <span
+                            id="kimi-season-poles">
+                            —
+                        </span>
+
+                        <p>
+                            Poles
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TOP 5 -->
+                <div class="kimi-season-2026-stat">
+
+                    <div class="kimi-season-2026-stat-icon">
+                        🔥
+                    </div>
+
+                    <div class="kimi-season-2026-stat-info">
+
+                        <span
+                            id="kimi-season-top5">
+                            —
+                        </span>
+
+                        <p>
+                            Top 5
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- VOLTAS MAIS RÁPIDAS -->
+                <div class="kimi-season-2026-stat">
+
+                    <div class="kimi-season-2026-stat-icon">
+                        ⏱️
+                    </div>
+
+                    <div class="kimi-season-2026-stat-info">
+
+                        <span
+                            id="kimi-season-fastest-laps">
+                            —
+                        </span>
+
+                        <p>
+                            Voltas rápidas
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ABANDONOS -->
+                <div class="kimi-season-2026-stat">
+
+                    <div class="kimi-season-2026-stat-icon">
+                        ❌
+                    </div>
+
+                    <div class="kimi-season-2026-stat-info">
+
+                        <span
+                            id="kimi-season-dnfs">
+                            —
+                        </span>
+
+                        <p>
+                            Abandonos
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- MELHOR RESULTADO -->
+                <div class="kimi-season-2026-stat">
+
+                    <div class="kimi-season-2026-stat-icon">
+                        🚀
+                    </div>
+
+                    <div class="kimi-season-2026-stat-info">
+
+                        <span
+                            id="kimi-season-best-result">
+                            —
+                        </span>
+
+                        <p>
+                            Melhor resultado
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- RESUMO -->
+            <div class="kimi-season-2026-summary">
+
+                <div class="kimi-season-2026-summary-item">
+
+                    <span>
+                        MÉDIA DE CHEGADA
+                    </span>
+
+                    <strong id="kimi-season-average-finish">
+                        —
+                    </strong>
+
+                </div>
+
+
+                <div class="kimi-season-2026-summary-item">
+
+                    <span>
+                        MÉDIA NA CLASSIFICAÇÃO
+                    </span>
+
+                    <strong id="kimi-season-average-quali">
+                        —
+                    </strong>
+
+                </div>
+
+
+                <div class="kimi-season-2026-summary-item">
+
+                    <span>
+                        MELHOR GRID
+                    </span>
+
+                    <strong id="kimi-season-best-quali">
+                        —
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+	
+<section class="pilotagem-antonelli" id="pilotagem">
+
+  <!-- =======================================================
+       CABEÇALHO
+  ======================================================== -->
+
+  <div class="pilotagem-header-antonelli">
+
+    <span class="pilotagem-tag-antonelli">
+      ANÁLISE TÉCNICA
+    </span>
+
+    <h2 class="titulo-pilotagem-antonelli">
+      ESTILO DE <span>PILOTAGEM</span>
+    </h2>
+
+    <p class="pilotagem-intro-antonelli">
+      Uma análise das principais características que definem
+      o estilo de Andrea Kimi Antonelli dentro da Fórmula 1.
+    </p>
+
+  </div>
+
+
+  <!-- =======================================================
+       CARD PRINCIPAL
+  ======================================================== -->
+
+  <div class="pilotagem-card-principal-antonelli">
+
+
+    <!-- =====================================================
+         LADO ESQUERDO
+         PERFIL DO PILOTO
+    ====================================================== -->
+
+    <div class="pilotagem-perfil-antonelli reveal-antonelli">
+
+
+      <!-- FOTO -->
+
+      <div class="perfil-imagem-container-antonelli">
+
+        <img
+          src="kimi/head.png"
+          alt="Kimi Antonelli"
+          class="perfil-imagem-antonelli"
+        >
+
+      </div>
+
+
+      <!-- INFORMAÇÕES -->
+
+      <div class="perfil-info-antonelli">
+
+        <span class="perfil-numero-antonelli">
+          12
+        </span>
+
+        <h3 class="perfil-nome-antonelli">
+
+          KIMI
+
+          <span>
+            ANTONELLI
+          </span>
+
+        </h3>
+
+
+        <p class="perfil-equipe-antonelli">
+          MERCEDES-AMG PETRONAS FORMULA ONE TEAM
+        </p>
+
+
+        <!-- FRASE -->
+
+        <div class="perfil-frase-antonelli">
+
+          <i class="fa-solid fa-quote-left"></i>
+
+          <p>
+            Precoce, agressivo e extremamente adaptável.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         LADO DIREITO
+         DESCRIÇÃO
+    ====================================================== -->
+
+    <div class="pilotagem-analise-antonelli reveal-antonelli">
+
+      <div class="analise-topo-antonelli">
+
+        <span class="analise-label-antonelli">
+          PERFIL DE PILOTAGEM
+        </span>
+
+        <h3>
+          TALENTO E <span>ADAPTAÇÃO</span>
+        </h3>
+
+      </div>
+
+
+      <p>
+        Andrea Kimi Antonelli se destaca pela velocidade natural
+        e pela impressionante capacidade de competir em alto nível
+        mesmo em uma fase inicial da sua carreira. Seu estilo combina
+        talento bruto, coragem e uma grande disposição para aprender.
+      </p>
+
+
+      <p>
+        O italiano possui uma abordagem agressiva quando necessário,
+        mas também demonstra maturidade ao compreender o carro e se
+        adaptar rapidamente às diferentes condições da pista. Sua
+        evolução constante é uma das principais características do
+        seu perfil como piloto.
+      </p>
+
+
+      <!-- CARACTERÍSTICAS -->
+
+      <div class="caracteristicas-antonelli">
+
+
+        <!-- PRECOCE -->
+
+        <div class="caracteristica-antonelli">
+
+          <div class="caracteristica-icone-antonelli">
+            <i class="fa-solid fa-star"></i>
+          </div>
+
+          <div>
+
+            <h4>
+              PRECOCE
+            </h4>
+
+            <p>
+              Demonstra talento e velocidade natural desde muito jovem.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- AGRESSIVO -->
+
+        <div class="caracteristica-antonelli">
+
+          <div class="caracteristica-icone-antonelli">
+            <i class="fa-solid fa-fire"></i>
+          </div>
+
+          <div>
+
+            <h4>
+              AGRESSIVO
+            </h4>
+
+            <p>
+              Não hesita em atacar e aproveitar oportunidades durante
+              disputas por posição.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- ADAPTÁVEL -->
+
+        <div class="caracteristica-antonelli">
+
+          <div class="caracteristica-icone-antonelli">
+            <i class="fa-solid fa-arrows-rotate"></i>
+          </div>
+
+          <div>
+
+            <h4>
+              ADAPTÁVEL
+            </h4>
+
+            <p>
+              Aprende rapidamente e ajusta sua pilotagem a novas
+              condições e diferentes situações.
+            </p>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+  <!-- =======================================================
+       SEÇÃO DE HABILIDADES
+  ======================================================== -->
+
+  <div class="pilotagem-skills-section-antonelli">
+
+
+    <div class="skills-header-antonelli">
+
+      <span>
+        HABILIDADES
+      </span>
+
+      <h3>
+        ÍNDICE DE <span>PERFORMANCE</span>
+      </h3>
+
+    </div>
+
+
+    <!-- GRID DAS SKILLS -->
+
+    <div class="skills-grid-antonelli">
+
+
+      <!-- VELOCIDADE -->
+
+      <div class="skill-card-antonelli reveal-antonelli">
+
+        <div class="skill-topo-antonelli">
+
+          <div class="skill-nome-antonelli">
+
+            <i class="fa-solid fa-bolt"></i>
+
+            <span>
+              VELOCIDADE
+            </span>
+
+          </div>
+
+          <strong
+            class="skill-numero-antonelli"
+            data-value="89"
+          >
+            0
+          </strong>
+
+        </div>
+
+        <div class="skill-barra-antonelli">
+
+          <div
+            class="skill-progresso-antonelli"
+            data-width="89%"
+          ></div>
+
+        </div>
+
+      </div>
+
+
+      <!-- CONSISTÊNCIA -->
+
+      <div class="skill-card-antonelli reveal-antonelli">
+
+        <div class="skill-topo-antonelli">
+
+          <div class="skill-nome-antonelli">
+
+            <i class="fa-solid fa-chart-line"></i>
+
+            <span>
+              CONSISTÊNCIA
+            </span>
+
+          </div>
+
+          <strong
+            class="skill-numero-antonelli"
+            data-value="84"
+          >
+            0
+          </strong>
+
+        </div>
+
+        <div class="skill-barra-antonelli">
+
+          <div
+            class="skill-progresso-antonelli"
+            data-width="84%"
+          ></div>
+
+        </div>
+
+      </div>
+
+
+      <!-- INTELIGÊNCIA -->
+
+      <div class="skill-card-antonelli reveal-antonelli">
+
+        <div class="skill-topo-antonelli">
+
+          <div class="skill-nome-antonelli">
+
+            <i class="fa-solid fa-brain"></i>
+
+            <span>
+              INTELIGÊNCIA DE CORRIDA
+            </span>
+
+          </div>
+
+          <strong
+            class="skill-numero-antonelli"
+            data-value="87"
+          >
+            0
+          </strong>
+
+        </div>
+
+        <div class="skill-barra-antonelli">
+
+          <div
+            class="skill-progresso-antonelli"
+            data-width="87%"
+          ></div>
+
+        </div>
+
+      </div>
+
+
+      <!-- GESTÃO DE PNEUS -->
+
+      <div class="skill-card-antonelli reveal-antonelli">
+
+        <div class="skill-topo-antonelli">
+
+          <div class="skill-nome-antonelli">
+
+            <i class="fa-solid fa-circle-dot"></i>
+
+            <span>
+              GESTÃO DE PNEUS
+            </span>
+
+          </div>
+
+          <strong
+            class="skill-numero-antonelli"
+            data-value="85"
+          >
+            0
+          </strong>
+
+        </div>
+
+        <div class="skill-barra-antonelli">
+
+          <div
+            class="skill-progresso-antonelli"
+            data-width="85%"
+          ></div>
+
+        </div>
+
+      </div>
+
+
+      <!-- ULTRAPASSAGEM -->
+
+      <div class="skill-card-antonelli reveal-antonelli">
+
+        <div class="skill-topo-antonelli">
+
+          <div class="skill-nome-antonelli">
+
+            <i class="fa-solid fa-forward"></i>
+
+            <span>
+              ULTRAPASSAGEM
+            </span>
+
+          </div>
+
+          <strong
+            class="skill-numero-antonelli"
+            data-value="88"
+          >
+            0
+          </strong>
+
+        </div>
+
+        <div class="skill-barra-antonelli">
+
+          <div
+            class="skill-progresso-antonelli"
+            data-width="88%"
+          ></div>
+
+        </div>
+
+      </div>
+
+
+      <!-- CLASSIFICAÇÃO -->
+
+      <div class="skill-card-antonelli reveal-antonelli">
+
+        <div class="skill-topo-antonelli">
+
+          <div class="skill-nome-antonelli">
+
+            <i class="fa-solid fa-stopwatch"></i>
+
+            <span>
+              CLASSIFICAÇÃO
+            </span>
+
+          </div>
+
+          <strong
+            class="skill-numero-antonelli"
+            data-value="90"
+          >
+            0
+          </strong>
+
+        </div>
+
+        <div class="skill-barra-antonelli">
+
+          <div
+            class="skill-progresso-antonelli"
+            data-width="90%"
+          ></div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+  <!-- =======================================================
+       PERFIL VISUAL
+  ======================================================== -->
+
+  <div class="pilotagem-grafico-section-antonelli reveal-antonelli">
+
+
+    <div class="grafico-header-antonelli">
+
+      <span>
+        PERFIL COMPLETO
+      </span>
+
+      <h3>
+        RADAR DE <span>PILOTAGEM</span>
+      </h3>
+
+    </div>
+
+
+    <div class="grafico-layout-antonelli">
+
+
+      <!-- RADAR -->
+
+      <div class="radar-container-antonelli">
+
+        <svg
+          class="radar-antonelli"
+          viewBox="0 0 500 500"
+        >
+
+          <!-- CÍRCULOS DE FUNDO -->
+
+          <circle cx="250" cy="250" r="200"
+            class="radar-linha-antonelli" />
+
+          <circle cx="250" cy="250" r="150"
+            class="radar-linha-antonelli" />
+
+          <circle cx="250" cy="250" r="100"
+            class="radar-linha-antonelli" />
+
+          <circle cx="250" cy="250" r="50"
+            class="radar-linha-antonelli" />
+
+
+          <!-- LINHAS -->
+
+          <line x1="250" y1="250" x2="250" y2="50"
+            class="radar-eixo-antonelli" />
+
+          <line x1="250" y1="250" x2="423" y2="150"
+            class="radar-eixo-antonelli" />
+
+          <line x1="250" y1="250" x2="423" y2="350"
+            class="radar-eixo-antonelli" />
+
+          <line x1="250" y1="250" x2="250" y2="450"
+            class="radar-eixo-antonelli" />
+
+          <line x1="250" y1="250" x2="77" y2="350"
+            class="radar-eixo-antonelli" />
+
+          <line x1="250" y1="250" x2="77" y2="150"
+            class="radar-eixo-antonelli" />
+
+
+          <!-- ÁREA DO PILOTO -->
+
+          <polygon
+            class="radar-area-antonelli"
+            points="250,250 250,250 250,250 250,250 250,250 250,250"
+          />
+
+
+          <!-- PONTOS -->
+
+          <circle r="6" class="radar-ponto-antonelli" />
+          <circle r="6" class="radar-ponto-antonelli" />
+          <circle r="6" class="radar-ponto-antonelli" />
+          <circle r="6" class="radar-ponto-antonelli" />
+          <circle r="6" class="radar-ponto-antonelli" />
+          <circle r="6" class="radar-ponto-antonelli" />
+
+        </svg>
+
+
+        <!-- LABELS -->
+
+        <span class="radar-label-antonelli radar-top-antonelli">
+          VELOCIDADE
+        </span>
+
+        <span class="radar-label-antonelli radar-top-right-antonelli">
+          CONSISTÊNCIA
+        </span>
+
+        <span class="radar-label-antonelli radar-bottom-right-antonelli">
+          INTELIGÊNCIA
+        </span>
+
+        <span class="radar-label-antonelli radar-bottom-antonelli">
+          PNEUS
+        </span>
+
+        <span class="radar-label-antonelli radar-bottom-left-antonelli">
+          ULTRAPASSAGEM
+        </span>
+
+        <span class="radar-label-antonelli radar-top-left-antonelli">
+          CLASSIFICAÇÃO
+        </span>
+
+      </div>
+
+
+      <!-- RESUMO -->
+
+      <div class="grafico-resumo-antonelli">
+
+
+        <div class="resumo-card-antonelli forte">
+
+          <div class="resumo-icone-antonelli">
+            <i class="fa-solid fa-star"></i>
+          </div>
+
+          <div>
+
+            <span>
+              PRINCIPAL QUALIDADE
+            </span>
+
+            <h4>
+              TALENTO NATURAL
+            </h4>
+
+            <p>
+              Velocidade e capacidade de encontrar desempenho
+              mesmo em uma fase inicial da carreira.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="resumo-card-antonelli evoluir">
+
+          <div class="resumo-icone-antonelli">
+            <i class="fa-solid fa-arrow-trend-up"></i>
+          </div>
+
+          <div>
+
+            <span>
+              ÁREA DE EVOLUÇÃO
+            </span>
+
+            <h4>
+              CONSISTÊNCIA
+            </h4>
+
+            <p>
+              Com mais experiência, pode transformar sua velocidade
+              em resultados ainda mais constantes.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="resumo-card-antonelli destaque">
+
+          <div class="resumo-icone-antonelli">
+            <i class="fa-solid fa-fire"></i>
+          </div>
+
+          <div>
+
+            <span>
+              ESTILO PRINCIPAL
+            </span>
+
+            <h4>
+              AGRESSIVO
+            </h4>
+
+            <p>
+              Busca oportunidades para atacar e não demonstra
+              receio em disputas diretas por posição.
+            </p>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- =======================================================
+       CONCLUSÃO
+  ======================================================== -->
+
+  <div class="pilotagem-conclusao-antonelli reveal-antonelli">
+
+    <span>
+      RESUMO DA ANÁLISE
+    </span>
+
+    <h3>
+      UM PILOTO <strong>PRECOCE</strong>, <strong>AGRESSIVO</strong>
+      E <strong>ADAPTÁVEL</strong>
+    </h3>
+
+    <p>
+      O estilo de Kimi Antonelli combina velocidade natural,
+      agressividade e uma grande capacidade de aprendizado. Mesmo
+      no início de sua trajetória na Fórmula 1, demonstra confiança
+      e talento para se adaptar rapidamente aos desafios e continuar
+      evoluindo como piloto.
+    </p>
+
+  </div>
+
+
+</section>
+
+
+<section class="antonelli-battle" id="teammates">
+
+<div class="antonelli-battle-card">
+
+<!-- HEADER -->
+<div class="antonelli-header">
+
+<div class="antonelli-title-wrap">
+
+<h2>TEAMMATE BATTLE</h2>
+
+<p>Kimi Antonelli</p>
+
+</div>
+
+<img
+class="antonelli-team-logo"
+src="icons/Mercedesa.png">
+
+</div>
+
+
+
+<!-- CONTEUDO -->
+<div class="antonelli-layout">
+
+<!-- NOME ESQUERDA -->
+<div class="antonelli-left-name">
+
+<span>
+KIMI
+</span>
+
+<h3>
+ANTONELLI
+</h3>
+
+</div>
+
+
+
+<!-- NOME DIREITA -->
+<div class="antonelli-right-name">
+
+<span id="mateFirst">
+GEORGE
+</span>
+
+<h3 id="mateLast">
+RUSSELL
+</h3>
+
+</div>
+
+
+
+<!-- IMAGENS -->
+<div class="antonelli-images">
+
+<div class="antonelli-side antonelli-left">
+
+<img
+src="kimi/head.png"
+alt="antonelli antonelli">
+
+</div>
+
+
+
+<div class="antonelli-side antonelli-right">
+
+<img
+id="mateImg"
+alt="Teammate">
+
+</div>
+
+</div>
+
+
+
+<!-- CENTRO -->
+<div class="antonelli-middle">
+
+<div class="antonelli-vs">
+
+<div class="antonelli-vs-box">
+
+VS
+
+</div>
+
+</div>
+
+
+
+<div class="antonelli-years"
+id="antonelliYears">
+
+2025
+
+</div>
+
+
+
+<div class="antonelli-stats">
+
+<!-- QUALI -->
+
+<div class="antonelli-row">
+
+<div class="antonelli-value">
+
+<span id="antonelliQualiLeft">
+0
+</span>
+
+</div>
+
+<div class="antonelli-label">
+
+QUALI
+
+</div>
+
+<div class="antonelli-value">
+
+<span id="antonelliQualiRight">
+0
+</span>
+
+</div>
+
+</div>
+
+<div class="antonelli-bars">
+
+<div
+class="antonelli-bar-left"
+id="antonelliBarQualiLeft">
+
+</div>
+
+<div
+class="antonelli-bar-right"
+id="antonelliBarQualiRight">
+
+</div>
+
+</div>
+
+
+
+<!-- CORRIDAS -->
+
+<div class="antonelli-row">
+
+<div class="antonelli-value">
+
+<span id="antonelliRaceLeft">
+0
+</span>
+
+</div>
+
+<div class="antonelli-label">
+
+RACES
+
+</div>
+
+<div class="antonelli-value">
+
+<span id="antonelliRaceRight">
+0
+</span>
+
+</div>
+
+</div>
+
+<div class="antonelli-bars">
+
+<div
+class="antonelli-bar-left"
+id="antonelliBarRaceLeft">
+
+</div>
+
+<div
+class="antonelli-bar-right"
+id="antonelliBarRaceRight">
+
+</div>
+
+</div>
+
+
+
+<!-- PODIOS -->
+
+<div class="antonelli-row">
+
+<div class="antonelli-value">
+
+<span id="antonelliPodLeft">
+0
+</span>
+
+</div>
+
+<div class="antonelli-label">
+
+PODIUMS
+
+</div>
+
+<div class="antonelli-value">
+
+<span id="antonelliPodRight">
+0
+</span>
+
+</div>
+
+</div>
+
+<div class="antonelli-bars">
+
+<div
+class="antonelli-bar-left"
+id="antonelliBarPodLeft">
+
+</div>
+
+<div
+class="antonelli-bar-right"
+id="antonelliBarPodRight">
+
+</div>
+
+</div>
+
+
+
+<!-- VITORIAS -->
+
+<div class="antonelli-row">
+
+<div class="antonelli-value">
+
+<span id="antonelliWinLeft">
+0
+</span>
+
+</div>
+
+<div class="antonelli-label">
+
+WINS
+
+</div>
+
+<div class="antonelli-value">
+
+<span id="antonelliWinRight">
+0
+</span>
+
+</div>
+
+</div>
+
+<div class="antonelli-bars">
+
+<div
+class="antonelli-bar-left"
+id="antonelliBarWinLeft">
+
+</div>
+
+<div
+class="antonelli-bar-right"
+id="antonelliBarWinRight">
+
+</div>
+
+</div>
+
+
+<div class="antonelli-row">
+
+<div class="antonelli-value">
+
+<span id="antonelliPoleLeft">
+0
+</span>
+
+</div>
+
+<div class="antonelli-label">
+
+POLES
+
+</div>
+
+<div class="antonelli-value">
+
+<span id="antonelliPoleRight">
+0
+</span>
+
+</div>
+
+</div>
+
+
+<div class="antonelli-bars">
+
+<div
+class="antonelli-bar-left"
+id="antonelliBarPoleLeft">
+
+</div>
+
+<div
+class="antonelli-bar-right"
+id="antonelliBarPoleRight">
+
+</div>
+
+</div>
+
+
+<div class="antonelli-row">
+
+<div class="antonelli-value">
+
+<span id="antonelliPointsLeft">
+0
+</span>
+
+</div>
+
+<div class="antonelli-label">
+
+POINTS
+
+</div>
+
+<div class="antonelli-value">
+
+<span id="antonelliPointsRight">
+0
+</span>
+
+</div>
+
+</div>
+
+
+<div class="antonelli-bars">
+
+<div
+class="antonelli-bar-left"
+id="antonelliBarPointsLeft">
+
+</div>
+
+<div
+class="antonelli-bar-right"
+id="antonelliBarPointsRight">
+
+</div>
+
+</div>
+
+
+
+	
+</div>
+
+</div>
+
+</div>
+
+
+
+	
+
+
+<!-- CONTROLES -->
+<div class="antonelli-controls">
+
+<button class="antonelli-arrow left">
+‹
+</button>
+
+
+<div class="antonelli-tabs">
+
+<button
+class="antonelli-tab active"
+data-id="0">
+
+RUSSELL
+
+</button>
+
+
+
+	
+</div>
+
+
+<button class="antonelli-arrow right">
+›
+</button>
+
+</div>
+
+</div>
+
+</section>
+	
+ 
+ 
+ <section class="radio-f1-kimi" id="radio">
+
+  <!-- STATUS -->
+  <div class="radio-status-kimi">
+    TEAM RADIO
+  </div>
+
+  <!-- INFO CORRIDA -->
+  <div class="race-info-kimi">
+    <span>P1</span>
+    <span>LAP 58</span>
+    <span>+0.000</span>
+  </div>
+
+  <!-- CARD -->
+  <div class="card-kimi" id="radioCardkimi">
+
+    <!-- ESQUERDA -->
+    <div class="left-kimi">
+      <span class="number-kimi">12</span>
+    </div>
+
+    <!-- DIREITA -->
+    <div class="right-kimi">
+
+      <h1>Antonelli</h1>
+      <h2>RADIO</h2>
+
+      <img
+        src="icons/Mercedesa.png"
+        class="logo-kimi"
+      >
+
+    </div>
+
+    <!-- WAVE -->
+    <div class="wave-kimi">
+
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+
+    </div>
+
+    <!-- CONTEÚDO -->
+    <div class="content-kimi">
+
+      <div class="text-kimi">
+
+        <p
+          class="eng-kimi"
+          id="eng-text-kimi"
+        ></p>
+
+        <p
+          class="pil-kimi"
+          id="pil-text-kimi"
+        ></p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <audio
+    id="radio-audio-kimi"
+    src="f1.mp3"
+  ></audio>
+
+</section>
+
+
+
+<section class="galeria-kimi" id="galeria">
+
+  <h2 class="titulo-galeria-kimi">
+    Galeria
+  </h2>
+
+  <div class="grid-galeria-kimi">
+
+    <div class="item-galeria-kimi">
+
+      <img src="kimi/capacete.jpeg">
+
+      <div class="overlay-antonelli">
+
+        <h3>Capacete</h3>
+        <p>Capacete de 2026</p>
+
+      </div>
+
+    </div>
+
+    <div class="item-galeria-kimi">
+
+      <img src="kimi/race.jpeg">
+
+      <div class="overlay-antonelli">
+
+        <h3>Corrida</h3>
+        <p>Kimi na Corrida</p>
+
+      </div>
+
+    </div>
+
+    <div class="item-galeria-kimi">
+
+      <img src="kimi/cele.jpg">
+
+      <div class="overlay-antonelli">
+
+        <h3>Comemoração</h3>
+        <p>Kimi comemorando</p>
+
+      </div>
+
+    </div>
+
+    <div class="item-galeria-kimi">
+
+      <img src="kimi/team.jpeg">
+
+      <div class="overlay-antonelli">
+
+        <h3>Equipe</h3>
+        <p>Kimi com a Equipe</p>
+
+      </div>
+
+    </div>
+
+    <div class="item-galeria-kimi">
+
+      <img src="kimi/marca.webp">
+
+      <div class="overlay-antonelli">
+
+        <h3>Marca</h3>
+        <p>Marca de Designer</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox-kimi">
+
+    <span class="fechar-kimi">
+      ×
+    </span>
+
+    <img class="img-lightbox-kimi">
+
+  </div>
+
+</section>
+
+
+
+
+<footer class="footer-f1-kimi">
+
+  <div class="footer-brand-kimi">
+    <p>Kimi Antonelli</p>
+    <span>Formula 1 Driver for Mercedes F1 Team</span>
+  </div>
+
+  <div class="footer-links-kimi">
+    <a href="index.html">Home</a>
+    <a href="F1.html">Regras</a>
+				<a href="info.html">Informações</a>
+
+    <a href="mercedes.html">Mercedes</a>
+    <a href="Russell.html">Russell</a>
+    <a href="about.html">About</a>
+  </div>
+
+  <div class="footer-social-kimi">
+    <a href="https://www.instagram.com/duduxl37?igsh=dnNwM29qYXprbnI4" target="_blank">Instagram</a>
+    <a href="https://x.com/Duducrvg1998" target="_blank">X</a>
+  </div>
+
+  <div class="footer-copy-kimi">
+    © 2026 Fan Project • Inspired by Formula 1
+  </div>
+
+</footer>
+
+
+
+	<button id="btnTopo" class="btn-topo">
+    <i class="fa-solid fa-arrow-up"></i>
+	</button>
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  <script src="kimi.js"></script>
+</body>
+</html>

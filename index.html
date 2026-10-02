@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Formula 1</title>
+    <link rel="stylesheet" href="stylemain.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body bgcolor="#15151e">
+
+    <img src="logos/F1-logo.png" alt="F1 Logo" class="logo-formula1">
+
+
+    <!-- Barra superior -->
+<div class="barra-topo">
+
+  <a href="F1.html" class="regras">Regras</a>
+
+  <a href="info.html" class="infor">Informação</a>
+
+  <a href="history.html" class="history">História da F1</a>
+
+</div>	
+
+    <h1 class="titulo-menu">Formula 1</h1>
+
+        
+  
+
+    <!-- Aqui começa seu conteúdo (grid das equipes etc) -->
+    <div class="conteudo">
+       
+<div class="redes-f1">
+
+<a class="instagram" href="https://www.instagram.com/f1" target="_blank">
+  <i class="fa-brands fa-instagram"></i>
+</a>
+
+<a class="twitter" href="https://twitter.com/F1" target="_blank">
+  <i class="fa-brands fa-x-twitter"></i>
+</a>
+
+<a class="youtube" href="https://www.youtube.com/@Formula1" target="_blank">
+  <i class="fa-brands fa-youtube"></i>
+</a>
+
+<a class="tiktok" href="https://www.tiktok.com/@f1" target="_blank">
+  <i class="fa-brands fa-tiktok"></i>
+</a>
+
+<a class="facebook" href="https://www.facebook.com/Formula1" target="_blank">
+  <i class="fa-brands fa-facebook-f"></i>
+</a>
+
+<a class="f1" href="https://www.formula1.com" target="_blank">
+  <img src="logos/F1-logo.png" alt="F1">
+</a>
+
+
+</div>
+
+  
+
+    <div class="container-f1">
+ <ul class="menu">
+ 
+ 
+<li class="has-submenu mclaren-menu">
+<a href="#" onclick="abrirEquipe('mclaren'); return false;"> 
+	<img src="icons/mclaren.png" class="team-icon"> McLaren
+  </a>
+
+<div class="submenu">
+
+    <a href="lando.html"
+    onclick="abrirPiloto('lando'); return false;">
+        Lando Norris
+    </a>
+
+    <a href="Piastri.html"
+    onclick="abrirPiloto('piastri'); return false;">
+        Oscar Piastri
+    </a>
+
+</div>
+
+</li>
+
+<li class="has-submenu mercedes-menu">
+<a href="#" onclick="abrirEquipe('mercedes'); return false;">
+	<img src="icons/Mercedesa.png" class="team-icon"> Mercedes
+  </a>
+	
+<div class="submenu">
+
+    <a href="Russell.html"
+    onclick="abrirPiloto('russell'); return false;">
+        George Russell
+    </a>
+
+    <a href="kimi.html"
+    onclick="abrirPiloto('kimi'); return false;">
+        Kimi Antonelli 
+    </a>
+
+</div>
+
+</li>
+
+<li class="has-submenu redbull-menu">
+<a href="#" onclick="abrirEquipe('redbull'); return false;">
+	<img src="icons/redbull.png" class="team-icon"> Red Bull
+  </a>
+  
+<div class="submenu">
+
+    <a href="max.html"
+    onclick="abrirPiloto('max'); return false;">
+        Max Verstappen 
+    </a>
+
+    <a href="hadjar.html"
+    onclick="abrirPiloto('hadjar'); return false;">
+        Isack Hadjar
+    </a>
+
+</div>
+
+</li>
+
+
+<li class="has-submenu ferrari-menu">
+<a href="#" onclick="abrirEquipe('ferrari'); return false;">
+	<img src="icons/ferrari.png" class="team-icon"> Ferrari
+  </a>
+  
+<div class="submenu">
+
+    <a href="lewis.html"
+    onclick="abrirPiloto('lewis'); return false;">
+        Lewis Hamilton
+    </a>
+
+    <a href="charles.tml"
+    onclick="abrirPiloto('charles'); return false;">
+      Charles Leclerc    
+		</a>
+
+</div>
+	
+</li>
+
+
+<li class="has-submenu williams-menu">
+	<a href="#" onclick="abrirEquipe('williams'); return false;">
+	<img src="icons/WilliamsF1.png" class="team-icon"> Williams
+  </a>
+	
+<div class="submenu">
+
+    <a href="alex.html"
+    onclick="abrirPiloto('alex'); return false;">
+    Alex Albon
+    </a>
+
+    <a href="carlos.html"
+    onclick="abrirPiloto('carlos'); return false;">
+        Carlos Sainz
+    </a>
+
+</div>	
+</li>
+
+
+<li class="has-submenu rb-menu">
+<a href="#" onclick="abrirEquipe('racingbulls'); return false;">
+	<img src="icons/racingbulls.svg" class="team-icon"> Racing Bulls
+  </a>
+	
+<div class="submenu">
+
+    <a href="liam.html"
+    onclick="abrirPiloto('liam'); return false;">
+        Liam Lawson
+    </a>
+
+    <a href="arvid.html"
+    onclick="abrirPiloto('arvid'); return false;">
+        Arvid Lindbland 
+    </a>
+
+</div>	
+</li>
+
+
+<li class="has-submenu aston-menu">
+<a href="#" onclick="abrirEquipe('astonmartin'); return false;">
+	<img src="icons/aston.png" class="team-icon"> Aston Martin
+  </a>
+	
+<div class="submenu">
+
+    <a href="alonso.html"
+    onclick="abrirPiloto('alonso'); return false;">
+        Fernando Alonso   </a>
+
+    <a href="lance.html"
+    onclick="abrirPiloto('lance'); return false;">
+        Lance Stroll 
+    </a>
+
+</div>	
+</li>
+
+
+<li class="has-submenu haas-menu">
+<a href="#" onclick="abrirEquipe('haas'); return false;">
+	<img src="icons/HaasF1.png" class="team-icon"> Haas
+  </a>
+	
+<div class="submenu">
+
+    <a href="ocon.html"
+    onclick="abrirPiloto('ocon'); return false;">
+        Esteban Ocon
+    </a>
+
+    <a href="oliver.html"
+    onclick="abrirPiloto('oliver'); return false;">
+        Oliver Bearman 
+    </a>
+
+</div>	
+</li>
+
+
+<li class="has-submenu team-audi-menu">
+<a href="#" onclick="abrirEquipe('audi'); return false;">
+	<img src="icons/audi.png" class="team-icon"> Audi
+  </a>
+	
+<div class="submenu">
+
+    <a href="hulkenberg.html"
+    onclick="abrirPiloto('nico'); return false;">
+        Nico Hulkenberg     </a>
+
+    <a href="bortoleto.html"
+    onclick="abrirPiloto('gabi'); return false;">
+        Gabriel Bortoleto 
+    </a>
+
+</div>	
+</li>
+
+<li class="has-submenu team-alpine-menu submenu-up">
+<a href="#" onclick="abrirEquipe('alpine'); return false;">
+	<img src="icons/Alpinef1.png" class="team-icon"> Alpine
+  </a>
+	
+<div class="submenu">
+
+    <a href="gasly.html"
+    onclick="abrirPiloto('gasly'); return false;">
+        Pierre Gasly 
+    </a>
+
+    <a href="franco.html"
+    onclick="abrirPiloto('franco'); return false;">
+        Franco Colapinto 
+    </a>
+
+</div>	
+</li>
+
+
+<li class="has-submenu cadillac-menu submenu-up"><a href="#" onclick="abrirEquipe('cadillac'); return false;">
+	<img src="icons/cadillac.png" class="team-icon"> Cadillac
+  </a>
+	
+<div class="submenu">
+
+    <a href="perez.html"
+    onclick="abrirPiloto('perez'); return false;">
+        Sergio Perez
+    </a>
+
+    <a href="bottas.html"
+    onclick="abrirPiloto('bottas'); return false;">
+        Valtteri Bottas
+    </a>
+
+</div>	
+  </li>
+  
+ </ul>
+ 
+</div>
+
+
+
+<div id="teamTransition" class="team-transition">
+
+    <div class="team-info">
+
+        <img
+            id="teamLogo"
+            src=""
+            alt="Equipe">
+
+        <h1 id="teamName"></h1>
+
+        <div class="team-drivers">
+
+            <div class="transition-driver">
+                <span id="driverNumber1"></span>
+                <span id="driverName1"></span>
+            </div>
+
+            <div class="transition-driver">
+                <span id="driverNumber2"></span>
+                <span id="driverName2"></span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <img
+        id="teamCar"
+        src=""
+        alt="Carro da equipe">
+
+</div>
+
+
+<!-- =====================================
+     TRANSIÇÃO DOS PILOTOS
+===================================== -->
+
+<div id="driverTransition" class="driver-transition">
+
+    <!-- Número gigante -->
+    <div id="driverNumber" class="driver-number-bg">
+        4
+    </div>
+
+    <!-- Nome gigante -->
+    <div class="driver-name-transition">
+
+        <span id="driverFirstName">
+            LANDO
+        </span>
+
+        <strong id="driverLastName">
+            NORRIS
+        </strong>
+
+    </div>
+
+    <!-- Foto do piloto -->
+    <img
+        id="driverImage"
+        class="driver-transition-image"
+        src=""
+        alt="Piloto">
+
+    <!-- Informações -->
+    <div class="driver-info-transition">
+
+        <span id="driverTeam">
+            McLAREN
+        </span>
+
+        <div class="driver-info-bottom">
+
+            <span id="driverFullName">
+                LANDO NORRIS
+            </span>
+
+            <span id="driverSmallNumber">
+                Nº 4
+            </span>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+			
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+

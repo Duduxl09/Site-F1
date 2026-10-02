@@ -1,0 +1,1617 @@
+  <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+ <body bgcolor="#ffffff">
+  <title>arvid Lindblad</title>
+
+  <!-- CSS do piloto -->
+  <link rel="stylesheet" href="stylemain.css">
+</head>
+<body>
+  
+  
+<header class="topbar-arvid">
+
+    <!-- MENU -->
+    <button class="menu-toggle-arvid" id="menuTogglearvid">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <!-- NOME -->
+<div class="topbar-title-arvid">
+
+    <img src="icons/racingbulls.svg" alt="McLaren">
+
+    <span>Arvid Lindblad </span>
+
+</div>
+    <!-- NOTÍCIAS -->
+    <button class="news-toggle-arvid" id="abrirNoticiasarvid">
+        <i class="fa-solid fa-newspaper"></i>
+    </button>
+
+</header>
+	
+  <nav class="side-menu-arvid" id="sideMenuarvid">
+    
+    <div class="close-menu-arvid" id="closeMenuarvid">✕</div>
+
+<div class="menu-profile-arvid">
+
+    <img
+        src="pilotos/arvid.png"
+        alt="arvid Norris">
+
+    <h2>Arvid Lindblad</h2>
+
+    <span>#41</span>
+
+    <p>Racing Bulls Formula 1 Team</p>
+
+</div>
+
+<div class="menu-links-arvid">
+	<ul>
+
+		
+	<li>
+<a href="#intro-arvid">
+<span><i class="fa-solid fa-house"></i> Introdução</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+<li>
+<a href="#about">
+<span><i class="fa-solid fa-id-card"></i> Dados</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+<li>
+<a href="#carreira">
+<span><i class="fa-solid fa-flag-checkered"></i> Carreira</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+<li>
+<a href="#pilotos">
+<span><i class="fa-solid fa-scale-balanced"></i> Comparação</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+<li>
+<a href="#numeros">
+<span><i class="fa-solid fa-chart-column"></i> Estatísticas</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+<li>
+<a href="#resultados">
+<span><i class="fa-solid fa-calendar"></i> Temporadas</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+<li>
+    <a href="#arvid-season-2026">
+        <span>
+            <i class="fa-solid fa-ranking-star"></i>
+            Temporada Atual
+        </span>
+        <i class="fa-solid fa-chevron-right"></i>
+    </a>
+</li>
+		
+<li>
+<a href="#pilotagem">
+<span><i class="fa-solid fa-gauge-high"></i> Pilotagem</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+<li>
+<a href="#teammates">
+<span><i class="fa-solid fa-users"></i> Companheiros</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+<li>
+<a href="#radio">
+<span><i class="fa-solid fa-radio"></i> Rádio</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+<li>
+<a href="#galeria">
+<span><i class="fa-solid fa-image"></i> Galeria</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+	</ul>
+</div>		
+	</nav>
+
+  <!-- OVERLAY -->
+  <div class="overlay-arvids" id="overlayarvid"></div>
+
+<div class="painel-noticias-arvid" id="painelNoticiasarvid">
+
+
+<div class="topo-noticias-arvid">
+
+    <h2>
+        <i class="fa-solid fa-newspaper"></i>
+        Arvid News
+    </h2>
+
+    <div class="acoes-topo-arvid">
+
+        <button id="atualizarNoticiasarvid"
+        title="Atualizar notícias">
+
+            <i class="fa-solid fa-rotate"></i>
+
+        </button>
+
+        <button id="fecharNoticiasarvid">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+    </div>
+
+</div>
+
+	
+    <div class="lista-noticias-arvid" id="listaNoticiasarvid">
+
+        <!-- Loading -->
+        <div class="loading-noticias-arvid">
+
+            <div class="spinner-arvid"></div>
+
+            <p>Carregando notícias...</p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="overlay-noticias-arvid"
+id="overlayNoticiasarvid"></div>
+
+
+
+     <div class="arvid-banner-bg">
+
+  <!-- CHUVA -->
+  <div class="arvid-rain">
+    <span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span>
+  </div>
+
+  <!-- BOTÃO HOME -->
+  <a href="index.html" class="home-btn-arvid">
+    <img src="logos/f1-logo.png" alt="Home">
+    <span>Home</span>
+  </a>
+
+  <!-- INFO -->
+  <div class="arvid-banner-info">
+
+    <div class="arvid-nome">
+      <span>Arvid</span>
+      <strong>Lindblad</strong>
+    </div>
+
+    <div class="arvid-pais">
+        🇬🇧 UNITED KINGDOM
+    </div>
+
+    <div class="arvid-equipe">
+      Racing Bulls F1 Team
+    </div>
+
+    <div class="arvid-frase">
+      "I want you to remember me. I'll see you in five years." 
+    </div>
+
+  </div>
+
+  <!-- NÚMERO -->
+  <div class="arvid-numero-bg">
+    41
+  </div>
+
+  <!-- PARTÍCULAS -->
+  <div class="arvid-particles">
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <!-- REDES SOCIAIS -->
+  <div class="arvid-socials">
+
+    <a href="https://www.instagram.com/arvid.lindblad?igsh=MWNoeXRucDFrb3I0Zw==" target="_blank" class="social-link-arvid">
+      <i class="fab fa-instagram"></i>
+    </a>
+
+  </div>
+
+</div>
+    
+
+<section class="intro-arvid" id="intro-arvid">
+
+  <div class="intro-arvid-container">
+
+    <div class="intro-arvid-texto">
+      <h2>Arvid Lindblad</h2>
+
+      <p>
+        Arvid Lindblad é considerado um dos maiores talentos da nova geração do automobilismo. Integrante do programa de jovens pilotos da Red Bull, o britânico construiu uma reputação baseada em velocidade natural, agressividade controlada e uma impressionante capacidade de adaptação.
+      </p>
+
+      <p>
+        Desde os tempos de kart, Lindblad acumulou vitórias e títulos importantes contra alguns dos melhores jovens pilotos do mundo. Sua rápida ascensão pelas categorias de base chamou a atenção da Red Bull, que o vê como um dos nomes mais promissores para o futuro da Fórmula 1.
+      </p>
+
+      <p>
+        Com maturidade acima da média, talento bruto e mentalidade vencedora, Arvid Lindblad continua sua trajetória rumo ao topo do automobilismo, sendo apontado por muitos especialistas como um possível piloto de Fórmula 1 nos próximos anos.
+      </p>
+
+      <div class="intro-arvid-dados">
+        <span>🇬🇧 British Driver</span>
+        <span>🔴 Red Bull Junior Team</span>
+        <span>🚀 Uma das maiores promessas da nova geração</span>
+      </div>
+
+    </div>
+
+    <div class="intro-arvid-img">
+      <img src="arvid/intro.jpeg" alt="Arvid Lindblad">
+    </div>
+
+  </div>
+
+</section>
+
+
+ <section class="about-lindblad" id="about">
+
+<div class="about-lindblad-container">
+
+<div class="about-lindblad-image">
+<img src="arvid/about.webp">
+</div>
+
+<div class="about-lindblad-content">
+
+<span class="about-lindblad-tag">
+Visa Cash App Racing Bulls
+</span>
+
+<h2>Arvid Lindblad</h2>
+
+<p class="about-lindblad-text">
+Arvid Lindblad chegou à Fórmula 1 como uma das maiores promessas da academia Red Bull. Conhecido pela velocidade e pela subida extremamente rápida nas categorias de base.
+</p>
+
+<p class="about-lindblad-text">
+Depois de conquistar resultados importantes no kart, F4, F3 e F2, recebeu a oportunidade de estrear na Fórmula 1 em 2026 pela Racing Bulls. 1
+</p>
+
+<div class="about-lindblad-stats">
+
+<div class="about-stat-lindblad">
+<span>2007</span>
+<h3>Nascimento</h3>
+<p>8 de Agosto</p>
+</div>
+
+<div class="about-stat-lindblad">
+<span>LONDON</span>
+<h3>Origem</h3>
+<p>Inglaterra</p>
+</div>
+
+<div class="about-stat-lindblad">
+<span>🇬🇧</span>
+<h3>Nacionalidade</h3>
+<p>Britânico</p>
+</div>
+
+<div class="about-stat-lindblad">
+<span>#41</span>
+<h3>Número</h3>
+<p>F1 2026</p>
+</div>
+
+<div class="about-stat-lindblad">
+<span>2021</span>
+<h3>Kart</h3>
+<p>WSK Euro Series</p>
+</div>
+
+<div class="about-stat-lindblad">
+<span>Red Bull</span>
+<h3>Academia</h3>
+<p>Desde jovem</p>
+</div>
+
+<div class="about-stat-lindblad">
+<span>18</span>
+<h3>Idade</h3>
+<p>Temporada 2026</p>
+</div>
+
+<div class="about-stat-lindblad">
+<span>2026</span>
+<h3>Estreia</h3>
+<p>Fórmula 1</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+	
+
+  <section class="slider-arvid" id="carreira">
+
+  <div class="bg-slider-arvid"></div>
+
+  <h2 class="titulo-arvid-slider">Carreira</h2>
+
+  <div class="slider-arvid-container">
+
+    <div class="slider-arvid-track">
+
+      <!-- KART -->
+      <div class="slide-arvid">
+        <img src="arvid/kart.jpg">
+        <div class="slide-arvid-texto">
+          <h3>Kart</h3>
+          <p>Após uma breve experiência no motocross, Lindblad foi introduzido ao kart quando tinha cinco anos, após pressão da mãe, com o piloto alegando mais tarde que se apaixonou "imediatamente" pelo esporte. Ele começou a disputar campeonatos em 2015, e em 2018, venceu a LGM Series e se tornou campeão britânico na categoria cadete, representando a Oliver Rowland Motorsport.</p>
+        </div>
+      </div>
+
+      <!-- FORMULA 4 / JUNIOR -->
+      <div class="slide-arvid">
+        <img src="arvid/f4.jpeg">
+        <div class="slide-arvid-texto">
+          <h3>Fórmula 4</h3>
+          <p>Em 2022, Lindblad fez sua estreia em corridas de monopostos ao se juntar à Van Amersfoort Racing no Campeonato Italiano de F4. Ele teve um ótimo começo, conquistando seis vitórias nas quatro primeiras rodadas. aumentando sua liderança no campeonato para 80 pontos.No entanto, ele perdeu a liderança após a etapa de Mugello e finalmente terminou o campeonato em terceiro.</p>
+        </div>
+      </div>
+
+
+      <!-- F3 -->
+      <div class="slide-arvid">
+        <img src="arvid/f3.jpeg">
+        <div class="slide-arvid-texto">
+          <h3>Fórmula 3</h3>
+          <p>Em outubro de 2023, Lindblad foi contratado para correr com a Prema Racing no Campeonato de Fórmula 3 da FIA de 2024. Lindblad foi o piloto que mais venceu corridas nessa temporada, com 4 triunfos.Mas uma série de resultados ruins, fez com que Lindblad terminasse a temporada em 4° no campeonato</p>
+        </div>
+      </div>
+
+     <!-- F2 -->
+    <div class="slide-arvid">
+  <img src="arvid/f2.webp">
+  <div class="slide-arvid-texto">
+    <h3>Fórmula 2</h3>
+    <p>
+      Em setembro de 2024, a equipe da Fórmula 2 Campos Racing anunciou a contratação de Lindblad para disputar a temporada de 2025 da Fórmula 2, Arvid terminou o ano com uma pole, três vitórias, cinco pódios e 134 pontos, se classificando em sexto lugar no campeonato de pilotos.
+    </p>
+  </div>
+</div>
+
+
+      <!-- F1 DEBUT -->
+      <div class="slide-arvid">
+        <img src="arvid/f1.jpeg">
+        <div class="slide-arvid-texto">
+          <h3>Estreia na Fórmula 1</h3>
+          <p>
+               Em dezembro de 2025, a Racing Bulls confirmou oficialmente a contratação de Lindblad para correr ao lado de Liam Lawson na temporada de 2026 da Fórmula 1.[43] Ele adotou o número 41, sendo o único estreante da temporada.
+          </p>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="dots-arvid"></div>
+
+    <button class="btn-arvid prev">‹</button>
+    <button class="btn-arvid next">›</button>
+
+  </div>
+
+</section>  
+
+
+
+
+<section class="numeros-arvid" id="numeros">
+
+<img src="arvid/numeros.jpeg" class="bg-numeros-arvid">
+
+<div class="overlay-numeros-arvid"></div>
+
+
+
+
+<div class="luz-laranja-arvid"></div>
+
+<div class="faíscas-arvid">
+<div class="spark-arvid"></div>
+<div class="spark-arvid"></div>
+<div class="spark-arvid"></div>
+<div class="spark-arvid"></div>
+<div class="spark-arvid"></div>
+</div>
+
+
+
+<h2 class="titulo-numeros-arvid">Estatisticas do arvid Sainz</h2>
+
+<div class="stats-grid-arvid">
+
+<div class="card-stat-arvid grande-arvid animar-arvid">
+<span id="corridas-arvid" class="contador-arvid" data-target="0">
+    0</span>
+	<div class="barra-velocidade-arvid"></div>
+<p>🏁 Corridas</p>
+</div>
+
+<div class="card-stat-arvid animar-arvid">
+<span id="poles-arvid" class="contador-arvid" data-target="0">0</span>
+<div class="barra-velocidade-arvid"></div>
+<p>⚡ Poles</p>
+</div>
+<div class="card-stat-arvid animar-arvid">
+<span id="vitorias-arvid" class="contador-arvid" data-target="0">0</span>
+<div class="barra-velocidade-arvid"></div>
+<p>🥇 Vitorias</p>
+</div>
+
+<div class="card-stat-arvid animar-arvid">
+	<span id="podios-arvid" class="contador-arvid" data-target="0">0</span>
+<div class="barra-velocidade-arvid"></div>
+<p>🥉 Pódios</p>
+</div>
+
+<div class="card-stat-arvid grande-arvid animar-arvid">
+    <span id="pontos-arvid" class="contador-arvid" data-target="0">0</span>
+    <div class="barra-velocidade-arvid"></div>
+    <p>📈 Pontos no Total</p>
+</div>
+	
+</div>
+</section>
+
+	
+
+<section class="lindblad-timeline" id="resultados">
+
+  <div class="lindblad-top-timeline">
+
+    <h2 class="lindblad-timeline-title">
+      Arvid Lindblad Seasons
+    </h2>
+
+    <div class="lindblad-anos">
+
+      
+      <button class="lindblad-ano-btn active" data-year="2026">2026</button>
+
+    </div>
+
+  </div>
+
+  <div class="lindblad-corridas-container"></div>
+  <div class="lindblad-season-summary"></div>
+
+</section>
+
+<section class="arvid-season-2026" id="arvid-season-2026">
+
+    <div class="arvid-season-2026-container">
+
+        <!-- IMAGEM DO arvid-->
+        <div class="arvid-season-2026-image">
+
+            <div class="arvid-season-2026-image-overlay"></div>
+
+            <img
+                src="arvid/head.webp"
+                alt="arvidarvid— Temporada 2026">
+
+            <div class="arvid-season-2026-number">
+               41
+            </div>
+
+        </div>
+
+
+        <!-- CONTEÚDO -->
+        <div class="arvid-season-2026-content">
+
+            <span class="arvid-season-2026-tag">
+                Racing Bulls Formula 1 Team
+            </span>
+<h1 
+class="arvid-season-2026-driver-name">
+	<strong>Arvid Lindblad</strong>
+
+            <h2>
+                Temporada 2026
+            </h2>
+
+            <p class="arvid-season-2026-subtitle">
+                Estatísticas de Arvid Lindblad temporada atual
+            </p>
+
+
+            <!-- POSIÇÃO NO CAMPEONATO -->
+            <div class="arvid-season-2026-championship">
+
+                <div class="arvid-season-2026-championship-info">
+
+                    <span>
+                        POSIÇÃO NO CAMPEONATO
+                    </span>
+
+                    <strong id="arvid-season-position">
+                        —
+                    </strong>
+
+                </div>
+
+                <div class="arvid-season-2026-points">
+
+                    <span id="arvid-season-points">
+                        —
+                    </span>
+
+                    <small>
+                        PONTOS
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <!-- GRID DE ESTATÍSTICAS -->
+            <div class="arvid-season-2026-stats">
+
+
+                <!-- CORRIDAS -->
+                <div class="arvid-season-2026-stat">
+
+                    <div class="arvid-season-2026-stat-icon">
+                        🏁
+                    </div>
+
+                    <div class="arvid-season-2026-stat-info">
+
+                        <span
+                            id="arvid-season-races">
+                            —
+                        </span>
+
+                        <p>
+                            Corridas
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- VITÓRIAS -->
+                <div class="arvid-season-2026-stat">
+
+                    <div class="arvid-season-2026-stat-icon">
+                        🥇
+                    </div>
+
+                    <div class="arvid-season-2026-stat-info">
+
+                        <span
+                            id="arvid-season-wins">
+                            —
+                        </span>
+
+                        <p>
+                            Vitórias
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PÓDIOS -->
+                <div class="arvid-season-2026-stat">
+
+                    <div class="arvid-season-2026-stat-icon">
+                        🏆
+                    </div>
+
+                    <div class="arvid-season-2026-stat-info">
+
+                        <span
+                            id="arvid-season-podiums">
+                            —
+                        </span>
+
+                        <p>
+                            Pódios
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- POLES -->
+                <div class="arvid-season-2026-stat">
+
+                    <div class="arvid-season-2026-stat-icon">
+                        ⚡
+                    </div>
+
+                    <div class="arvid-season-2026-stat-info">
+
+                        <span
+                            id="arvid-season-poles">
+                            —
+                        </span>
+
+                        <p>
+                            Poles
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TOP 5 -->
+                <div class="arvid-season-2026-stat">
+
+                    <div class="arvid-season-2026-stat-icon">
+                        🔥
+                    </div>
+
+                    <div class="arvid-season-2026-stat-info">
+
+                        <span
+                            id="arvid-season-top5">
+                            —
+                        </span>
+
+                        <p>
+                            Top 5
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- VOLTAS MAIS RÁPIDAS -->
+                <div class="arvid-season-2026-stat">
+
+                    <div class="arvid-season-2026-stat-icon">
+                        ⏱️
+                    </div>
+
+                    <div class="arvid-season-2026-stat-info">
+
+                        <span
+                            id="arvid-season-fastest-laps">
+                            —
+                        </span>
+
+                        <p>
+                            Voltas rápidas
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ABANDONOS -->
+                <div class="arvid-season-2026-stat">
+
+                    <div class="arvid-season-2026-stat-icon">
+                        ❌
+                    </div>
+
+                    <div class="arvid-season-2026-stat-info">
+
+                        <span
+                            id="arvid-season-dnfs">
+                            —
+                        </span>
+
+                        <p>
+                            Abandonos
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- MELHOR RESULTADO -->
+                <div class="arvid-season-2026-stat">
+
+                    <div class="arvid-season-2026-stat-icon">
+                        🚀
+                    </div>
+
+                    <div class="arvid-season-2026-stat-info">
+
+                        <span
+                            id="arvid-season-best-result">
+                            —
+                        </span>
+
+                        <p>
+                            Melhor resultado
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- RESUMO -->
+            <div class="arvid-season-2026-summary">
+
+                <div class="arvid-season-2026-summary-item">
+
+                    <span>
+                        MÉDIA DE CHEGADA
+                    </span>
+
+                    <strong id="arvid-season-average-finish">
+                        —
+                    </strong>
+
+                </div>
+
+
+                <div class="arvid-season-2026-summary-item">
+
+                    <span>
+                        MÉDIA NA CLASSIFICAÇÃO
+                    </span>
+
+                    <strong id="arvid-season-average-quali">
+                        —
+                    </strong>
+
+                </div>
+
+
+                <div class="arvid-season-2026-summary-item">
+
+                    <span>
+                        MELHOR GRID
+                    </span>
+
+                    <strong id="arvid-season-best-quali">
+                        —
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+	
+
+<section class="pilotagem-lindblad" id="pilotagem">
+
+  <!-- =======================================================
+       CABEÇALHO
+  ======================================================== -->
+
+  <div class="pilotagem-header-lindblad">
+
+    <span class="pilotagem-tag-lindblad">
+      ANÁLISE TÉCNICA
+    </span>
+
+    <h2 class="titulo-pilotagem-lindblad">
+      ESTILO DE <span>PILOTAGEM</span>
+    </h2>
+
+    <p class="pilotagem-intro-lindblad">
+      Uma análise das principais características que definem
+      o estilo de Arvid Lindblad dentro da Fórmula 1.
+    </p>
+
+  </div>
+
+
+  <!-- =======================================================
+       CARD PRINCIPAL
+  ======================================================== -->
+
+  <div class="pilotagem-card-principal-lindblad">
+
+
+    <!-- PERFIL -->
+
+    <div class="pilotagem-perfil-lindblad reveal-lindblad">
+
+      <div class="perfil-imagem-container-lindblad">
+
+        <img
+          src="arvid/head.webp"
+          alt="Arvid Lindblad"
+          class="perfil-imagem-lindblad"
+        >
+
+      </div>
+
+
+      <div class="perfil-info-lindblad">
+
+        <span class="perfil-numero-lindblad">
+          41
+        </span>
+
+        <h3 class="perfil-nome-lindblad">
+
+          ARVID
+
+          <span>
+            LINDBLAD
+          </span>
+
+        </h3>
+
+
+        <p class="perfil-equipe-lindblad">
+          RACING BULLS
+        </p>
+
+
+        <div class="perfil-frase-lindblad">
+
+          <i class="fa-solid fa-quote-left"></i>
+
+          <p>
+            Agressivo, veloz e determinado.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- ANÁLISE -->
+
+    <div class="pilotagem-analise-lindblad reveal-lindblad">
+
+      <div class="analise-topo-lindblad">
+
+        <span class="analise-label-lindblad">
+          PERFIL DE PILOTAGEM
+        </span>
+
+        <h3>
+          VELOCIDADE E <span>AGRESSIVIDADE</span>
+        </h3>
+
+      </div>
+
+
+      <p>
+        Arvid Lindblad se destaca pela velocidade natural e por uma
+        abordagem agressiva nas disputas. O jovem piloto possui uma
+        grande confiança ao volante e não costuma evitar oportunidades
+        de ataque quando encontra uma abertura.
+      </p>
+
+
+      <p>
+        Sua pilotagem é baseada em intensidade, reflexos rápidos e
+        capacidade de manter um ritmo competitivo. Mesmo em início de
+        carreira, demonstra personalidade e disposição para assumir
+        riscos calculados.
+      </p>
+
+
+      <!-- CARACTERÍSTICAS -->
+
+      <div class="caracteristicas-lindblad">
+
+
+        <div class="caracteristica-lindblad">
+
+          <div class="caracteristica-icone-lindblad">
+            <i class="fa-solid fa-fire"></i>
+          </div>
+
+          <div>
+
+            <h4>
+              AGRESSIVO
+            </h4>
+
+            <p>
+              Busca oportunidades e não hesita em disputar posições.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="caracteristica-lindblad">
+
+          <div class="caracteristica-icone-lindblad">
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+
+          <div>
+
+            <h4>
+              VELOZ
+            </h4>
+
+            <p>
+              Possui velocidade natural e forte ritmo de corrida.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="caracteristica-lindblad">
+
+          <div class="caracteristica-icone-lindblad">
+            <i class="fa-solid fa-bullseye"></i>
+          </div>
+
+          <div>
+
+            <h4>
+              DETERMINADO
+            </h4>
+
+            <p>
+              Mantém uma postura intensa e competitiva nas disputas.
+            </p>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- =======================================================
+       HABILIDADES
+  ======================================================== -->
+
+  <div class="pilotagem-skills-section-lindblad">
+
+    <div class="skills-header-lindblad">
+
+      <span>
+        HABILIDADES
+      </span>
+
+      <h3>
+        ÍNDICE DE <span>PERFORMANCE</span>
+      </h3>
+
+    </div>
+
+
+    <div class="skills-grid-lindblad">
+
+
+      <!-- VELOCIDADE -->
+
+      <div class="skill-card-lindblad reveal-lindblad">
+
+        <div class="skill-topo-lindblad">
+
+          <div class="skill-nome-lindblad">
+
+            <i class="fa-solid fa-bolt"></i>
+
+            <span>
+              VELOCIDADE
+            </span>
+
+          </div>
+
+          <strong
+            class="skill-numero-lindblad"
+            data-value="87"
+          >
+            0
+          </strong>
+
+        </div>
+
+        <div class="skill-barra-lindblad">
+
+          <div
+            class="skill-progresso-lindblad"
+            data-width="87%"
+          ></div>
+
+        </div>
+
+      </div>
+
+
+      <!-- CONSISTÊNCIA -->
+
+      <div class="skill-card-lindblad reveal-lindblad">
+
+        <div class="skill-topo-lindblad">
+
+          <div class="skill-nome-lindblad">
+
+            <i class="fa-solid fa-chart-line"></i>
+
+            <span>
+              CONSISTÊNCIA
+            </span>
+
+          </div>
+
+          <strong
+            class="skill-numero-lindblad"
+            data-value="84"
+          >
+            0
+          </strong>
+
+        </div>
+
+        <div class="skill-barra-lindblad">
+
+          <div
+            class="skill-progresso-lindblad"
+            data-width="84%"
+          ></div>
+
+        </div>
+
+      </div>
+
+
+      <!-- INTELIGÊNCIA -->
+
+      <div class="skill-card-lindblad reveal-lindblad">
+
+        <div class="skill-topo-lindblad">
+
+          <div class="skill-nome-lindblad">
+
+            <i class="fa-solid fa-brain"></i>
+
+            <span>
+              INTELIGÊNCIA DE CORRIDA
+            </span>
+
+          </div>
+
+          <strong
+            class="skill-numero-lindblad"
+            data-value="86"
+          >
+            0
+          </strong>
+
+        </div>
+
+        <div class="skill-barra-lindblad">
+
+          <div
+            class="skill-progresso-lindblad"
+            data-width="86%"
+          ></div>
+
+        </div>
+
+      </div>
+
+
+      <!-- GESTÃO DE PNEUS -->
+
+      <div class="skill-card-lindblad reveal-lindblad">
+
+        <div class="skill-topo-lindblad">
+
+          <div class="skill-nome-lindblad">
+
+            <i class="fa-solid fa-circle-dot"></i>
+
+            <span>
+              GESTÃO DE PNEUS
+            </span>
+
+          </div>
+
+          <strong
+            class="skill-numero-lindblad"
+            data-value="85"
+          >
+            0
+          </strong>
+
+        </div>
+
+        <div class="skill-barra-lindblad">
+
+          <div
+            class="skill-progresso-lindblad"
+            data-width="85%"
+          ></div>
+
+        </div>
+
+      </div>
+
+
+      <!-- ULTRAPASSAGEM -->
+
+      <div class="skill-card-lindblad reveal-lindblad">
+
+        <div class="skill-topo-lindblad">
+
+          <div class="skill-nome-lindblad">
+
+            <i class="fa-solid fa-forward"></i>
+
+            <span>
+              ULTRAPASSAGEM
+            </span>
+
+          </div>
+
+          <strong
+            class="skill-numero-lindblad"
+            data-value="91"
+          >
+            0
+          </strong>
+
+        </div>
+
+        <div class="skill-barra-lindblad">
+
+          <div
+            class="skill-progresso-lindblad"
+            data-width="91%"
+          ></div>
+
+        </div>
+
+      </div>
+
+
+      <!-- CLASSIFICAÇÃO -->
+
+      <div class="skill-card-lindblad reveal-lindblad">
+
+        <div class="skill-topo-lindblad">
+
+          <div class="skill-nome-lindblad">
+
+            <i class="fa-solid fa-stopwatch"></i>
+
+            <span>
+              CLASSIFICAÇÃO
+            </span>
+
+          </div>
+
+          <strong
+            class="skill-numero-lindblad"
+            data-value="88"
+          >
+            0
+          </strong>
+
+        </div>
+
+        <div class="skill-barra-lindblad">
+
+          <div
+            class="skill-progresso-lindblad"
+            data-width="88%"
+          ></div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+  <!-- =======================================================
+       RADAR
+  ======================================================== -->
+
+  <div class="pilotagem-grafico-section-lindblad reveal-lindblad">
+
+    <div class="grafico-header-lindblad">
+
+      <span>
+        PERFIL COMPLETO
+      </span>
+
+      <h3>
+        RADAR DE <span>PILOTAGEM</span>
+      </h3>
+
+    </div>
+
+
+    <div class="grafico-layout-lindblad">
+
+      <div class="radar-container-lindblad">
+
+        <svg
+          class="radar-lindblad"
+          viewBox="0 0 500 500"
+        >
+
+          <circle cx="250" cy="250" r="200" class="radar-linha-lindblad" />
+          <circle cx="250" cy="250" r="150" class="radar-linha-lindblad" />
+          <circle cx="250" cy="250" r="100" class="radar-linha-lindblad" />
+          <circle cx="250" cy="250" r="50" class="radar-linha-lindblad" />
+
+          <line x1="250" y1="250" x2="250" y2="50" class="radar-eixo-lindblad" />
+          <line x1="250" y1="250" x2="423" y2="150" class="radar-eixo-lindblad" />
+          <line x1="250" y1="250" x2="423" y2="350" class="radar-eixo-lindblad" />
+          <line x1="250" y1="250" x2="250" y2="450" class="radar-eixo-lindblad" />
+          <line x1="250" y1="250" x2="77" y2="350" class="radar-eixo-lindblad" />
+          <line x1="250" y1="250" x2="77" y2="150" class="radar-eixo-lindblad" />
+
+          <polygon
+            class="radar-area-lindblad"
+            points="250,250 250,250 250,250 250,250 250,250 250,250"
+          />
+
+          <circle cx="250" cy="250" r="6" class="radar-ponto-lindblad" />
+          <circle cx="250" cy="250" r="6" class="radar-ponto-lindblad" />
+          <circle cx="250" cy="250" r="6" class="radar-ponto-lindblad" />
+          <circle cx="250" cy="250" r="6" class="radar-ponto-lindblad" />
+          <circle cx="250" cy="250" r="6" class="radar-ponto-lindblad" />
+          <circle cx="250" cy="250" r="6" class="radar-ponto-lindblad" />
+
+        </svg>
+
+        <span class="radar-label-lindblad radar-top-lindblad">VELOCIDADE</span>
+        <span class="radar-label-lindblad radar-top-right-lindblad">CONSISTÊNCIA</span>
+        <span class="radar-label-lindblad radar-bottom-right-lindblad">INTELIGÊNCIA</span>
+        <span class="radar-label-lindblad radar-bottom-lindblad">PNEUS</span>
+        <span class="radar-label-lindblad radar-bottom-left-lindblad">ULTRAPASSAGEM</span>
+        <span class="radar-label-lindblad radar-top-left-lindblad">CLASSIFICAÇÃO</span>
+
+      </div>
+
+
+      <!-- RESUMO -->
+
+      <div class="grafico-resumo-lindblad">
+
+        <div class="resumo-card-lindblad forte">
+
+          <div class="resumo-icone-lindblad">
+            <i class="fa-solid fa-star"></i>
+          </div>
+
+          <div>
+
+            <span>
+              PRINCIPAL QUALIDADE
+            </span>
+
+            <h4>
+              ULTRAPASSAGEM
+            </h4>
+
+            <p>
+              Possui uma abordagem agressiva e confiança para
+              buscar oportunidades nas disputas diretas.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="resumo-card-lindblad evoluir">
+
+          <div class="resumo-icone-lindblad">
+            <i class="fa-solid fa-arrow-trend-up"></i>
+          </div>
+
+          <div>
+
+            <span>
+              ÁREA DE EVOLUÇÃO
+            </span>
+
+            <h4>
+              CONSISTÊNCIA
+            </h4>
+
+            <p>
+              A experiência pode ajudar a transformar sua velocidade
+              em performances fortes de forma cada vez mais regular.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="resumo-card-lindblad destaque">
+
+          <div class="resumo-icone-lindblad">
+            <i class="fa-solid fa-fire"></i>
+          </div>
+
+          <div>
+
+            <span>
+              ESTILO PRINCIPAL
+            </span>
+
+            <h4>
+              AGRESSIVO
+            </h4>
+
+            <p>
+              Um piloto intenso, competitivo e disposto a atacar
+              sempre que encontra uma oportunidade.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- CONCLUSÃO -->
+
+  <div class="pilotagem-conclusao-lindblad reveal-lindblad">
+
+    <span>
+      RESUMO DA ANÁLISE
+    </span>
+
+    <h3>
+      UM PILOTO <strong>AGRESSIVO</strong>,
+      <strong>VELOZ</strong> E
+      <strong>DETERMINADO</strong>
+    </h3>
+
+    <p>
+      O estilo de Arvid Lindblad é baseado na combinação entre
+      velocidade natural, agressividade e determinação. Seu perfil
+      competitivo faz dele um piloto que busca constantemente atacar
+      e extrair o máximo de cada situação.
+    </p>
+
+  </div>
+
+</section>
+
+
+
+
+  <section class="radio-f1-arvid" id="radio">
+
+  <!-- STATUS -->
+  <div class="radio-status-arvid">TEAM RADIO</div>
+
+  <!-- INFO CORRIDA -->
+  <div class="race-info-arvid">
+    <span>P1</span>
+    <span>LAP 52</span>
+    <span>+0.000</span>
+  </div>
+
+  <!-- CARD -->
+  <div class="card-arvid" id="radioCard">
+
+    <!-- ESQUERDA -->
+    <div class="left-arvid">
+      <span class="number-arvid">41</span>
+    </div>
+
+    <!-- DIREITA -->
+    <div class="right-arvid">
+      <h1>Lindblad</h1>
+      <h2>RADIO</h2>
+      <img src="icons/racingbulls.svg" class="logo-arvid">
+    </div>
+
+    <!-- WAVE -->
+    <div class="wave-arvid">
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <!-- CONTEÚDO -->
+    <div class="content-arvid">
+      <div class="text-arvid">
+        <p class="eng-arvid" id="eng-text"></p>
+        <p class="pil-arvid" id="pil-text"></p>
+      </div>
+    </div>
+
+  </div>
+
+  <audio id="radio-audio" src="f1.mp3"></audio>
+
+</section>
+
+
+<section class="galeria-arvid" id="galeria">
+
+  <h2 class="titulo-galeria-arvid">Galeria</h2>
+
+  <div class="grid-galeria-arvid">
+
+    <div class="item-galeria-arvid">
+      <img src="arvid/capacete.jpeg">
+      <div class="overlay-arvi">
+           <h3>Capacete</h3>
+           <p>Capacete de 2026</p>
+           </div>
+    </div>
+
+    <div class="item-galeria-arvid">
+      <img src="arvid/race.jpeg">
+      <div class="overlay-arvi">
+           <h3>Corrida</h3>
+           <p>Arvid em Corrida</p>
+           </div>
+    </div>
+
+    <div class="item-galeria-arvid">
+      <img src="arvid/cele.jpeg">
+      <div class="overlay-arvi">
+           <h3>Comemoração</h3>
+           <p>Arvid Comemorando</p>
+           </div>
+    </div>
+
+
+    <div class="item-galeria-arvid">
+      <img src="arvid/team.jpeg">
+      <div class="overlay-arvi">
+           <h3>Equipe</h3>
+           <p>Arvid com Equipe</p>
+           </div>
+    </div>
+
+    <div class="item-galeria-arvid">
+      <img src="arvid/logo.jpeg">
+      <div class="overlay-arvi">
+          <h3>Marca</h3>
+           <p>Marca de Designer</p>
+           </div>
+    </div>
+
+  </div>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox-arvid">
+    <span class="fechar-arvid">×</span>
+    <img class="img-lightbox-arvid">
+  </div>
+
+</section>
+
+<footer class="footer-f1-arvid">
+
+  <div class="footer-brand-arvid">
+    <p>Arvid Lindblad</p>
+    <span>Formula 1 Driver for Racing Bulls Formula 1 Team</span>
+  </div>
+
+  <div class="footer-links-arvid">
+    <a href="index.html">Home</a>
+    <a href="f1.html">Regras</a>
+				<a href="info.html">Informações</a>
+
+    <a href="RB.html">Racing Bulls</a>
+    <a href="liam.html">Lawson</a>
+    <a href="about.html">About</a>
+  </div>
+
+  <div class="footer-social-arvid">
+    <a href="https://www.instagram.com/duduxl37?igsh=dnNwM29qYXprbnI4" target="_blank">Instagram</a>
+    <a href="https://x.com/Duducrvg1998" target="_blank">X</a>
+  
+  </div>
+
+  <div class="footer-copy-arvid">
+    © 2026 Fan Project • Inspired by Formula 1
+  </div>
+
+</footer>
+
+
+  <!-- BOTÃO VOLTAR AO TOPO -->
+ 	<button id="btnTopo" class="btn-topo">
+    <i class="fa-solid fa-arrow-up"></i>
+	</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+       <script src="arvid.js"></script>
+</body>
+</html>

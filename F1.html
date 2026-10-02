@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+ <link rel="stylesheet" href="home.css">
+	<link rel="stylesheet" href="stylemain.css">
+
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body bgcolor="#15151e">
+
+
+      <header class="header-f1">
+
+  <!-- LOGO (botão do menu) -->
+  <div class="f1-logo" id="menuTogglef1">
+    <img src="logos/F1-logo.png" alt="Equipe">
+  </div>
+
+  <!-- MENU LATERAL -->
+  <nav class="side-menu-f1" id="sideMenuf1">
+    
+    <div class="close-menu-f1" id="closeMenuf1">✕</div>
+    
+    <ul>
+      <li><a href="#pontos">Pontuação</a></li>
+      <li><a href="#pneus">Pneus</a></li>
+      <li><a href="#bandeira">Bandeiras</a></li>
+      <li><a href="#sc">Safaty Cars</a></li>
+      <li><a href="#penalti">Penalidades</a></li>
+    </ul>
+  </nav>
+
+  <!-- OVERLAY -->
+  <div class="overlay-f1" id="overlayf1"></div>
+
+</header>
+     
+
+
+
+  <section class="banner-regras">
+       
+  <a href="index.html" class="botao-home-f1">
+    <img src="logos/F1-logo.png" class="botao-home-f1" alt="logo-f1">
+</a>
+  
+    <img src="logos/F1-logo.png" alt="F1 Logo" class="logo-f1">
+    
+    <div class="conteudo-banner-regras">
+        <h1>REGRAS DA F1</h1>
+    </div>
+    
+</section>
+
+
+
+
+
+<div class="qualy-container" id="quali">
+
+  <!-- LATERAL -->
+  <div class="qualy-menu">
+    <button onclick="mostrarQualy(1)">Q1</button>
+    <button onclick="mostrarQualy(2)">Q2</button>
+    <button onclick="mostrarQualy(3)">Q3</button>
+  </div>
+
+  <!-- CENTRO -->
+  <div class="qualy-grid">
+
+    <h2 id="titulo-qualy">Q1</h2>
+    <p id="explicacao-qualy"></p>
+<h2 class="titulo-qualy-secao">Classificação</h2>
+    <div class="tabela-qualy" id="listaPilotosQualy"></div>
+
+  </div>
+
+</div>
+
+
+
+
+
+<section class="pontuacao-f1" id="pontos">
+
+<h2 class="titulo-pontuacao">Sistema de Pontuação</h2>
+
+<div class="switch-pontuacao">
+  <button class="btn-pontuacao ativo" onclick="trocarPontuacao('corrida', event)">Corrida</button>
+  <button class="btn-pontuacao" onclick="trocarPontuacao('sprint', event)">Sprint</button>
+</div>
+
+<div class="telemetria-pontuacao" id="telemetria-pontuacao"></div>
+
+</section>
+
+
+
+ <section class="compostos-f1" id="compostos">
+
+    <h2 class="titulo-compostos">
+        Compostos de Pneus
+    </h2>
+
+    <p class="texto-compostos">
+        A Pirelli produz cinco compostos slick, identificados como
+        <strong>C1</strong> até <strong>C5</strong>, variando do mais duro ao mais macio.
+        Para cada Grande Prêmio, a FIA e a Pirelli escolhem apenas três desses compostos,
+        que passam a ser chamados de <strong>Hard</strong>,
+        <strong>Medium</strong> e <strong>Soft</strong> durante o fim de semana.
+        Além deles, existem dois pneus específicos para condições de chuva:
+        <strong>Intermediário</strong> e <strong>Full Wet</strong>.
+    </p>
+
+    <!-- SLICKS -->
+    <h3 class="subtitulo-compostos">
+        Pneus Slick (Pista Seca)
+    </h3>
+
+    <div class="grid-compostos">
+
+        <div class="card-composto">
+            <img src="pneus/duro.webp" alt="C1">
+            <h3>C1</h3>
+            <span>Mais duro</span>
+            <p>
+                Máxima durabilidade. Ideal para circuitos muito abrasivos
+                e stints longos.
+            </p>
+        </div>
+
+        <div class="card-composto">
+            <img src="pneus/duro.webp" alt="C2">
+            <h3>C2</h3>
+            <span>Duro</span>
+            <p>
+                Equilibra resistência e desempenho.
+                Frequentemente utilizado como Hard.
+            </p>
+        </div>
+
+        <div class="card-composto">
+            <img src="pneus/medio.webp" alt="C3">
+            <h3>C3</h3>
+            <span>Intermediário</span>
+            <p>
+                Composto mais versátil da gama.
+                Pode ser Hard, Medium ou Soft dependendo do GP.
+            </p>
+        </div>
+
+        <div class="card-composto">
+            <img src="pneus/macio.webp" alt="C4">
+            <h3>C4</h3>
+            <span>Macio</span>
+            <p>
+                Excelente aderência para classificação
+                e stints mais curtos.
+            </p>
+        </div>
+
+        <div class="card-composto">
+            <img src="pneus/macio.webp" alt="C5">
+            <h3>C5</h3>
+            <span>Mais macio</span>
+            <p>
+                Máximo desempenho e aderência,
+                porém com desgaste elevado.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- CHUVA -->
+    <h3 class="subtitulo-compostos chuva">
+        Pneus para Chuva
+    </h3>
+
+    <div class="grid-chuva">
+
+        <div class="card-composto chuva-card">
+            <img src="pneus/inter.webp" alt="Intermediário">
+            <h3>Intermediário</h3>
+            <span>Faixa Verde</span>
+            <p>
+                Utilizado quando a pista está úmida
+                ou com chuva leve.
+            </p>
+        </div>
+
+        <div class="card-composto chuva-card">
+            <img src="pneus/wet.webp" alt="Full Wet">
+            <h3>Full Wet</h3>
+            <span>Faixa Azul</span>
+            <p>
+                Utilizado em chuva intensa e quando há
+                grande quantidade de água na pista.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+	
+
+<section class="pneus-f1" id="pneus">
+
+<!-- =========================
+     TÍTULO
+========================= -->
+<h2 class="titulo-pneus">Estratégia de Pneus</h2>
+
+<!-- =========================
+     CLIMA
+========================= -->
+<div class="clima">
+  <button onclick="mudarClima('seco')" class="ativo">☀️ Seco</button>
+  <button onclick="mudarClima('chuva')">🌧️ Chuva</button>
+</div>
+
+<!-- =========================
+     SELETOR DE PNEUS
+========================= -->
+<div class="seletor-pneus">
+  <div class="pneu" onclick="selecionarPneu(0)">Soft</div>
+  <div class="pneu" onclick="selecionarPneu(1)">Medium</div>
+  <div class="pneu" onclick="selecionarPneu(2)">Hard</div>
+  <div class="pneu" onclick="selecionarPneu(3)">Inter</div>
+  <div class="pneu" onclick="selecionarPneu(4)">Wet</div>
+</div>
+
+<!-- =========================
+     CARD PRINCIPAL
+========================= -->
+<div class="info-pneu">
+
+  <img id="imgPrincipal" class="img-pneu" src="" alt="Pneu">
+
+  <h3 id="nomePrincipal">Selecione um pneu</h3>
+  <p id="descPrincipal">Clique em um composto para ver detalhes</p>
+
+  <!-- STATS -->
+  <div class="stats-pneu">
+
+    <div class="stat">
+      <span>Grip</span>
+      <div class="barra"><div id="statGrip"></div></div>
+    </div>
+
+    <div class="stat">
+      <span>Durabilidade</span>
+      <div class="barra"><div id="statDur"></div></div>
+    </div>
+
+    <div class="stat">
+      <span>Velocidade</span>
+      <div class="barra"><div id="statVel"></div></div>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- =========================
+     DESGASTE
+========================= -->
+<div class="desgaste-box">
+
+  <button onclick="simularDesgaste()">Simular Stint</button>
+
+  <div class="barra-desgaste">
+    <div id="desgaste"></div>
+  </div>
+
+  <p id="textoDesgaste"></p>
+
+</div>
+
+<!-- =========================
+     COMPARADOR
+========================= -->
+<div class="comparador-pneus">
+
+<h2>Comparar Pneus</h2>
+
+<div class="cards-comparar">
+
+  <!-- CARD 1 -->
+  <div class="card-comp" onclick="abrirSelecao(0)">
+    <p class="placeholder">Selecionar Pneu</p>
+    <img id="imgComp0">
+    <h3 id="nomeComp0"></h3>
+  </div>
+
+  <!-- CARD 2 -->
+  <div class="card-comp" onclick="abrirSelecao(1)">
+    <p class="placeholder">Selecionar Pneu</p>
+    <img id="imgComp1">
+    <h3 id="nomeComp1"></h3>
+  </div>
+
+</div>
+
+<!-- STATS COMPARAÇÃO -->
+<div class="stats-comparacao">
+
+  <div class="linha">
+    <span>Grip</span>
+    <div class="barra"><div id="compGrip1"></div></div>
+    <div class="barra"><div id="compGrip2"></div></div>
+  </div>
+
+  <div class="linha">
+    <span>Durabilidade</span>
+    <div class="barra"><div id="compDur1"></div></div>
+    <div class="barra"><div id="compDur2"></div></div>
+  </div>
+
+  <div class="linha">
+    <span>Velocidade</span>
+    <div class="barra"><div id="compVel1"></div></div>
+    <div class="barra"><div id="compVel2"></div></div>
+  </div>
+
+</div>
+
+
+
+</div>
+
+</section>
+
+
+
+  <section class="slider-pit" id="regras">
+
+  <div class="bg-slider-pit"></div>
+
+  <h2 class="titulo-pit-slider">Como Funciona um Pit Stop</h2>
+
+  <div class="slider-pit-container">
+
+    <div class="slider-pit-track">
+
+      <!-- KART -->
+      <div class="slide-pit">
+				       <video muted playinline preload="auto">
+    <source src="videos/Entrada.mp4" type="video/mp4">
+</video>
+				<div class="slide-pit-texto">
+          <h3>Entrada no Pit Lane</h3>
+					
+          <p>Quando o piloto decide parar, ele entra no pit lane antes da última curva do circuito. A partir desse ponto é obrigatório respeitar o limite de velocidade (geralmente 80 km/h, podendo variar conforme o circuito). Exceder esse limite resulta em penalidade, por isso o piloto utiliza o limitador de velocidade até chegar ao box da equipe.</p>
+        </div>
+      </div>
+
+      <!-- FORMULA RENAULT -->
+      <div class="slide-pit">
+				       <video muted playinline preload="auto">
+    <source src="videos/Troca.mp4" type="video/mp4">
+</video>
+
+				<div class="slide-pit-texto">
+          <h3>Troca Dos Penus</h3>
+					
+          <p>Assim que o carro para exatamente na marca indicada, a equipe entra em ação. Quatro mecânicos retiram as rodas antigas enquanto outros quatro instalam os novos pneus. Ao mesmo tempo, outro integrante opera o macaco dianteiro e outro o traseiro para levantar o carro. Quando tudo está concluído, o mecânico responsável libera o piloto para voltar à pista. Em condições ideais, toda a operação dura cerca de 2 segundos.</p>
+        </div>
+      </div>
+
+    
+      <!-- GP3 -->
+      <div class="slide-pit">
+				       <video muted playinline preload="auto">
+    <source src="videos/Saida.mp4" type="video/mp4">
+</video>
+         <div class="slide-pit-texto">
+          <h3>Saida do Pit Lane</h3>
+					
+          <p>Após deixar o box, o piloto percorre todo o pit lane ainda respeitando o limite de velocidade. Somente ao cruzar a linha de saída ele pode acelerar novamente até a velocidade máxima. Durante esse trecho também é obrigatório respeitar a linha branca na saída dos boxes para evitar punições e garantir uma entrada segura na pista.</p>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="dots-pit"></div>
+ 
+    <button class="btn-pit prev-pit">‹</button>
+    <button class="btn-pit next-pit">›</button>
+
+  </div>
+
+</section>
+
+
+
+	
+	
+<div class="secao-bandeiras" id="bandeira">
+
+  <h2 class="titulo-bandeiras">Bandeiras da F1</h2>
+
+  <div class="slider-bandeiras">
+    <div class="bandeiras-focus">
+
+      <div class="card-focus ativo verde">
+        <img src="bandeiras/GREEN.jpg">
+        <div class="overlay-info">
+          <h3>Bandeira Verde</h3>
+          <p>Pista livre, corrida normal</p>
+        </div>
+      </div>
+
+      <div class="card-focus amarela">
+        <img src="bandeiras/YELLOW.jpg">
+        <div class="overlay-info">
+          <h3>Bandeira Amarela</h3>
+          <p>Perigo na pista</p>
+        </div>
+      </div>
+
+      <div class="card-focus vermelha">
+        <img src="bandeiras/RED.jpg">
+        <div class="overlay-info">
+          <h3>Bandeira Vermelha</h3>
+          <p>Corrida interrompida</p>
+        </div>
+      </div>
+
+      <div class="card-focus azul">
+        <img src="bandeiras/BLUE.jpg">
+        <div class="overlay-info">
+          <h3>Bandeira Azul</h3>
+          <p>Dê passagem</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="pista-sc" id="sc">
+
+  <div class="linha-pista"></div>
+
+  <!-- Safety Car -->
+  <img src="Safety/safety.png" class="safety-car">
+
+
+<div class="info-corrida">
+  <h3 class="titulo-info">CORRIDA NORMAL</h3>
+  <p class="texto-info">
+    Os carros estão em ritmo total de corrida, disputando posições livremente.
+  </p>
+</div>
+
+  <!-- Carros -->
+  <div class="carro carro1">
+    <img src="safety/w17.png">
+   
+  </div>
+
+  <div class="carro carro2">
+    <img src="safety/sf26.png">
+   
+  </div>
+  
+    <div class="carro carro3">
+    <img src="safety/mcl40.png">
+   
+  </div>
+
+  <div class="carro carro4">
+    <img src="safety/rb19.png">
+  
+  </div>
+  <!-- Aviso -->
+ <div class="aviso-sc">
+  <span class="badge-sc">SC</span>
+  SAFETY CAR DEPLOYED
+</div>
+
+<div class="aviso-vsc">
+  <span class="badge-vsc">VSC</span>
+  VIRTUAL SAFETY CAR
+</div>
+   
+<div class="hud-velocidade">
+
+  <div class="velocimetro">
+    <div class="barra-velocidade"></div>
+  </div>
+
+  <div class="vel-numero">320 km/h</div>
+
+</div>
+   
+   
+</div>
+
+<div class="pista-sc">
+
+
+ <div class="area-corrida">
+
+
+
+<div class="penalidades-container" id="penalti">
+
+  <!-- 🚨 BANNER TOPO -->
+ <div class="fia-banner">
+  <img src="fia.png" class="fia-logo">
+  <span class="fia-texto"></span>
+</div>
+
+  <!-- 📄 INFO PRINCIPAL -->
+  <div class="fia-info"></div>
+
+  
+
+  <!-- 🧩 GRID -->
+  <div class="pen-grid">
+
+    <div class="pen-card"
+    data-tipo="+5s"
+    data-piloto="Lando Norris"
+    data-numero="1">
+      <h3>+5s</h3>
+      </div>
+      
+      
+      
+    <div class="pen-card" 
+    data-tipo="+10s"
+      data-piloto="Lando Norris"
+    data-numero="1">
+      <h3>+10s</h3>
+      </div>
+      
+    <div class="pen-card"
+    data-tipo="DRIVE THROUGH"
+      data-piloto="Lando Norris"
+    data-numero="1">
+      <h3>Drive Through</h3>
+      </div>
+      
+    <div class="pen-card"
+    data-tipo="STOP & GO"
+      data-piloto="Lando Norris"
+     data-numero="1">
+      <h3>Stop & Go</h3>
+      </div>
+      
+    <div class="pen-card" 
+    data-tipo="GRID PENALTY"
+      data-piloto="Lando Norris"
+    data-numero="1">
+      <h3>Grid Penalty</h3>
+      </div>
+      
+    <div class="pen-card" 
+    data-tipo="DSQ"
+      data-piloto="Lando Norris"
+    data-numero="1">
+      <h3>DSQ</h3>
+      </div>
+
+  </div>
+
+</div>
+
+ 
+ </div> <!-- pen-grid -->
+</div> 
+
+<footer class="footer-f1-f1">
+
+  <div class="footer-brand-f1">
+    <p>F1</p>
+    <span>Formula One</span>
+  </div>
+
+  <div class="footer-links-f1">
+    <a href="index.html">Home</a>
+		<a href="info.html">Informações</a>
+    <a href="about.html">About</a>
+    <a href="index.html">Menu</a>
+  </div>
+
+  <div class="footer-social-f1">
+
+    <a 
+      href="https://www.instagram.com/duduxl37?igsh=dnNwM29qYXprbnI4" 
+      target="_blank"
+    >
+      Instagram
+    </a>
+
+    <a 
+      href="https://x.com/Duducrvg1998" 
+      target="_blank"
+    >
+      X
+    </a>
+
+  </div>
+
+  <div class="footer-copy-f1">
+    © 2026 Fan Project • Inspired by Formula 1
+  </div>
+
+</footer>
+ 
+ 
+ 	<button id="btnTopo" class="btn-topo">
+    <i class="fa-solid fa-arrow-up"></i>
+	</button>
+
+ 
+<script src="f1.js"></script>
+ </body>
+ </html>
+ 
+ 
+
+ 
+

@@ -1,0 +1,1998 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cadillac</title>
+<link rel="stylesheet" href="stylemain.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="cadillac">
+
+   
+<header class="topbar-cadillac">
+
+    <!-- MENU -->
+    <button class="menu-toggle-cadillac" id="menuTogglecadillac">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <!-- NOME -->
+<div class="topbar-title-cadillac">
+
+    <img src="icons/cadillac.png" alt="McLaren">
+
+    <span>Cadillac Formula 1 Team</span>
+
+</div>
+    <!-- NOTÍCIAS -->
+    <button class="news-toggle-cadillac" id="abrirNoticiascadillac">
+        <i class="fa-solid fa-newspaper"></i>
+    </button>
+
+</header>
+	
+  <nav class="side-menu-cadillac" id="sideMenucadillac">
+    
+    <div class="close-menu-cadillac" id="closeMenucadillac">✕</div>
+
+<div class="menu-profile-cadillac">
+
+    <img
+        src="api/cadillac.avif"
+        alt="Lando Norris">
+
+    <p>Cadillac Formula 1 Team</p>
+
+</div>
+
+
+<div class="menu-links-cadillac">
+	<ul>
+
+<li>
+<a href="#overlay">
+<span><i class="fa-solid fa-users"></i> Pilotos</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+<li>
+<a href="#intro">
+<span><i class="fa-solid fa-id-card"></i> Introdução</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+<li>
+<a href="#philo">
+<span><i class="fa-solid fa-lightbulb"></i> Filosofia</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+<li>
+<a href="#fac">
+<span><i class="fa-solid fa-industry"></i> Fabrica</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+<li>
+<a href="#linha">
+<span><i class="fa-solid fa-timeline"></i> Linha Geneólogica</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+<li>
+<a href="#tabela">
+<span><i class="fa-solid fa-circle-info"></i> Infos</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+<li>
+<a href="#resultados">
+<span><i class="fa-solid fa-flag-checkered"></i> Temporada</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+<li>
+<a href="#cadillac-teammates">
+<span><i class="fa-solid fa-user-group"></i> Teammates</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+<li>
+<a href="#driver-evolution-cadillac">
+<span><i class="fa-solid fa-chart-line"></i> Driver Evolution</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+		
+<li>
+<a href="#lider">
+<span><i class="fa-solid fa-people-group"></i> Equipe</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+<li>
+<a href="#sec">
+<span><i class="fa-solid fa-map"></i> Setores</span>
+<i class="fa-solid fa-chevron-right"></i>
+</a>
+</li>
+
+<li>
+	<a href="#creator">
+		<span><i class="fa-solid fa-screwdriver-wrench"></i>Criação</span>
+	<i class="fa-solid fa-chevron-right"></i>
+	</a>
+</li>
+			
+	<li>
+	<a href="#eras">
+		<span><i class="fa-solid fa-book-open"></i>Historia da equipe</span>
+	<i class="fa-solid fa-chevron-right"></i>
+	</a>
+</li>
+	
+
+	</ul>
+</div>
+	</nav>
+
+  <!-- OVERLAY -->
+  <div class="overlay-cadillac" id="overlaycadillac"></div>
+
+<div class="painel-noticias-cadillac" id="painelNoticiascadillac">
+
+
+<div class="topo-noticias-cadillac">
+
+    <h2>
+        <i class="fa-solid fa-newspaper"></i>
+        Cadillac News
+    </h2>
+
+    <div class="acoes-topo-cadillac">
+
+        <button id="atualizarNoticiascadillac"
+        title="Atualizar notícias">
+
+            <i class="fa-solid fa-rotate"></i>
+
+        </button>
+
+        <button id="fecharNoticiascadillac">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+    </div>
+
+</div>
+
+	
+    <div class="lista-noticias-cadillac" id="listaNoticiascadillac">
+
+        <!-- Loading -->
+        <div class="loading-noticias-cadillac">
+
+            <div class="spinner-cadillac"></div>
+
+            <p>Carregando notícias...</p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="overlay-noticias-cadillac"
+id="overlayNoticiascadillac"></div>
+
+
+
+
+<section class="cadillac-hero" id="inicio">
+
+<div class="cadillac-pulsos">
+<span></span><span></span><span></span><span></span><span></span>
+<span></span><span></span><span></span><span></span><span></span>
+<span></span><span></span><span></span><span></span><span></span>
+<span></span><span></span><span></span><span></span><span></span>
+<span></span><span></span><span></span><span></span><span></span>
+<span></span><span></span><span></span><span></span><span></span>
+<span></span><span></span><span></span><span></span><span></span>
+<span></span><span></span><span></span><span></span><span></span>
+<span></span><span></span><span></span><span></span><span></span>
+<span></span><span></span><span></span><span></span><span></span>
+<span></span><span></span><span></span><span></span><span></span>
+<span></span><span></span><span></span><span></span><span></span>
+<span></span><span></span><span></span><span></span><span></span>
+<span></span><span></span><span></span><span></span><span></span>
+<span></span><span></span><span></span><span></span><span></span>
+<span></span><span></span><span></span><span></span><span></span>
+<span></span><span></span><span></span><span></span><span></span>
+<span></span><span></span><span></span><span></span><span></span>
+<span></span><span></span><span></span><span></span><span></span>
+<span></span><span></span><span></span><span></span><span></span>
+</div>
+
+
+<!-- CARRO OCUPANDO TODO O FUNDO -->
+<div class="cadillac-car-bg"></div>
+<div class="cadillac-overlay"></div>
+
+
+<!-- TOPO -->
+<header class="cadillac-top">
+
+<a href="index.html" class="cadillac-home">
+<i class="fa-solid fa-house"></i>
+<span>HOME</span>
+</a>
+
+<div class="cadillac-status">
+FORMULA 1 • 2026
+</div>
+
+<div class="cadillac-logo">
+
+<div class="cadillac-logo-glow"></div>
+
+<img
+src="logos/cadillac.png"
+alt="cadillac Mastercard F1 Team"
+>
+
+</div>
+
+
+</header>
+
+
+<!-- REDES -->
+<div class="cadillac-social-top">
+
+<a href="https://www.instagram.com/cadillacf1team/"
+aria-label="Instagram"
+target="_blank"
+rel="noopener">
+ <i class="fa-brands fa-instagram"></i>
+</a>
+
+<a href="https://x.com/CadillacF1Team"
+aria-label="X"
+target="_blank"
+rel="noopener">
+ <i class="fa-brands fa-x-twitter"></i>
+</a>
+
+<a href="https://www.facebook.com/CadillacF1Team/"
+aria-label="Facebook"
+target="_blank"
+rel="noopener">
+ <i class="fa-brands fa-facebook-f"></i>
+</a>
+
+<a href="https://www.tiktok.com/@cadillacf1team"
+aria-label="TikTok"
+target="_blank"
+rel="noopener">
+ <i class="fa-brands fa-tiktok"></i>
+</a>
+
+<a href="https://www.youtube.com/@CadillacF1Team"
+aria-label="YouTube"
+target="_blank"
+rel="noopener">
+ <i class="fa-brands fa-youtube"></i>
+</a>
+
+<a href="https://www.threads.net/@cadillacf1team"
+aria-label="Threads"
+target="_blank"
+rel="noopener">
+ <i class="fa-brands fa-threads"></i>
+</a>
+
+<a href="https://www.linkedin.com/company/cadillacf1/"
+aria-label="LinkedIn"
+target="_blank"
+rel="noopener">
+ <i class="fa-brands fa-linkedin-in"></i>
+</a>
+
+<a href="https://www.cadillacf1team.com/"
+aria-label="Site oficial"
+target="_blank"
+rel="noopener">
+ <i class="fa-solid fa-globe"></i>
+</a>
+
+</div>
+	
+<div class="cadillac-main">
+<span class="cadillac-kicker">
+ CADILLAC FORMULA 1 TEAM
+</span>
+
+<h1>
+ CADILLAC
+ <strong>RACING</strong>
+</h1>
+
+<p class="cadillac-full-name">
+ CADILLAC FORMULA 1 TEAM
+</p>
+
+<div class="cadillac-title-line"></div>
+</div>
+	
+	<div class="cadillac-bottom">
+
+<span>11 SERGIO PEREZ</span>
+
+<div></div>
+
+<span>77 VALTTERI BOTTAS</span>
+
+</div>
+
+</section>
+
+
+<section class="pilotos-cadillac">
+
+ <div class="pilotos-titulo-cadillac">
+<span>CADILLAC FORMULA 1 TEAM</span>
+<h2>OS PILOTOS</h2>
+<p>Conheça a dupla que representa a Cadillac na Formula 1.</p>
+ </div>
+
+
+ <div class="dupla-pilotos-cadillac">
+
+
+
+<!-- =====================================================
+     DIVISÃO CENTRAL cadillac MARTIN 
+====================================================== -->
+
+<div class="centro-cadillac">
+
+ <div class="centro-logo-cadillac">
+
+<img
+    src="icons/cadillac.png"
+    alt="cadillac"
+>
+
+ </div>
+
+ <div class="centro-linha-cadillac"></div>
+
+ <span class="centro-nome-cadillac">
+CADILLAC  
+ </span>
+
+</div>
+			
+
+<!-- =========================
+     LANDO fernando 
+========================== -->
+
+<a href="perez.html" class="piloto-cadillac piloto-perez-cadillac">
+
+<div class="piloto-numero-bg-cadillac">
+11
+</div>
+
+<div class="piloto-foto-cadillac">
+ <img src="perez/head.webp" alt="Lando fernando ">
+</div>
+
+<div class="piloto-dados-cadillac">
+
+ <span class="piloto-pais-cadillac">
+    MEXICAN 
+ </span>
+
+ <h3>
+    SERGIO   
+<strong>PEREZ</strong>
+ </h3>
+
+ <div class="piloto-linha-cadillac"></div>
+
+ <span class="piloto-categoria-cadillac">
+    CADILLAC F1 DRIVER
+ </span>
+
+</div>
+
+<div class="piloto-acao-cadillac">
+ <span>VER PERFIL</span>
+ <strong>↗</strong>
+</div>
+
+</a>
+
+
+<!-- =========================
+     OSCAR lindblad
+========================== -->
+
+<a href="bottas.html" class="piloto-cadillac piloto-bottas-cadillac">
+
+<div class="piloto-numero-bg-cadillac">
+77
+</div>
+
+<div class="piloto-foto-cadillac">
+	<img src="bottas/head.webp" alt="Oscar lindblad">
+</div>
+
+<div class="piloto-dados-cadillac">
+
+<span class="piloto-pais-cadillac">
+FINLAND
+</span>
+
+<h3>
+VALTTERI 
+<strong>BOTTAS</strong>
+</h3>
+
+<div class="piloto-linha-cadillac"></div>
+
+<span class="piloto-categoria-cadillac">
+CADILLAC F1 DRIVER
+</span>
+
+</div>
+
+<div class="piloto-acao-cadillac">
+	<span>VER PERFIL</span>
+<strong>↗</strong>
+</div>
+
+</a>
+
+</div>
+
+</section>	
+
+
+
+
+<section class="intro-cadillac" id="intro">
+
+  <div class="intro-container-cadillac">
+
+    <div class="intro-texto-cadillac">
+
+      <h2>Cadillac F1 Team</h2>
+
+      <p>
+        A Cadillac chega à Fórmula 1 como parte de uma nova geração de fabricantes interessados em disputar espaço na categoria mais tecnológica do automobilismo.
+      </p>
+
+      <p>
+        Com forte identidade americana, a equipe promete unir inovação, potência e presença global em um projeto ambicioso para o futuro da Fórmula 1.
+      </p>
+
+      <p>
+        O objetivo da Cadillac é construir uma estrutura competitiva capaz de representar os Estados Unidos no mais alto nível do esporte mundial.
+      </p>
+
+      <div class="intro-dados-cadillac">
+
+        <span>🇺🇸 Estados Unidos</span>
+
+        <span>🏁 Nova Era F1</span>
+
+        <span>⚡ Projeto GM</span>
+
+      </div>
+
+    </div>
+
+    <div class="intro-img-cadillac">
+
+      <img src="carros/cdl.avif" alt="Cadillac F1">
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="cadillac-philosophy" id="philo">
+
+  <div class="philosophy-content-cadillac">
+
+    <span class="mini-title-cadillac">
+      Cadillac Formula One Team
+    </span>
+
+    <h2>
+      Inovação Americana,
+      Luxo e Performance
+    </h2>
+
+    <h3>
+      A Mentalidade da Cadillac na Fórmula 1
+    </h3>
+
+    <p>
+      A Cadillac chega à Fórmula 1 representando tecnologia, inovação e a força da engenharia americana. Com uma nova estrutura focada em desenvolvimento de longo prazo, a equipe busca construir um projeto competitivo capaz de evoluir rapidamente no grid.
+    </p>
+
+    <div class="philosophy-block-cadillac">
+
+      <h4>
+        Uma nova potência em construção
+      </h4>
+
+      <p>
+        Com investimentos em infraestrutura, aerodinâmica, simuladores e desenvolvimento técnico, a Cadillac pretende criar uma equipe moderna preparada para disputar posições importantes na Fórmula 1 nos próximos anos.
+      </p>
+
+    </div>
+
+    <div class="philosophy-grid-cadillac">
+
+      <!-- CARD 1 -->
+      <div class="philosophy-card-cadillac">
+
+        <span>01</span>
+
+        <h5>
+          Engenharia americana
+        </h5>
+
+        <p>
+          A Cadillac leva para a Fórmula 1 a tradição da indústria automotiva americana, combinando potência, inovação e tecnologia de ponta.
+        </p>
+
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="philosophy-card-cadillac">
+
+        <span>02</span>
+
+        <h5>
+          Ambição global
+        </h5>
+
+        <p>
+          O projeto da equipe nasce com o objetivo de crescer rapidamente e se tornar uma das principais forças da Fórmula 1 moderna.
+        </p>
+
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="philosophy-card-cadillac">
+
+        <span>03</span>
+
+        <h5>
+          Evolução constante
+        </h5>
+
+        <p>
+          Desenvolvimento contínuo, análise de dados e inovação técnica fazem parte da estratégia para evoluir temporada após temporada.
+        </p>
+
+      </div>
+
+    </div>
+
+    <div class="philosophy-ending-cadillac">
+
+      <h4>
+        O Que Define a Cadillac?
+      </h4>
+
+      <p>
+        A Cadillac representa luxo, desempenho e tecnologia avançada. Sua entrada na Fórmula 1 marca o início de uma nova era americana dentro do esporte.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="cadillac-factory" id="fac">
+
+  <div class="cadillac-factory-content">
+
+    <span class="cadillac-factory-mini">
+      Cadillac Formula One Team
+    </span>
+
+    <h2>
+      O Centro da Cadillac
+    </h2>
+
+    <h3>
+      Tecnologia, engenharia e ambição impulsionando uma nova era americana na Fórmula 1.
+    </h3>
+
+    <p class="cadillac-factory-intro">
+      A Cadillac entra na Fórmula 1 com um projeto moderno focado em desenvolvimento técnico, inovação e crescimento competitivo. A estrutura da equipe foi criada para reunir engenharia avançada, simulações e análise de performance em um ambiente preparado para o futuro da categoria.
+    </p>
+
+    <p class="cadillac-factory-intro">
+      Com investimentos em infraestrutura, aerodinâmica e tecnologia de ponta, a equipe busca construir uma base sólida para evoluir rapidamente dentro do grid e disputar posições importantes nos próximos anos.
+    </p>
+
+    <div class="cadillac-factory-grid">
+
+      <!-- CARD 1 -->
+      <div class="cadillac-factory-card">
+
+        <span>01</span>
+
+        <h4>
+          Estrutura moderna
+        </h4>
+
+        <p>
+          A Cadillac desenvolve uma operação focada em eficiência, inovação e integração total entre engenharia e performance.
+        </p>
+
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="cadillac-factory-card">
+
+        <span>02</span>
+
+        <h4>
+          Desenvolvimento técnico
+        </h4>
+
+        <p>
+          Simuladores, análise de dados e evolução aerodinâmica fazem parte da estratégia para acelerar o crescimento da equipe.
+        </p>
+
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="cadillac-factory-card">
+
+        <span>03</span>
+
+        <h4>
+          Visão de futuro
+        </h4>
+
+        <p>
+          O objetivo da Cadillac é construir uma equipe competitiva a longo prazo e se tornar uma referência da nova geração da Fórmula 1.
+        </p>
+
+      </div>
+
+    </div>
+
+    <div class="cadillac-factory-ending">
+
+      <blockquote class="cadillac-factory-quote">
+        “O futuro da performance começa com inovação.”
+      </blockquote>
+
+      <p class="cadillac-factory-text">
+        A Cadillac combina tradição automotiva, tecnologia e ambição para iniciar sua trajetória na Fórmula 1.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="cadillac-linha-evolution" id="linha">
+
+<div class="linha-evolution-header-cadillac">
+<span>THE ROAD TO CADILLAC F1 TEAM</span>
+
+<h2>
+UMA LINHA DE <strong>EVOLUÇÃO</strong>
+</h2>
+
+<p>
+Das origens à atual Cadillac na Fórmula 1.
+</p>
+</div>
+
+
+<div class="linha-evolution-grid-cadillac">
+
+
+
+<!-- cadillac -->
+
+<article class="linha-evolution-team-cadillac team-cadillac-current">
+
+<div class="team-bg-number-cadillac">01</div>
+
+<div class="team-image-cadillac">
+<img src="icons/cadillac.png" alt="cadillac">
+</div>
+
+<div class="team-content-cadillac">
+
+<span class="team-era-cadillac">2026 — PRESENTE</span>
+
+<h3>CADILLAC</h3>
+
+<div class="team-line-cadillac"></div>
+
+<span class="team-role-cadillac">THE AMERICAN ICON</span>
+
+</div>
+
+<div class="team-arrow-cadillac">↗</div>
+
+</article>
+
+</div>
+
+
+<div class="linha-evolution-footer-cadillac">
+
+<span>01</span>
+
+<div class="footer-line-cadillac"></div>
+
+<span>CADILLAC F1 TEAM</span>
+
+<div class="footer-line-cadillac"></div>
+
+<span>01</span>
+
+</div>
+
+</section>
+
+
+
+<section class="tabela-cadillac" id="tabela">
+     
+     <h2 class="titulo-tabela-cadillac">
+  <img src="icons/CadillacF1.png" class="logo-titulo-cad">
+  Dados da Cadillac
+  </h2>
+
+<div class="box-tabela-cadillac">
+     
+<table>
+
+<tr>
+<td>🏎️ Chassi Atual</td>
+<td>MAC26</td>
+</tr>
+
+<tr>
+<td>⚙️ Motor Atual</td>
+<td>Ferrari</td>
+</tr>
+
+<tr>
+<td>📅 Fundação</td>
+<td>2026</td>
+</tr>
+
+<tr>
+<td>📍 Sede</td>
+<td>Fishers – Estados Unidos</td>
+</tr>
+
+<tr>
+<td>🥇 Primeira Corrida</td>
+<td>Australia – 2026</td>
+</tr>
+
+<tr>
+<td>🏆 Melhor Resultado</td>
+<td>Valteri Bottas 🇫🇮  – 13° (China)</td>
+</tr>
+
+<tr>
+<td>🔥 Melhor posição de Largada</td>
+<td> Sergio Perez 🇲🇽 - Australia(2026)</td>
+</tr>
+
+<tr>
+<td>👬 Dupla Atual</td>
+<td>
+Sergio Perez 🇲🇽<br>
+Valteri Bottas 🇫🇮
+</td>
+</tr>
+
+</table>
+</div>
+</section>
+
+
+<section class="temporada-cadillac" id="resultados">
+
+  <h2 class="titulo-temp-cadillac">
+    cadillac • Temporada 2026
+  </h2>
+
+  <div class="dashboard-cadillac">
+
+    <div class="topo-temp-cadillac">
+
+      <div class="card-campeonato-cadillac">
+        <div class="valor-posicao-cadillac" id="posicaocadillac">—</div>
+        <p>Posição campeonato</p>
+      </div>
+
+      <div class="card-grafico-cadillac">
+        <svg viewBox="0 0 900 300">
+          <polyline id="linhaGraficocadillac" fill="none"></polyline>
+        </svg>
+      </div>
+
+      <div class="card-pontos-cadillac">
+        <div id="pontoscadillac">—</div>
+        <p>Pontos</p>
+      </div>
+
+    </div>
+
+    <div class="desempenho-cadillac">
+
+      <div><span id="podioscadillac">0</span><p>Pódios</p></div>
+      <div><span id="vitoriascadillac">0</span><p>Vitórias</p></div>
+      <div><span id="top5cadillac">0</span><p>Top 5</p></div>
+      <div><span id="avgGridcadillac">—</span><p>Avg Grid</p></div>
+
+    </div>
+
+    <div class="resultados-cadillac">
+
+      <table>
+        <thead>
+          <tr>
+            <th>Etapa</th>
+            <th>GP</th>
+            <th>Perez</th>
+            <th>Bottas</th>
+          </tr>
+        </thead>
+
+        <tbody id="tabelacadillac"></tbody>
+      </table>
+
+      <div class="total-cadillac">
+        Total:
+        <span id="totalTabelacadillac">0</span>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="cadillac-battle" id="cadillac-teammates">
+
+    <div class="cadillac-battle-card">
+
+        <!-- =====================================
+             HEADER
+        ====================================== -->
+
+        <header class="cadillac-header">
+
+            <div class="cadillac-title-wrap">
+
+                <h2>TEAMMATE BATTLE</h2>
+
+                <p>CADILLAC 2026</p>
+
+            </div>
+
+            <img
+                class="cadillac-team-logo"
+                src="icons/cadillac.png"
+                alt="cadillac"
+            >
+
+        </header>
+
+
+        <!-- =====================================
+             ÁREA PRINCIPAL
+        ====================================== -->
+
+        <div class="cadillac-layout">
+
+
+            <!-- =================================
+                 PILOTO ESQUERDO
+            ================================== -->
+
+            <div class="cadillac-left">
+
+                <div class="cadillac-left-name">
+
+                    <span>SERGIO</span>
+
+                    <h3>PEREZ</h3>
+
+                </div>
+
+
+                <div class="cadillac-left-image">
+
+                    <img
+                        id="cadillacPEREZImg"
+                        src="perez/head.webp"
+                        alt="SERGIO PEREZ"
+                    >
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================
+                 CENTRO
+            ================================== -->
+
+            <div class="cadillac-middle">
+
+
+                <!-- VS -->
+
+                <div class="cadillac-vs">
+
+                    <div class="cadillac-vs-box">
+
+                        VS
+
+                    </div>
+
+                </div>
+
+
+                <!-- TEMPORADA -->
+
+                <div
+                    class="cadillac-season"
+                    id="cadillacSeason"
+                >
+
+                    TEMPORADA 2026
+
+                </div>
+
+
+
+                <!-- =================================
+                     ESTATÍSTICAS
+                ================================== -->
+
+                <div class="cadillac-stats">
+
+
+                    <!-- =============================
+                         WINS
+                    ============================== -->
+
+                    <div class="cadillac-stat">
+
+                        <div class="cadillac-stat-values">
+
+                            <div class="cadillac-value">
+
+                                <span id="cadillacWinsLeft">0</span>
+
+                            </div>
+
+
+                            <div class="cadillac-label">
+
+                                WINS
+
+                            </div>
+
+
+                            <div class="cadillac-value">
+
+                                <span id="cadillacWinsRight">0</span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="cadillac-bars">
+
+                            <div
+                                class="cadillac-bar-left"
+                                id="cadillacBarWinsLeft"
+                            ></div>
+
+
+                            <div
+                                class="cadillac-bar-right"
+                                id="cadillacBarWinsRight"
+                            ></div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =============================
+                         PODIUMS
+                    ============================== -->
+
+                    <div class="cadillac-stat">
+
+                        <div class="cadillac-stat-values">
+
+                            <div class="cadillac-value">
+
+                                <span id="cadillacPodiumsLeft">0</span>
+
+                            </div>
+
+
+                            <div class="cadillac-label">
+
+                                PODIUMS
+
+                            </div>
+
+
+                            <div class="cadillac-value">
+
+                                <span id="cadillacPodiumsRight">0</span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="cadillac-bars">
+
+                            <div
+                                class="cadillac-bar-left"
+                                id="cadillacBarPodiumsLeft"
+                            ></div>
+
+
+                            <div
+                                class="cadillac-bar-right"
+                                id="cadillacBarPodiumsRight"
+                            ></div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =============================
+                         POLES
+                    ============================== -->
+
+                    <div class="cadillac-stat">
+
+                        <div class="cadillac-stat-values">
+
+                            <div class="cadillac-value">
+
+                                <span id="cadillacPolesLeft">0</span>
+
+                            </div>
+
+
+                            <div class="cadillac-label">
+
+                                POLES
+
+                            </div>
+
+
+                            <div class="cadillac-value">
+
+                                <span id="cadillacPolesRight">0</span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="cadillac-bars">
+
+                            <div
+                                class="cadillac-bar-left"
+                                id="cadillacBarPolesLeft"
+                            ></div>
+
+
+                            <div
+                                class="cadillac-bar-right"
+                                id="cadillacBarPolesRight"
+                            ></div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =============================
+                         FASTEST LAPS
+                    ============================== -->
+
+                    <div class="cadillac-stat">
+
+                        <div class="cadillac-stat-values">
+
+                            <div class="cadillac-value">
+
+                                <span id="cadillacFastLeft">0</span>
+
+                            </div>
+
+
+                            <div class="cadillac-label">
+
+                                FASTEST LAPS
+
+                            </div>
+
+
+                            <div class="cadillac-value">
+
+                                <span id="cadillacFastRight">0</span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="cadillac-bars">
+
+                            <div
+                                class="cadillac-bar-left"
+                                id="cadillacBarFastLeft"
+                            ></div>
+
+
+                            <div
+                                class="cadillac-bar-right"
+                                id="cadillacBarFastRight"
+                            ></div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =============================
+                         POINTS
+                    ============================== -->
+
+                    <div class="cadillac-stat">
+
+                        <div class="cadillac-stat-values">
+
+                            <div class="cadillac-value">
+
+                                <span id="cadillacPointsLeft">0</span>
+
+                            </div>
+
+
+                            <div class="cadillac-label">
+
+                                POINTS
+
+                            </div>
+
+
+                            <div class="cadillac-value">
+
+                                <span id="cadillacPointsRight">0</span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="cadillac-bars">
+
+                            <div
+                                class="cadillac-bar-left"
+                                id="cadillacBarPointsLeft"
+                            ></div>
+
+
+                            <div
+                                class="cadillac-bar-right"
+                                id="cadillacBarPointsRight"
+                            ></div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================
+                 PILOTO DIREITO
+            ================================== -->
+
+            <div class="cadillac-right">
+
+                <div class="cadillac-right-name">
+
+                    <span>VALTTERI</span>
+
+                    <h3>BOTTAS</h3>
+
+                </div>
+
+
+                <div class="cadillac-right-image">
+
+                    <img
+                        id="cadillacBOTTASImg"
+                        src="bottas/head.webp"
+                        alt="VALTTERI BOTTAS"
+                    >
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>    
+
+
+	
+	
+<section class="driver-evolution-cadillac" id="driver-evolution-cadillac">
+
+	<!-- ==============================
+   HEADER
+============================== -->
+
+<div class="evolution-header-cadillac">
+
+<h2>DRIVER EVOLUTION</h2>
+
+<p>Cadillac</p>
+
+</div>
+
+
+<!-- ==============================
+CARD PRINCIPAL
+=============================== -->
+
+	<div class="evolution-card-cadillac">
+
+ <!-- ==========================
+    TOPO DO CARD
+=========================== -->
+
+ <div class="evolution-card-top-cadillac">
+
+ <div class="evolution-intro-cadillac">
+
+<h3>
+SERGIO PEREZ
+ <span>AND</span>
+VALTTERI BOTTAS</h3>
+
+<p>
+Formula 1 championship points evolution
+</p>
+
+</div>
+
+
+            <!-- SELETOR -->
+
+ <div class="evolution-selector-cadillac">
+
+<button
+class="evolution-mode-cadillac active" data-mode="both">
+ BOTH
+</button>
+
+ <button
+  class="evolution-mode-cadillac"
+data-mode="perez">
+ PEREZ
+</button>
+
+<button
+class="evolution-mode-cadillac"
+ data-mode="bottas">
+BOTTAS</button>
+
+</div>
+
+ </div>
+
+
+
+        <!-- ==========================
+             CONTEÚDO
+        =========================== -->
+ <div class="evolution-content-cadillac">
+
+
+            <!-- ======================
+                 GRÁFICO
+            ======================= -->
+ <div class="evolution-chart-area-cadillac">
+
+<div class="y-axis-title-cadillac">
+POINTS
+</div>
+
+
+<div class="evolution-chart-cadillac">
+
+ <div class="chart-y-labels-cadillac">
+</div>
+
+
+ <div class="chart-main-cadillac" id="evolutionChart">
+</div>
+
+ </div>
+
+</div>
+
+
+
+            <!-- ======================
+                 LEGENDA
+            ======================= -->
+<aside class="evolution-sidebar-cadillac">
+
+
+<div class="sidebar-title-cadillac">
+LINE IDENTITY
+ </div>
+
+
+                
+<!-- perez -->
+
+<div class="driver-identity-cadillac">
+
+    <div class="identity-line-cadillac perez-line-cadillac">
+        <span></span>
+    </div>
+
+    <div class="identity-driver-info-cadillac">
+
+        <small>SERGIO</small>
+
+        <strong>PEREZ</strong>
+
+    </div>
+
+    <img
+        class="identity-driver-image-cadillac"
+        src="pilotos/sergio.png"
+        alt="SERGIO perez">
+
+</div>
+
+
+<!-- bottas -->
+
+<div class="driver-identity-cadillac">
+
+    <div class="identity-line-cadillac bottas-line-cadillac">
+        <span></span>
+    </div>
+
+    <div class="identity-driver-info-cadillac">
+
+        <small>VALTTERI</small>
+
+        <strong>BOTTAS</strong>
+
+    </div>
+
+    <img
+        class="identity-driver-image-cadillac"
+        src="pilotos/bottas.png"
+        alt="VALTTERI bottas">
+
+</div>
+
+
+                
+                <!-- ==================
+                     LEGEND
+                =================== -->
+
+ <div class="sidebar-title-cadillac legend-title-cadillac">
+ LEGEND
+</div>
+
+
+                <!-- perez CARD -->
+
+ <div class="driver-legend-cadillac perez-legend-cadillac">
+
+<div class="legend-info-cadillac">
+
+ <span>SERGIO</span>
+<strong>PEREZ</strong>
+</div>
+
+<img id="legendperez"
+src="pilotos/sergio.png" alt="SERGIO perez">
+ </div>
+
+
+                <!-- bottas CARD -->
+
+<div class="driver-legend-cadillac bottas-legend-cadillac">
+
+<div class="legend-info-cadillac">
+
+ <span>VALTTERI</span>
+<strong>BOTTAS</strong>
+</div>
+
+<img id="legendbottas" 
+	src="pilotos/bottas.png"  alt="VALTTERI bottas">
+</div>
+</aside>
+
+ </div>
+</div>
+
+</section>
+
+	
+
+
+<section class="lideranca-cadillac" id="lider">
+     
+  <h2 class="titulo-lideranca-cadillac">Líderes – Cadillac F1 Team </h2>
+
+  <div class="container-lideranca-cadillac">
+
+    <div class="card-lider-cadillac">
+      <img src="lideres/dan.jpeg" alt="">
+      <h3>Dan Towriss</h3>
+      <span>CEO</span>
+      <p>Responsável pela direção geral e investimentos da equipe.</p>
+    </div>
+
+    <div class="card-lider-cadillac">
+      <img src="lideres/graeme.jpeg" alt="">
+      <h3>Graeme Lowdon</h3>
+      <span>Team Principal</span>
+      <p>Chefe de equipe responsável pelas decisões esportivas e estratégicas.</p>
+    </div>
+
+    <div class="card-lider-cadillac">
+      <img src="lideres/nick.jpg" alt="">
+      <h3>Nick Chester</h3>
+      <span>Diretor Técnico</span>
+      <p>Lidera o desenvolvimento técnico do carro em parceria com a Ferrari.</p>
+    </div>
+
+    <div class="card-lider-cadillac">
+      <img src="haas/carine.jpg" alt="">
+      <h3>Mark Hynes</h3>
+      <span>Chefe de Estratégia</span>
+      <p>Coordena as estratégias durante as corridas.</p>
+    </div>
+
+    <div class="card-lider-cadillac">
+      <img src="lideres/jon.jpg" alt="">
+      <h3>Jon Tomlinson</h3>
+      <span>Chefe de Aerodinâmica</span>
+      <p>Responsável pelo desenvolvimento aerodinâmico do carro.</p>
+    </div>
+
+    <div class="card-lider-cadillac">
+      <img src="lideres/nick.jpg" alt="">
+      <h3>Nick Chester</h3>
+      <span>Chefe de Designer</span>
+      <p>Coordena o design e estrutura do carro.</p>
+    </div>
+
+    <div class="card-lider-cadillac">
+      <img src="lideres/rob.jpeg" alt="">
+      <h3>Rob White</h3>
+      <span>Diretor de Engenharia</span>
+      <p>Responsável pela integração técnica e funcionamento do carro.</p>
+    </div>
+
+    <div class="card-lider-cadillac">
+      <img src="icons/CadillacF1.png" alt="">
+      <h3>Função Compartilhada</h3>
+      <span>Diretor de Performance</span>
+      <p>Foco em extrair o máximo desempenho do carro durante o fim de semana.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="cadillac-sectors" id="sec">
+
+  <div class="cadillac-sectors-header">
+
+    <span>
+      Inside Cadillac F1 Team
+    </span>
+
+    <h2>
+      Os Setores Que Movem
+      a Cadillac na Fórmula 1
+    </h2>
+
+    <p>
+      A Cadillac une engenharia americana, inovação e tecnologia avançada para construir sua entrada na Fórmula 1. Cada setor da equipe trabalha em conjunto para transformar desenvolvimento técnico, estratégia e performance em resultados dentro das pistas.
+    </p>
+
+  </div>
+
+  <div class="cadillac-sectors-grid">
+
+    <div class="cadillac-sector-card">
+
+      <h3>
+        Pilotos Titulares
+      </h3>
+
+      <p>
+        Representam a equipe nas pistas e ajudam os engenheiros a desenvolver o carro durante toda a temporada.
+      </p>
+
+    </div>
+
+    <div class="cadillac-sector-card">
+
+      <h3>
+        Academia de Pilotos
+      </h3>
+
+      <p>
+        A Cadillac investe em jovens talentos para construir uma base forte para o futuro da equipe na Fórmula 1.
+      </p>
+
+    </div>
+
+    <div class="cadillac-sector-card">
+
+      <h3>
+        Engenharia de Performance
+      </h3>
+
+      <p>
+        Analisa ritmo de corrida, pneus e equilíbrio do carro para extrair o máximo desempenho em cada GP.
+      </p>
+
+    </div>
+
+    <div class="cadillac-sector-card">
+
+      <h3>
+        Engenharia de Corrida
+      </h3>
+
+      <p>
+        Coordena ajustes, comunicação com os pilotos e decisões técnicas durante os fins de semana de corrida.
+      </p>
+
+    </div>
+
+    <div class="cadillac-sector-card">
+
+      <h3>
+        Aerodinâmica
+      </h3>
+
+      <p>
+        Desenvolve soluções para melhorar downforce, eficiência e estabilidade em curvas e retas.
+      </p>
+
+    </div>
+
+    <div class="cadillac-sector-card">
+
+      <h3>
+        Mecânicos
+      </h3>
+
+      <p>
+        Responsáveis pela montagem dos carros, manutenção e execução precisa dos pit stops.
+      </p>
+
+    </div>
+
+    <div class="cadillac-sector-card">
+
+      <h3>
+        Estratégia
+      </h3>
+
+      <p>
+        Analisa desgaste de pneus, safety cars e cenários de corrida para definir as melhores decisões.
+      </p>
+
+    </div>
+
+    <div class="cadillac-sector-card">
+
+      <h3>
+        Telemetria e Dados
+      </h3>
+
+      <p>
+        Monitora milhares de informações em tempo real para avaliar performance e comportamento do carro.
+      </p>
+
+    </div>
+
+    <div class="cadillac-sector-card">
+
+      <h3>
+        Pesquisa e Desenvolvimento
+      </h3>
+
+      <p>
+        Busca novas soluções técnicas para acelerar a evolução da Cadillac dentro do grid.
+      </p>
+
+    </div>
+
+    <div class="cadillac-sector-card">
+
+      <h3>
+        Software e Simulações
+      </h3>
+
+      <p>
+        Sistemas avançados ajudam na análise de dados, simuladores e desenvolvimento do carro.
+      </p>
+
+    </div>
+
+    <div class="cadillac-sector-card">
+
+      <h3>
+        Logística
+      </h3>
+
+      <p>
+        Coordena o transporte de carros, peças e equipamentos pelo mundo durante toda a temporada.
+      </p>
+
+    </div>
+
+    <div class="cadillac-sector-card">
+
+      <h3>
+        Marketing e Comunicação
+      </h3>
+
+      <p>
+        Fortalece a identidade da Cadillac e aproxima a equipe dos fãs globalmente.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<section class="cadillac-creation" id="creator">
+
+  <div class="cadillac-creation-header">
+
+    <span>
+      Cadillac Formula 1 Team Engineering
+    </span>
+
+    <h2>
+      Como Nasce
+      Um Carro da Cadillac
+    </h2>
+
+    <p>
+      Nos Estados Unidos e em parceria com centros avançados de engenharia, inovação e desenvolvimento trabalham juntos para criar cada novo carro da Cadillac na Fórmula 1. O processo envolve simulações avançadas, estudos aerodinâmicos e evolução constante em busca de desempenho máximo.
+    </p>
+
+  </div>
+
+  <div class="cadillac-creation-timeline">
+
+    <div class="cadillac-creation-step">
+
+      <div class="cadillac-step-number">01</div>
+
+      <div class="cadillac-step-content">
+
+        <h3>Conceito Inicial</h3>
+
+        <p>
+          O desenvolvimento começa com estudos aerodinâmicos e análise de performance para encontrar equilíbrio, eficiência e competitividade.
+        </p>
+
+      </div>
+
+    </div>
+
+    <div class="cadillac-creation-step">
+
+      <div class="cadillac-step-number">02</div>
+
+      <div class="cadillac-step-content">
+
+        <h3>Design Digital</h3>
+
+        <p>
+          Engenheiros utilizam softwares avançados para criar modelos virtuais e testar diferentes soluções antes da produção.
+        </p>
+
+      </div>
+
+    </div>
+
+    <div class="cadillac-creation-step">
+
+      <div class="cadillac-step-number">03</div>
+
+      <div class="cadillac-step-content">
+
+        <h3>Túnel de Vento</h3>
+
+        <p>
+          A equipe ajusta a aerodinâmica para melhorar downforce, estabilidade e velocidade em diferentes tipos de circuito.
+        </p>
+
+      </div>
+
+    </div>
+
+    <div class="cadillac-creation-step">
+
+      <div class="cadillac-step-number">04</div>
+
+      <div class="cadillac-step-content">
+
+        <h3>Construção do Chassi</h3>
+
+        <p>
+          Materiais leves e resistentes são utilizados para garantir segurança, rigidez estrutural e máxima performance.
+        </p>
+
+      </div>
+
+    </div>
+
+    <div class="cadillac-creation-step">
+
+      <div class="cadillac-step-number">05</div>
+
+      <div class="cadillac-step-content">
+
+        <h3>Simulador e Feedback</h3>
+
+        <p>
+          Pilotos e engenheiros trabalham juntos ajustando comportamento, equilíbrio e dirigibilidade do carro.
+        </p>
+
+      </div>
+
+    </div>
+
+    <div class="cadillac-creation-step">
+
+      <div class="cadillac-step-number">06</div>
+
+      <div class="cadillac-step-content">
+
+        <h3>Evolução Contínua</h3>
+
+        <p>
+          Durante toda a temporada, novas atualizações são desenvolvidas para buscar ganhos constantes de desempenho.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="cadillac-creation-ending">
+
+    <blockquote>
+      “Na Cadillac, cada detalhe é desenvolvido para transformar inovação em velocidade.”
+    </blockquote>
+
+  </div>
+
+</section>
+
+
+
+
+<section class="numeros-cadillac" id="numeros">
+
+<img src="secao/cl26.png" class="bg-numeros-cadillac">
+
+<div class="overlay-numeros-cadillac"></div>
+
+
+
+
+<div class="luz-laranja-cadillac"></div>
+
+<div class="faíscas-cadillac">
+<div class="spark-cadillac"></div>
+<div class="spark-cadillac"></div>
+<div class="spark-cadillac"></div>
+<div class="spark-cadillac"></div>
+<div class="spark-cadillac"></div>
+</div>
+
+
+
+<h2 class="titulo-numeros-cadillac">Estatisticas da cadillac</h2>
+
+<div class="stats-grid-cadillac">
+
+<div class="card-stat-cadillac grande-cadillac animar-cadillac">
+<span id="corridas-cadillac" class="contador-cadillac" data-target="0">
+    0</span>
+	<div class="barra-velocidade-cadillac"></div>
+<p>🏁 Corridas</p>
+</div>
+
+<div class="card-stat-cadillac animar-cadillac">
+<span id="top10-cadillac" class="contador-cadillac" data-target="0">0</span>
+<div class="barra-velocidade-cadillac"></div>
+<p>🥇 Top 10</p>
+</div>
+<div class="card-stat-cadillac animar-cadillac">
+<span id="q3-cadillac" class="contador-cadillac" data-target="0">0</span>
+<div class="barra-velocidade-cadillac"></div>
+<p>🥇 q3</p>
+</div>
+
+<div class="card-stat-cadillac animar-cadillac">
+	<span id="q2-cadillac" class="contador-cadillac" data-target="0">0</span>
+<div class="barra-velocidade-cadillac"></div>
+<p>⚡ q2</p>
+</div>
+
+<div class="card-stat-cadillac grande-cadillac animar-cadillac">
+    <span id="pontos-cadillac" class="contador-cadillac" data-target="0">0</span>
+    <div class="barra-velocidade-cadillac"></div>
+    <p>📈 Pontos no Total</p>
+</div>
+	
+</div>
+</section>
+
+
+
+	
+
+
+<section class="eras-cadillac" id="eras">
+
+
+<h2 class="titulo-eras-cadillac">Eras da Cadillac</h2>
+
+<div class="botoes-eras-cadillac">
+    <button onclick="mostrarEra(0)" class="ativo">Início</button>
+    <button onclick="mostrarEra(1)">Co strução</button>
+    <button onclick="mostrarEra(2)">Sonhos</button>
+  
+</div>
+
+<div class="conteudo-era-cadillac"></div>
+    <h3 id="tituloEra-cadillac"></h3>
+    <p id="textoEra-cadillac"></p>
+    <div id="cadillac-timeline"></div>
+
+</section>
+
+
+<footer class="footer-f1-cadillac">
+
+  <div class="footer-brand-cadillac">
+    <p>Cadillac</p>
+    <span>Cadillac  Formula One Team</span>
+  </div>
+
+  <div class="footer-links-cadillac">
+    <a href="index.html">Home</a>
+    <a href="f1.html">Regras</a>
+				<a href="info.html">Informações</a>
+
+    <a href="perez.html">Perez</a>
+    <a href="bottas.html">Bottas</a>
+    <a href="about.html">About</a>
+  </div>
+
+  <div class="footer-social-cadillac">
+
+    <a 
+      href="https://www.instagram.com/duduxl37?igsh=dnNwM29qYXprbnI4" 
+      target="_blank"
+    >
+      Instagram
+    </a>
+
+    <a 
+      href="https://x.com/Duducrvg1998" 
+      target="_blank"
+    >
+      X
+    </a>
+
+  </div>
+
+  <div class="footer-copy-cadillac">
+    © 2026 Fan Project • Inspired by Formula 1
+  </div>
+
+</footer>
+
+ 	<button id="btnTopo" class="btn-topo">
+    <i class="fa-solid fa-arrow-up"></i>
+	</button>
+
+
+
+
+
+
+<script src="Cadillac.js"></script>
+</body>
+</html>
